@@ -14,6 +14,10 @@
     {
       "text": "User explicitly identifies Stairway 2 as the wrong latch type. Prioritizing that proven mismatch: removed generic keyed lever from the stair exit and added a horizontal push bar with the larger left latch-side housing, using v054/v018. Apartment 209 remains a separate opposite-handed source case. New skill rule audits every instance of shared code rather than only the reported example.",
       "timestamp": "2026-10-29T07:55:28Z"
+    },
+    {
+      "text": "Local render comparisons completed against v054/v018 for stair push bar and brick-mounted sign; against v060 for 209 right-edge lever extending left and separate upper round lock. The common generator covers 12 doors: observed 209/210/Stair 2 and 9 gray context doors without individual verified hardware. No blanket reversal applied. Code tests now 49 passing plus 6 source tests; 210 regression remains passing. Screenshot stair2-pushbar-local.png retained.",
+      "timestamp": "2026-10-29T08:03:32Z"
     }
   ],
   "priority": 1,
