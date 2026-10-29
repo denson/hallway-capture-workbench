@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-29T21:54:12Z",
+  "description": "Follow hall-979: resize frame-210 to outside width 40 inches measured and outside height about 80 inches estimated. Fit door-210 and opening consistently; preserve measured vs inferred distinction. Verify rendered result, bounds and publish.",
+  "id": "hall-bxf",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Apply measured frame width and estimated height to geometry",
+  "type": "task",
+  "updated_at": "2026-10-29T21:54:12Z"
+}
