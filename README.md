@@ -2,6 +2,8 @@
 
 An interactive, provisional industrial hallway model adapted from [wit543/image-to-3d-house-editor](https://github.com/wit543/image-to-3d-house-editor). Published with GitHub Pages.
 
+Moving computers or taking over as a new agent? Read [LAPTOP_SETUP.md](LAPTOP_SETUP.md) and the substantial handoff in the private Google Drive transfer package.
+
 ## Run and build
 
 Use Node 24. Run `npm ci`, `npm run dev:pages`, and open the printed URL. `npm run build:pages` writes `dist-pages/`; `npm run preview:pages` serves that build.
