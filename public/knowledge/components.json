@@ -797,8 +797,8 @@
       "name": "Stair 2 branch · east wall",
       "dimensionsMetres": {
         "width": 0.17599999904632568,
-        "depth": 11.021568184265135,
-        "height": 3.5052000265955923
+        "depth": 11.021567806324008,
+        "height": 3.505200026786327
       },
       "evidence": {
         "basis": "Blueprint",
@@ -825,13 +825,13 @@
       "id": "door-210",
       "name": "Apartment 210 door panel · estimated",
       "dimensionsMetres": {
-        "width": 0.8803743591487407,
+        "width": 0.882774349659682,
         "depth": 0.11760000053644148,
-        "height": 2.0065999031066895
+        "height": 1.9520000219345093
       },
       "evidence": {
         "basis": "Tape measurement + photos + user correction",
-        "notes": "The prior 79-inch leaf height reading is unreliable; model height and width remain provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.",
+        "notes": "The prior 79-inch leaf height reading is unreliable. Leaf dimensions inferred to fit a frame 40 inches wide and approximately 80 inches high; leaf dimensions remain estimates. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.",
         "status": "estimated"
       },
       "coverage": "captured-route",
@@ -840,7 +840,7 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Earlier 79-inch door-leaf height reading is unreliable and retained only as a provisional modeling assumption. Video places doorway on east wall near Stair 2; placement estimated. Hardware refined from close-ups; click keyed lever for its record. Frame outside width is measured at 40 inches; select frame for details.",
+        "notes": "Earlier 79-inch door-leaf height reading is unreliable and superseded as a geometry anchor by the measured frame width and estimated frame height. Video places doorway on east wall near Stair 2; placement estimated. Hardware refined from close-ups; click keyed lever for its record. Frame outside width is measured at 40 inches; select frame for details.",
         "evidenceIds": [
           "v009",
           "v168",
@@ -896,13 +896,13 @@
       "id": "frame-210",
       "name": "Door frame 210",
       "dimensionsMetres": {
-        "width": 1.0135999917984009,
+        "width": 1.0160000324249268,
         "depth": 0.11999999731779099,
-        "height": 2.1316000269532203
+        "height": 2.0320000648498535
       },
       "evidence": {
-        "basis": "Photos",
-        "notes": "Steel jamb, stop and header profiles estimated.",
+        "basis": "Measured outside width + photo height estimate",
+        "notes": "Outside frame width 40 inches measured; outside height approximately 80 inches photo-derived. Depth and frame profiles estimated.",
         "status": "estimated"
       },
       "coverage": "captured-route",
@@ -911,7 +911,7 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Outside-to-outside frame width: 40 inches (1.016 m), measured by the user. Outside frame height: approximately 80 inches, inferred from a photo of another door the user says has the same dimensions. All other frame dimensions and placement are estimates. The model geometry has not yet been resized to this photo estimate.",
+        "notes": "Outside-to-outside frame width: 40 inches (1.016 m), measured by the user. Outside frame height: approximately 80 inches, inferred from a photo of another door the user says has the same dimensions. All other frame dimensions and placement are estimates. Frame geometry uses the measured 40-inch outside width and estimated 80-inch outside height. Depth, profiles and fitted door-leaf dimensions are estimates.",
         "evidenceIds": [
           "v009",
           "v168",

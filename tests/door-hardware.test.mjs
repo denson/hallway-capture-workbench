@@ -16,7 +16,7 @@ test('210 hardware follows its door and can be inspected independently', () => {
   assert.equal(hardware.object.parent, door);
   // Hallway-facing -Z surface: local +X is the left latch edge in the photos.
   assert.ok(
-    Math.abs(HALL.doorWidth / 2 - hardware.object.position.x - 0.065) < 1e-8,
+    Math.abs((40 * 0.0254 - 0.15) / 2 - hardware.object.position.x - 0.065) < 1e-8,
   );
   assert.ok(
     objectBounds(hardware.object).min.x < -0.12,

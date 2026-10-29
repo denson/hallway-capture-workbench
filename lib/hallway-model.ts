@@ -123,17 +123,19 @@ export function buildHallway(textures=typeof document!=='undefined'){
     }
     let cursor=0;
     for(const o of [...openings].sort((a,b)=>a.center-b.center)){
-      const a=o.center-HALL.doorWidth/2-.045,b=o.center+HALL.doorWidth/2+.045;
-      segment(cursor,a);segment(a,b,HALL.doorHeight+.05);cursor=b;
+      const openingW=o.id==='210'?40*.0254-.15:HALL.doorWidth;
+      const openingH=o.id==='210'?80*.0254-.08:HALL.doorHeight;
+      const a=o.center-openingW/2-.045,b=o.center+openingW/2+.045;
+      segment(cursor,a);segment(a,b,openingH+.05);cursor=b;
       door(o.id,x+(axis==='x'?o.center:0),z+(axis==='z'?o.center:0),axis==='x'?(z<0?Math.PI:0):(x>HALL.branchRight?Math.PI/2:-Math.PI/2));
     }
     segment(cursor,length);return g;
   }
   function door(id:string,x:number,z:number,rotation:number,exit=false){
     const name=id==='210'?'Apartment 210 door panel · estimated':exit?'Stair '+id+' exit door':'Apartment '+id+' door panel';
-    const e=id==='210'?evidence('Tape measurement + photos + user correction','The prior 79-inch leaf height reading is unreliable; model height and width remain provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','estimated'):exit?evidence('Four exit-device detail photos + video 00:18 / 00:54','Hallway-left curved latch case, raised press pad, shorter right fixed cover and end cap observed. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
+    const e=id==='210'?evidence('Tape measurement + photos + user correction','The prior 79-inch leaf height reading is unreliable. Leaf dimensions inferred to fit a frame 40 inches wide and approximately 80 inches high; leaf dimensions remain estimates. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','estimated'):exit?evidence('Four exit-device detail photos + video 00:18 / 00:54','Hallway-left curved latch case, raised press pad, shorter right fixed cover and end cap observed. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
     const g=assembly('door-'+id,name,e,[x,0,z],rotation);
-    const w=exit?.95:HALL.doorWidth,h=exit?2.18:HALL.doorHeight;
+    const w=id==='210'?40*.0254-.15:exit?.95:HALL.doorWidth,h=id==='210'?80*.0254-.08:exit?2.18:HALL.doorHeight;
     box(g,[0,h/2,0],[w,h,.052],trim);
     box(g,[0,.145,-.029],[w-.08,.28,.008],steel);
     if(id==='210'){
@@ -157,10 +159,10 @@ export function buildHallway(textures=typeof document!=='undefined'){
     if(!exit)cylinder(g,[0,1.48,-.029],[0,1.48,-.043],.008,steel,12);
     const hingeX=id==='210'||exit?-w/2-.008:w/2+.008;
     for(const y of [.22,h/2,h-.22])cylinder(g,[hingeX,y-.04,0],[hingeX,y+.04,0],.009,steel);
-    const frame=assembly('frame-'+id,'Door frame '+id,evidence('Photos','Steel jamb, stop and header profiles estimated.'),[x,0,z],rotation);
-    for(const side of [-1,1])box(frame,[side*(w/2+.037),h/2,0],[.074,h+.09,.12],trim);
+    const frame=assembly('frame-'+id,'Door frame '+id,evidence(id==='210'?'Measured outside width + photo height estimate':'Photos',id==='210'?'Outside frame width 40 inches measured; outside height approximately 80 inches photo-derived. Depth and frame profiles estimated.':'Steel jamb, stop and header profiles estimated.'),[x,0,z],rotation);
+    for(const side of [-1,1])box(frame,[side*(w/2+.037),id==='210'?(h+.08)/2:h/2,0],[.074,id==='210'?h+.08:h+.09,.12],trim);
     box(frame,[0,h+.04,0],[w+.15,.08,.12],trim);
-    if(!exit){const plaque=id==='210'?[w/2+.16,1.45,-.075]:id==='209'?[-w/2-.16,1.45,-.075]:[0,h+.16,-.075];label(frame,id,plaque as V,.19,.065,Math.PI);}
+    if(!exit){const plaque=id==='210'?[w/2+.16,1.45,-.075]:id==='209'?[-w/2-.16,1.45,-.075]:[0,h+.16,-.075];label(id==='210'?g:frame,id,plaque as V,.19,.065,Math.PI);}
     const alongX=Math.abs(Math.sin(rotation))<.5;
     collider(g,x,z,alongX?w+.09:.11,alongX?.11:w+.09);
     return g;
