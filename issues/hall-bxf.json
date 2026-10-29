@@ -6,9 +6,15 @@
   "description": "Follow hall-979: resize frame-210 to outside width 40 inches measured and outside height about 80 inches estimated. Fit door-210 and opening consistently; preserve measured vs inferred distinction. Verify rendered result, bounds and publish.",
   "id": "hall-bxf",
   "labels": [],
+  "comments": [
+    {
+      "text": "Commit 2a54f83. Frame bounds verified by tests: width 1.016 m, height 2.032 m; only width measured. Local walk and edit rendered views inspected for fit, left-side lever and adjacent cabinet context against existing photo evidence. Required checks passed (53 tests, 6 source checks, typecheck, build, public check). Pages run 40961911290 succeeded; published component bounds verified. User check: reload and inspect frame-210 proportions.",
+      "timestamp": "2026-10-29T21:57:27Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Apply measured frame width and estimated height to geometry",
   "type": "task",
-  "updated_at": "2026-10-29T21:54:29Z"
+  "updated_at": "2026-10-29T21:57:27Z"
 }
