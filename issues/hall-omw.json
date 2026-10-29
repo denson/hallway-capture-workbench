@@ -10,11 +10,15 @@
     {
       "text": "Captured live URL at user-selected T view: walk, position 9.375/1.65/0.941 m, yaw 174.8 degrees, pitch -5.4 degrees, full walls and labels on, guides off. Added shared opening snapshot, unlinked-start fallback, Walk Inside entry and Reset behavior; explicit links retain precedence and named Stairway 2 remains distinct. Verified bare local root URL and Reset produce captured view, with screenshot outputs/opening-local.png. Regression tests cover bare/explicit precedence; all 53 tests, six source tests, typecheck and build pass.",
       "timestamp": "2026-10-29T19:58:05Z"
+    },
+    {
+      "text": "Published commit 45bff8206bc0f6c3c6a4e8dabfbf0f5bbb983a09 via successful Pages run 40944902542. Verified plain public site root opens at selected T-junction view. An explicit stair-door view still opens correctly; Reset then returns to exact saved position, heading and pitch, with full walls/labels on and guides off. Live screenshot outputs/opening-published.png. Viewer left at new start. Human check: fresh root visit or Reset.",
+      "timestamp": "2026-10-29T20:01:12Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Use the user-selected junction view as the opening camera",
   "type": "task",
-  "updated_at": "2026-10-29T19:58:05Z"
+  "updated_at": "2026-10-29T20:01:12Z"
 }
