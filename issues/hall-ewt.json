@@ -2,6 +2,8 @@
   "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-29T07:25:54Z",
+  "close_reason": "Workflow documented in project instructions and public knowledge; checks and Pages deployment passed; published document verified.",
   "created": "2026-10-29T07:22:00Z",
   "description": "User specifies: the agent is the application interface. Voice/text change requests become Beadwork tickets, tied to the selected stable component and evidence. Agent updates canonical source, validates and publishes, verifies deployment, closes the ticket, and tells the user what changed and what to check. Persist this contract in project instructions and public agent-readable knowledge. Clarify that unsent browser-local text is not automatically transmitted to the agent. Preserve browser save/backup as optional fallback. Acceptance: workflow documented, knowledge rebuilt, required checks pass, public deployment succeeds, ticket closed with commit/deployment and review instructions.",
   "id": "hall-ewt",
@@ -21,7 +23,7 @@
     }
   ],
   "priority": 1,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Record the agent-managed annotation and publishing workflow",
   "type": "task",
   "updated_at": "2026-10-29T07:25:54Z"
