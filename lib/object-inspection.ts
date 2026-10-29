@@ -3,6 +3,7 @@ import type { EditableEntry } from './house-editor';
 export function isInspectable(id: string) {
   return (
     !/^(floor-|wall-|ceiling-|structure-|frame-|junction-wall-)/.test(id) ||
+    id === 'frame-210' ||
     id === 'wall-cabinet' ||
     id === 'wall-heater-stair2'
   );

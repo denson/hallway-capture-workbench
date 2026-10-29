@@ -32,7 +32,7 @@ Every row is authored geometry. Dimensions enclose the full assembly and are est
 | Apartment 209 door panel | door-209 | unknown | 0.880 × 0.113 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-209&focus=1&roof=0) |
 | Door frame 209 | frame-209 | unknown | 1.014 × 0.120 × 2.132 | [Inspect](../#v=1&mode=edit&object=frame-209&focus=1&roof=0) |
 | Stair 2 branch · east wall | wall-branch-east | unknown | 0.176 × 11.022 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-branch-east&focus=1&roof=0) |
-| Apartment 210 door panel · 79 in measured | door-210 | unknown | 0.880 × 0.118 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-210&focus=1&roof=0) |
+| Apartment 210 door panel · estimated | door-210 | unknown | 0.880 × 0.118 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-210&focus=1&roof=0) |
 | Apartment 210 · keyed lever and lock | door-hardware-210 | unknown | 0.169 × 0.066 × 0.076 | [Inspect](../#v=1&mode=edit&object=door-hardware-210&focus=1&roof=0) |
 | Door frame 210 | frame-210 | unknown | 1.014 × 0.120 × 2.132 | [Inspect](../#v=1&mode=edit&object=frame-210&focus=1&roof=0) |
 | Stair 2 end · brick surround | wall-stair2 | unknown | 1.590 × 0.210 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-stair2&focus=1&roof=0) |

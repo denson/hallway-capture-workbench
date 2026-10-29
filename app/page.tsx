@@ -356,8 +356,8 @@ export default function Home() {
           </p>
           <div className="facts">
             <div>
-              <strong>79″</strong>
-              <span>Door height · tape</span>
+              <strong>40″</strong>
+              <span>Frame width · measured</span>
             </div>
             <div>
               <strong>24′</strong>

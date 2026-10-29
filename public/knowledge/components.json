@@ -823,7 +823,7 @@
     },
     {
       "id": "door-210",
-      "name": "Apartment 210 door panel · 79 in measured",
+      "name": "Apartment 210 door panel · estimated",
       "dimensionsMetres": {
         "width": 0.8803743591487407,
         "depth": 0.11760000053644148,
@@ -831,8 +831,8 @@
       },
       "evidence": {
         "basis": "Tape measurement + photos + user correction",
-        "notes": "Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.",
-        "status": "measured"
+        "notes": "The prior 79-inch leaf height reading is unreliable; model height and width remain provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.",
+        "status": "estimated"
       },
       "coverage": "captured-route",
       "record": {
@@ -840,7 +840,7 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Door height supplied by tape: 79 inches. Video places doorway on east wall near Stair 2. Distance along hallway estimated. Hardware refined from three close-ups received 2026-10-29; click the keyed lever for its separate door-hardware-210 record. Hardware dimensions and manufacturer/model remain unconfirmed.",
+        "notes": "Earlier 79-inch door-leaf height reading is unreliable and retained only as a provisional modeling assumption. Video places doorway on east wall near Stair 2; placement estimated. Hardware refined from close-ups; click keyed lever for its record. Frame outside width is measured at 40 inches; select frame for details.",
         "evidenceIds": [
           "v009",
           "v168",
@@ -887,7 +887,7 @@
         "evidenceNote": "Three user-supplied close-ups: keyed insert, front view and side profile; full-door video frames at 00:06 and 00:09 register placement. Review date is the receipt date, not a verified camera capture date. Hardware dimensions remain inferred, without a hardware measurement.",
         "workHeight": 0.91,
         "heightStatus": "estimated",
-        "heightSource": "Approximate 0.91 m center height and 65 mm edge setback inferred from the full-door video frame using the 79-inch leaf anchor; not tape-measured.",
+        "heightSource": "Approximate 0.91 m center height and 65 mm edge setback inferred from the full-door video frame using the provisional 79-inch leaf assumption; not tape-measured.",
         "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
       },
       "view": "../#v=1&mode=edit&object=door-hardware-210&focus=1&roof=0"
@@ -911,13 +911,13 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Door height supplied by tape: 79 inches. Video places doorway on east wall near Stair 2. Distance along hallway estimated.",
+        "notes": "Outside-to-outside frame width: 40 inches (1.016 m), measured by the user. Outside frame height: approximately 80 inches, inferred from a photo of another door the user says has the same dimensions. All other frame dimensions and placement are estimates. The model geometry has not yet been resized to this photo estimate.",
         "evidenceIds": [
           "v009",
           "v168",
           "v156"
         ],
-        "evidenceNote": "",
+        "evidenceNote": "40-inch outer frame width supplied by user. Height inferred from the proportions of a photograph of an equivalent door; not directly measured. Previous 79-inch door-leaf reading was later considered unreliable.",
         "workHeight": null,
         "heightStatus": "unknown",
         "heightSource": "",

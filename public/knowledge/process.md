@@ -2,7 +2,7 @@
 
 The intended service is quick capture followed by progressive detail. The field worker starts with ground video, optional drone footage when relevant, and close-up stills for specific equipment. An agent authors a rough spatial model, links observations to components, and asks only for targeted missing evidence.
 
-This demonstration began with individual photos and an accurate related-floor plan. Repeated requests for wall coverage and hallway dimensions made the capture process too burdensome. The user rejected a complete engineering survey and supplied a 79-inch door height as a strong anchor. This failure is part of the demonstration.
+This demonstration began with individual photos and an accurate related-floor plan. Repeated requests for wall coverage and hallway dimensions made the capture process too burdensome. The user rejected a complete engineering survey and initially supplied a 79-inch door height, later considered unreliable; the outside frame width is now measured at 40 inches. This failure is part of the demonstration.
 
 The repository supplied an existing Three.js viewer and editor. Its controls, selection, editing, history, saves and exports were retained. The initial Blender inspiration article describes a different workflow; this app does not run Blender or automatically turn uploaded video into geometry.
 

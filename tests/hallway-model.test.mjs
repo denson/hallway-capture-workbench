@@ -6,14 +6,14 @@ import {migrateHallwayLayout} from '../lib/hallway-layout-migration.ts';
 import {measurementSize} from '../lib/object-measurements.ts';
 import {emptyComponentRecord} from '../lib/component-record.ts';
 
-test('scale bar and measured door height survive authored geometry',()=>{
+test('scale bar and provisional door geometry survive authored geometry',()=>{
   assert.ok(Math.abs(METRES_PER_PLAN_PIXEL*150-24*.3048)<1e-10);
   const built=buildHallway(false),door=built.entries.find(e=>e.id==='door-210');
   assert.ok(door);const d=measurementSize(door.object);
   assert.ok(Math.abs(d.height-79*.0254)<1e-6,`Door panel height ${d.height}`);
   // Overall bounds include the hinge knuckles outside the 34-inch leaf.
   assert.ok(d.width>=34*.0254&&d.width<.90,`Door/hardware width ${d.width}`);
-  assert.equal(door.object.userData.evidence.status,'measured');
+  assert.equal(door.object.userData.evidence.status,'estimated');
   assert.ok(Math.abs(door.object.position.x-DOOR_210.x)<1e-9);
   assert.ok(Math.abs(door.object.position.z-DOOR_210.z)<1e-9);
   assert.ok(Math.abs(door.object.rotation.y-Math.PI/2)<1e-9);

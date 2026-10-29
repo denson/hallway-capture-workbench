@@ -130,8 +130,8 @@ export function buildHallway(textures=typeof document!=='undefined'){
     segment(cursor,length);return g;
   }
   function door(id:string,x:number,z:number,rotation:number,exit=false){
-    const name=id==='210'?'Apartment 210 door panel · 79 in measured':exit?'Stair '+id+' exit door':'Apartment '+id+' door panel';
-    const e=id==='210'?evidence('Tape measurement + photos + user correction','Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','measured'):exit?evidence('Four exit-device detail photos + video 00:18 / 00:54','Hallway-left curved latch case, raised press pad, shorter right fixed cover and end cap observed. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
+    const name=id==='210'?'Apartment 210 door panel · estimated':exit?'Stair '+id+' exit door':'Apartment '+id+' door panel';
+    const e=id==='210'?evidence('Tape measurement + photos + user correction','The prior 79-inch leaf height reading is unreliable; model height and width remain provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','estimated'):exit?evidence('Four exit-device detail photos + video 00:18 / 00:54','Hallway-left curved latch case, raised press pad, shorter right fixed cover and end cap observed. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
     const g=assembly('door-'+id,name,e,[x,0,z],rotation);
     const w=exit?.95:HALL.doorWidth,h=exit?2.18:HALL.doorHeight;
     box(g,[0,h/2,0],[w,h,.052],trim);
