@@ -1,0 +1,2393 @@
+{
+  "version": 1,
+  "units": "metres",
+  "components": [
+    {
+      "id": "floor-0",
+      "name": "Main corridor concrete floor",
+      "dimensionsMetres": {
+        "width": 31.552896052124026,
+        "depth": 1.6093440055847168,
+        "height": 0.12999999523162842
+      },
+      "evidence": {
+        "basis": "Blueprint scale bar",
+        "notes": "Corridor footprint traced from corresponding plan geometry.",
+        "status": "plan"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=floor-0&focus=1&roof=0"
+    },
+    {
+      "id": "floor-1",
+      "name": "Stair 2 branch concrete floor",
+      "dimensionsMetres": {
+        "width": 1.5118080377578735,
+        "depth": 11.021568298339844,
+        "height": 0.12999999523162842
+      },
+      "evidence": {
+        "basis": "Blueprint scale bar",
+        "notes": "Corridor footprint traced from corresponding plan geometry.",
+        "status": "plan"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=floor-1&focus=1&roof=0"
+    },
+    {
+      "id": "floor-2",
+      "name": "East lobby concrete floor",
+      "dimensionsMetres": {
+        "width": 7.3639678955078125,
+        "depth": 1.3655040264129639,
+        "height": 0.12999999523162842
+      },
+      "evidence": {
+        "basis": "Blueprint scale bar",
+        "notes": "Corridor footprint traced from corresponding plan geometry.",
+        "status": "plan"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=floor-2&focus=1&roof=0"
+    },
+    {
+      "id": "ceiling-slabs",
+      "name": "Ceiling slabs · cutaway toggle",
+      "dimensionsMetres": {
+        "width": 37.97520050274658,
+        "depth": 12.81091180148697,
+        "height": 0.23999999463558197
+      },
+      "evidence": {
+        "basis": "Photos + existing height reading",
+        "notes": "3.5052 m height uses the existing approximate iPhone reading; slab thickness inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=ceiling-slabs&focus=1&roof=0"
+    },
+    {
+      "id": "wall-main-north",
+      "name": "Main corridor · upper plan wall",
+      "dimensionsMetres": {
+        "width": 31.552896027297976,
+        "depth": 0.17599999904632568,
+        "height": 3.5052000265955923
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-main-north&focus=1&roof=0"
+    },
+    {
+      "id": "door-206",
+      "name": "Apartment 206 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487407,
+        "depth": 0.11300000064074993,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-206&focus=1&roof=0"
+    },
+    {
+      "id": "frame-206",
+      "name": "Door frame 206",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.119999997317791,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-206&focus=1&roof=0"
+    },
+    {
+      "id": "door-205",
+      "name": "Apartment 205 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487407,
+        "depth": 0.11300000064074993,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-205&focus=1&roof=0"
+    },
+    {
+      "id": "frame-205",
+      "name": "Door frame 205",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-205&focus=1&roof=0"
+    },
+    {
+      "id": "door-204",
+      "name": "Apartment 204 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487407,
+        "depth": 0.11300000064074993,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-204&focus=1&roof=0"
+    },
+    {
+      "id": "frame-204",
+      "name": "Door frame 204",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-204&focus=1&roof=0"
+    },
+    {
+      "id": "door-203",
+      "name": "Apartment 203 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487425,
+        "depth": 0.11300000064074994,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-203&focus=1&roof=0"
+    },
+    {
+      "id": "frame-203",
+      "name": "Door frame 203",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-203&focus=1&roof=0"
+    },
+    {
+      "id": "door-202",
+      "name": "Apartment 202 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487425,
+        "depth": 0.11300000064074993,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-202&focus=1&roof=0"
+    },
+    {
+      "id": "frame-202",
+      "name": "Door frame 202",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-202&focus=1&roof=0"
+    },
+    {
+      "id": "wall-main-south-west",
+      "name": "Main corridor · west return",
+      "dimensionsMetres": {
+        "width": 8.583168029785156,
+        "depth": 0.17599999904632568,
+        "height": 3.5051999543070793
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-main-south-west&focus=1&roof=0"
+    },
+    {
+      "id": "wall-main-south-east",
+      "name": "Main corridor · apartment wall",
+      "dimensionsMetres": {
+        "width": 20.336255890052797,
+        "depth": 0.17599999904632568,
+        "height": 3.5052000265955923
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-main-south-east&focus=1&roof=0"
+    },
+    {
+      "id": "door-211",
+      "name": "Apartment 211 door panel",
+      "dimensionsMetres": {
+        "width": 0.880374359148739,
+        "depth": 0.11300000064074989,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-211&focus=1&roof=0"
+    },
+    {
+      "id": "frame-211",
+      "name": "Door frame 211",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-211&focus=1&roof=0"
+    },
+    {
+      "id": "door-212",
+      "name": "Apartment 212 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487425,
+        "depth": 0.11300000064074989,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-212&focus=1&roof=0"
+    },
+    {
+      "id": "frame-212",
+      "name": "Door frame 212",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-212&focus=1&roof=0"
+    },
+    {
+      "id": "door-213",
+      "name": "Apartment 213 door panel",
+      "dimensionsMetres": {
+        "width": 0.880374359148739,
+        "depth": 0.11300000064074989,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-213&focus=1&roof=0"
+    },
+    {
+      "id": "frame-213",
+      "name": "Door frame 213",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-213&focus=1&roof=0"
+    },
+    {
+      "id": "wall-main-west",
+      "name": "West corridor end",
+      "dimensionsMetres": {
+        "width": 0.17599999904632568,
+        "depth": 1.6093440055847168,
+        "height": 3.5051999543070793
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-main-west&focus=1&roof=0"
+    },
+    {
+      "id": "wall-branch-west",
+      "name": "Stair 2 branch · west wall",
+      "dimensionsMetres": {
+        "width": 0.17599999904632568,
+        "depth": 11.021567927220104,
+        "height": 3.5052000265955923
+      },
+      "evidence": {
+        "basis": "Blueprint",
+        "notes": "Wall position follows the blueprint; finish from hallway photos.",
+        "status": "plan"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Video shows an uninterrupted wall toward the T. The unverified mid-branch door 208 from the third-floor plan was removed; 209 remains near Stair 2.",
+        "evidenceIds": [
+          "v156",
+          "v162"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-branch-west&focus=1&roof=0"
+    },
+    {
+      "id": "door-209",
+      "name": "Apartment 209 door panel",
+      "dimensionsMetres": {
+        "width": 0.8803743591487407,
+        "depth": 0.113000000640751,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + photo style",
+        "notes": "Door size inferred from 210; closed doors define model boundary.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated.",
+        "evidenceIds": [
+          "v060"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-209&focus=1&roof=0"
+    },
+    {
+      "id": "frame-209",
+      "name": "Door frame 209",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779276,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Steel jamb, stop and header profiles estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated.",
+        "evidenceIds": [
+          "v060"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-209&focus=1&roof=0"
+    },
+    {
+      "id": "wall-branch-east",
+      "name": "Stair 2 branch · east wall",
+      "dimensionsMetres": {
+        "width": 0.17599999904632568,
+        "depth": 11.021568184265135,
+        "height": 3.5052000265955923
+      },
+      "evidence": {
+        "basis": "Blueprint",
+        "notes": "Wall position follows the blueprint; finish from hallway photos.",
+        "status": "plan"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-branch-east&focus=1&roof=0"
+    },
+    {
+      "id": "door-210",
+      "name": "Apartment 210 door panel · 79 in measured",
+      "dimensionsMetres": {
+        "width": 0.8803743591487407,
+        "depth": 0.11300000064074922,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Tape measurement + photos + user correction",
+        "notes": "Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.",
+        "status": "measured"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Door height supplied by tape: 79 inches. Video places doorway on east wall near Stair 2. Distance along hallway estimated.",
+        "evidenceIds": [
+          "v009",
+          "v168",
+          "v156"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-210&focus=1&roof=0"
+    },
+    {
+      "id": "frame-210",
+      "name": "Door frame 210",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Steel jamb, stop and header profiles estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Door height supplied by tape: 79 inches. Video places doorway on east wall near Stair 2. Distance along hallway estimated.",
+        "evidenceIds": [
+          "v009",
+          "v168",
+          "v156"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-210&focus=1&roof=0"
+    },
+    {
+      "id": "wall-stair2",
+      "name": "Stair 2 end · brick surround",
+      "dimensionsMetres": {
+        "width": 1.590000002384187,
+        "depth": 0.18149999839812558,
+        "height": 3.5050000572204594
+      },
+      "evidence": {
+        "basis": "Exit photo + plan",
+        "notes": "Brick surround and transom approximate; plan locates the stair.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-stair2&focus=1&roof=0"
+    },
+    {
+      "id": "door-2",
+      "name": "Stair 2 exit door",
+      "dimensionsMetres": {
+        "width": 0.9667743453681474,
+        "depth": 0.11300000064074922,
+        "height": 2.180000066757202
+      },
+      "evidence": {
+        "basis": "Blueprint + photo style",
+        "notes": "Door size inferred from 210; closed doors define model boundary.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Stair 2 sign and door/push hardware visible. Stairwell beyond is not modeled from this footage.",
+        "evidenceIds": [
+          "v054"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-2&focus=1&roof=0"
+    },
+    {
+      "id": "frame-2",
+      "name": "Door frame 2",
+      "dimensionsMetres": {
+        "width": 1.100000023841858,
+        "depth": 0.11999999731779099,
+        "height": 2.304999989569187
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Steel jamb, stop and header profiles estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-2&focus=1&roof=0"
+    },
+    {
+      "id": "wall-lobby-north",
+      "name": "Elevator lobby · north side",
+      "dimensionsMetres": {
+        "width": 6.242303848266602,
+        "depth": 0.17599999904632568,
+        "height": 3.5051999543070793
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-lobby-north&focus=1&roof=0"
+    },
+    {
+      "id": "wall-lobby-south",
+      "name": "Elevator lobby · south side",
+      "dimensionsMetres": {
+        "width": 7.363967941870925,
+        "depth": 0.17599999904632568,
+        "height": 3.5052000265955923
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-lobby-south&focus=1&roof=0"
+    },
+    {
+      "id": "door-214",
+      "name": "Apartment 214 door panel",
+      "dimensionsMetres": {
+        "width": 0.880374359148739,
+        "depth": 0.11300000064075011,
+        "height": 2.0065999031066895
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=door-214&focus=1&roof=0"
+    },
+    {
+      "id": "frame-214",
+      "name": "Door frame 214",
+      "dimensionsMetres": {
+        "width": 1.0135999917984009,
+        "depth": 0.11999999731779099,
+        "height": 2.1316000269532203
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=frame-214&focus=1&roof=0"
+    },
+    {
+      "id": "wall-lobby-east",
+      "name": "Stair 1 lobby end",
+      "dimensionsMetres": {
+        "width": 0.17599999904632568,
+        "depth": 1.3655040264129639,
+        "height": 3.5051999543070793
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-lobby-east&focus=1&roof=0"
+    },
+    {
+      "id": "elevator-doors",
+      "name": "Elevator doors · plan location",
+      "dimensionsMetres": {
+        "width": 0.0889999989941721,
+        "depth": 1.1549999880790711,
+        "height": 2.1600000858306885
+      },
+      "evidence": {
+        "basis": "Blueprint + distant corridor overview",
+        "status": "plan",
+        "notes": "Details not captured. Gray simplified context; equipment and exact second-floor features unverified."
+      },
+      "coverage": "overview-only",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=elevator-doors&focus=1&roof=0"
+    },
+    {
+      "id": "structure-B1",
+      "name": "Concrete beam and brace B1",
+      "dimensionsMetres": {
+        "width": 1.6318080425262451,
+        "depth": 0.30000001192092896,
+        "height": 3.5051999546051027
+      },
+      "evidence": {
+        "basis": "Photos 1 / 2 and ceiling close-ups",
+        "notes": "Beam profile, bay spacing and brace dimensions inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=structure-B1&focus=1&roof=0"
+    },
+    {
+      "id": "structure-B2",
+      "name": "Concrete beam and brace B2",
+      "dimensionsMetres": {
+        "width": 1.6318080425262451,
+        "depth": 0.30000001192092896,
+        "height": 3.5051999546051027
+      },
+      "evidence": {
+        "basis": "Photos 1 / 2 and ceiling close-ups",
+        "notes": "Beam profile, bay spacing and brace dimensions inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=structure-B2&focus=1&roof=0"
+    },
+    {
+      "id": "structure-B3",
+      "name": "Concrete beam and brace B3",
+      "dimensionsMetres": {
+        "width": 1.6318080425262451,
+        "depth": 0.30000001192092896,
+        "height": 3.5051999546051027
+      },
+      "evidence": {
+        "basis": "Photos 1 / 2 and ceiling close-ups",
+        "notes": "Beam profile, bay spacing and brace dimensions inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=structure-B3&focus=1&roof=0"
+    },
+    {
+      "id": "structure-B4",
+      "name": "Concrete beam and brace B4",
+      "dimensionsMetres": {
+        "width": 1.6318080425262451,
+        "depth": 0.30000001192092896,
+        "height": 3.5051999546051027
+      },
+      "evidence": {
+        "basis": "Photos 1 / 2 and ceiling close-ups",
+        "notes": "Beam profile, bay spacing and brace dimensions inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=structure-B4&focus=1&roof=0"
+    },
+    {
+      "id": "pipe-branch-main",
+      "name": "Sprinkler pipe branch-main",
+      "dimensionsMetres": {
+        "width": 0.11440000086426849,
+        "depth": 10.430912017822264,
+        "height": 0.30987999829649926
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Visible pipe style/fittings modeled; unphotographed route and spacing inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Black pipe with orange grooved fittings and visible branch connections. Nominal pipe sizes and fitting part numbers unconfirmed.",
+        "evidenceIds": [
+          "v240",
+          "v252",
+          "v282"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=pipe-branch-main&focus=1&roof=0"
+    },
+    {
+      "id": "pipe-branch-cross-0",
+      "name": "Sprinkler pipe branch-cross-0",
+      "dimensionsMetres": {
+        "width": 1.3695579907008408,
+        "depth": 0.22089899137616165,
+        "height": 0.3364682704508306
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Visible pipe style/fittings modeled; unphotographed route and spacing inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Black pipe with orange grooved fittings and visible branch connections. Nominal pipe sizes and fitting part numbers unconfirmed.",
+        "evidenceIds": [
+          "v240",
+          "v252",
+          "v282"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=pipe-branch-cross-0&focus=1&roof=0"
+    },
+    {
+      "id": "sprinkler-head-B0",
+      "name": "Upright sprinkler head B1",
+      "dimensionsMetres": {
+        "width": 0.048746395856142044,
+        "depth": 0.05000000074505806,
+        "height": 0.25999999988824163
+      },
+      "evidence": {
+        "basis": "Video 00:36 / 04:42",
+        "notes": "Upright end form visible near east wall; simplified head and dimensions estimated. Exact model needs confirmation for hallway.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "needs-confirmation-for-hallway",
+        "notes": "Representative upright head/end form in hallway video. Exact head model, part number, dimensions and individual station spacing unconfirmed. Apartment-head comparison has not been supplied.",
+        "evidenceIds": [
+          "v282",
+          "v252"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.4352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=sprinkler-head-B0&focus=1&roof=0"
+    },
+    {
+      "id": "pipe-branch-cross-1",
+      "name": "Sprinkler pipe branch-cross-1",
+      "dimensionsMetres": {
+        "width": 1.3695579907008408,
+        "depth": 0.22089899137616165,
+        "height": 0.3364682704508306
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Visible pipe style/fittings modeled; unphotographed route and spacing inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Black pipe with orange grooved fittings and visible branch connections. Nominal pipe sizes and fitting part numbers unconfirmed.",
+        "evidenceIds": [
+          "v240",
+          "v252",
+          "v282"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=pipe-branch-cross-1&focus=1&roof=0"
+    },
+    {
+      "id": "sprinkler-head-B1",
+      "name": "Upright sprinkler head B2",
+      "dimensionsMetres": {
+        "width": 0.048746395856142044,
+        "depth": 0.05000000074505806,
+        "height": 0.25999999988824163
+      },
+      "evidence": {
+        "basis": "Video 00:36 / 04:42",
+        "notes": "Upright end form visible near east wall; simplified head and dimensions estimated. Exact model needs confirmation for hallway.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "needs-confirmation-for-hallway",
+        "notes": "Representative upright head/end form in hallway video. Exact head model, part number, dimensions and individual station spacing unconfirmed. Apartment-head comparison has not been supplied.",
+        "evidenceIds": [
+          "v282",
+          "v252"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.4352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=sprinkler-head-B1&focus=1&roof=0"
+    },
+    {
+      "id": "pipe-branch-cross-2",
+      "name": "Sprinkler pipe branch-cross-2",
+      "dimensionsMetres": {
+        "width": 1.3695579907008408,
+        "depth": 0.22089899137616165,
+        "height": 0.3364682704508306
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Visible pipe style/fittings modeled; unphotographed route and spacing inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Black pipe with orange grooved fittings and visible branch connections. Nominal pipe sizes and fitting part numbers unconfirmed.",
+        "evidenceIds": [
+          "v240",
+          "v252",
+          "v282"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=pipe-branch-cross-2&focus=1&roof=0"
+    },
+    {
+      "id": "sprinkler-head-B2",
+      "name": "Upright sprinkler head B3",
+      "dimensionsMetres": {
+        "width": 0.048746395856142044,
+        "depth": 0.05000000074505806,
+        "height": 0.25999999988824163
+      },
+      "evidence": {
+        "basis": "Video 00:36 / 04:42",
+        "notes": "Upright end form visible near east wall; simplified head and dimensions estimated. Exact model needs confirmation for hallway.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "needs-confirmation-for-hallway",
+        "notes": "Representative upright head/end form in hallway video. Exact head model, part number, dimensions and individual station spacing unconfirmed. Apartment-head comparison has not been supplied.",
+        "evidenceIds": [
+          "v282",
+          "v252"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.4352,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=sprinkler-head-B2&focus=1&roof=0"
+    },
+    {
+      "id": "conduit-branch-0",
+      "name": "Conduit branch-0",
+      "dimensionsMetres": {
+        "width": 0.03799999877810478,
+        "depth": 10.780912160873413,
+        "height": 0.03899999138414856
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Routes near photographed bay are reference-informed; continuations inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=conduit-branch-0&focus=1&roof=0"
+    },
+    {
+      "id": "conduit-branch-1",
+      "name": "Conduit branch-1",
+      "dimensionsMetres": {
+        "width": 0.03799999877810478,
+        "depth": 10.780912160873413,
+        "height": 0.03899999138414856
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Routes near photographed bay are reference-informed; continuations inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=conduit-branch-1&focus=1&roof=0"
+    },
+    {
+      "id": "conduit-branch-junction-offset",
+      "name": "Conduit branch-junction-offset",
+      "dimensionsMetres": {
+        "width": 0.35347652435302734,
+        "depth": 0.719857931137085,
+        "height": 0.0959960984168089
+      },
+      "evidence": {
+        "basis": "Ceiling photos",
+        "notes": "Routes near photographed bay are reference-informed; continuations inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=conduit-branch-junction-offset&focus=1&roof=0"
+    },
+    {
+      "id": "cable-bundle-0",
+      "name": "Wall-top cable 1",
+      "dimensionsMetres": {
+        "width": 0.06499999761581421,
+        "depth": 10.831112742424011,
+        "height": 0.05774235725402832
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Individual cables and loose bends reference-informed; precise routes inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=cable-bundle-0&focus=1&roof=0"
+    },
+    {
+      "id": "cable-bundle-1",
+      "name": "Wall-top cable 2",
+      "dimensionsMetres": {
+        "width": 0.06499999761581421,
+        "depth": 10.831096649169922,
+        "height": 0.05744600296020508
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Individual cables and loose bends reference-informed; precise routes inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=cable-bundle-1&focus=1&roof=0"
+    },
+    {
+      "id": "cable-bundle-2",
+      "name": "Wall-top cable 3",
+      "dimensionsMetres": {
+        "width": 0.06499999761581421,
+        "depth": 10.831138610839844,
+        "height": 0.05772519111633301
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Individual cables and loose bends reference-informed; precise routes inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=cable-bundle-2&focus=1&roof=0"
+    },
+    {
+      "id": "cable-bundle-3",
+      "name": "Wall-top cable 4",
+      "dimensionsMetres": {
+        "width": 0.06499999761581421,
+        "depth": 10.831098437309265,
+        "height": 0.057465553283691406
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Individual cables and loose bends reference-informed; precise routes inferred.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Visible conduit/cable route. Precise cable identities and concealed continuations unknown.",
+        "evidenceIds": [
+          "v198",
+          "v180"
+        ],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=cable-bundle-3&focus=1&roof=0"
+    },
+    {
+      "id": "light-B1",
+      "name": "Round ceiling light B1",
+      "dimensionsMetres": {
+        "width": 0.30000001192092896,
+        "depth": 0.30000001192092896,
+        "height": 0.2790000012964011
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Suspension, housing and diffuser dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Representative round pendant light form; exact spacing, output and model estimated.",
+        "evidenceIds": [
+          "v180",
+          "v156"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.1952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=light-B1&focus=1&roof=0"
+    },
+    {
+      "id": "light-B2",
+      "name": "Round ceiling light B2",
+      "dimensionsMetres": {
+        "width": 0.30000001192092896,
+        "depth": 0.30000001192092896,
+        "height": 0.2790000012964011
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Suspension, housing and diffuser dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Representative round pendant light form; exact spacing, output and model estimated.",
+        "evidenceIds": [
+          "v180",
+          "v156"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.1952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=light-B2&focus=1&roof=0"
+    },
+    {
+      "id": "light-B3",
+      "name": "Round ceiling light B3",
+      "dimensionsMetres": {
+        "width": 0.30000001192092896,
+        "depth": 0.30000001192092896,
+        "height": 0.2790000012964011
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Suspension, housing and diffuser dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Representative round pendant light form; exact spacing, output and model estimated.",
+        "evidenceIds": [
+          "v180",
+          "v156"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.1952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=light-B3&focus=1&roof=0"
+    },
+    {
+      "id": "light-B4",
+      "name": "Round ceiling light B4",
+      "dimensionsMetres": {
+        "width": 0.30000001192092896,
+        "depth": 0.30000001192092896,
+        "height": 0.2790000012964011
+      },
+      "evidence": {
+        "basis": "Photos",
+        "notes": "Suspension, housing and diffuser dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Representative round pendant light form; exact spacing, output and model estimated.",
+        "evidenceIds": [
+          "v180",
+          "v156"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.1952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=light-B4&focus=1&roof=0"
+    },
+    {
+      "id": "emergency-branch",
+      "name": "Twin-head emergency light branch",
+      "dimensionsMetres": {
+        "width": 0.4799999996423736,
+        "depth": 0.25145640339186126,
+        "height": 0.24387072801710874
+      },
+      "evidence": {
+        "basis": "Overhead close-ups",
+        "notes": "Housing shape, two lamp heads, mounting box, indicator and test button observed; dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Emergency/exit enclosure and lamp form observed. Manufacturer, electrical rating and exact model unknown.",
+        "evidenceIds": [
+          "v294"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=emergency-branch&focus=1&roof=0"
+    },
+    {
+      "id": "emergency-stair2",
+      "name": "Exit sign / twin-head unit stair2",
+      "dimensionsMetres": {
+        "width": 0.4799999996423736,
+        "depth": 0.25145640339186126,
+        "height": 0.38637073218943396
+      },
+      "evidence": {
+        "basis": "Overhead close-ups",
+        "notes": "Housing shape, two lamp heads, mounting box, indicator and test button observed; dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Emergency/exit enclosure and lamp form observed. Manufacturer, electrical rating and exact model unknown.",
+        "evidenceIds": [
+          "v294"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=emergency-stair2&focus=1&roof=0"
+    },
+    {
+      "id": "emergency-junction",
+      "name": "Exit sign / twin-head unit junction",
+      "dimensionsMetres": {
+        "width": 0.47999999964237217,
+        "depth": 0.25145640339186126,
+        "height": 0.38637073218943396
+      },
+      "evidence": {
+        "basis": "Overhead close-ups",
+        "notes": "Housing shape, two lamp heads, mounting box, indicator and test button observed; dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Emergency/exit enclosure and lamp form observed. Manufacturer, electrical rating and exact model unknown.",
+        "evidenceIds": [
+          "v294"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.2952,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=emergency-junction&focus=1&roof=0"
+    },
+    {
+      "id": "detector-0",
+      "name": "Ceiling detector 1",
+      "dimensionsMetres": {
+        "width": 0.12999999523162842,
+        "depth": 0.12999999523162842,
+        "height": 0.08000000003725294
+      },
+      "evidence": {
+        "basis": "Wide corridor photos",
+        "notes": "Round housing modeled; exact device identity and position estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=detector-0&focus=1&roof=0"
+    },
+    {
+      "id": "detector-1",
+      "name": "Ceiling detector 2",
+      "dimensionsMetres": {
+        "width": 0.12999999523162842,
+        "depth": 0.12999999523162842,
+        "height": 0.08000000003725294
+      },
+      "evidence": {
+        "basis": "Wide corridor photos",
+        "notes": "Round housing modeled; exact device identity and position estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=detector-1&focus=1&roof=0"
+    },
+    {
+      "id": "camera-dome",
+      "name": "Dome camera and exposed leads",
+      "dimensionsMetres": {
+        "width": 0.143500000685453,
+        "depth": 0.11887175597250463,
+        "height": 0.26350000068545354
+      },
+      "evidence": {
+        "basis": "Video 03:36 / 04:54",
+        "notes": "Camera is on the junction wall, with visible loose leads; dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Junction-wall dome camera and exposed leads visible. Exact manufacturer/model unknown.",
+        "evidenceIds": [
+          "v216",
+          "v294"
+        ],
+        "evidenceNote": "",
+        "workHeight": 3.3051999999999997,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=camera-dome&focus=1&roof=0"
+    },
+    {
+      "id": "outlet-opposite-210",
+      "name": "Outlet opposite 210",
+      "dimensionsMetres": {
+        "width": 0.07100000232458115,
+        "depth": 0.0155000000651917,
+        "height": 0.11500000208616257
+      },
+      "evidence": {
+        "basis": "Opposite-wall photos + video registration",
+        "notes": "Kept opposite 210 on branch west wall; height and size estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=outlet-opposite-210&focus=1&roof=0"
+    },
+    {
+      "id": "wall-cabinet",
+      "name": "Fire extinguisher cabinet",
+      "dimensionsMetres": {
+        "width": 0.3400000035762787,
+        "depth": 0.17199999963864698,
+        "height": 0.6909999996647238
+      },
+      "evidence": {
+        "basis": "User confirmation + two cabinet close-up photos",
+        "notes": "Fire extinguisher in white cabinet with narrow left viewing window, metal pull and right hinge. Dimensions estimated; location confirmed by user, existing placement retained.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "tentative",
+        "notes": "Equipment type confirmed by user and close-ups: fire extinguisher in a white cabinet. Narrow left viewing window, left metal pull, right hinge, red body, black hose and ABC marking visible. Exact manufacturer/model/part number and dimensions unknown. Location confirmed by user; existing placement retained.",
+        "evidenceIds": [
+          "extinguisher-photo-1",
+          "extinguisher-photo-2",
+          "stair2-equipment-context",
+          "horn-strobe-photo",
+          "v018",
+          "v150"
+        ],
+        "evidenceNote": "Two user-supplied cabinet close-ups, attachment 307F185F-3236-4158-ACF3-7F28B814F447. Identification status remains tentative for the exact product, not the equipment type.",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=wall-cabinet&focus=1&roof=0"
+    },
+    {
+      "id": "fire-pull-station",
+      "name": "Fire alarm pull station · Stair 2",
+      "dimensionsMetres": {
+        "width": 0.0949999988079071,
+        "depth": 0.06250000094622443,
+        "height": 0.14000000059604645
+      },
+      "evidence": {
+        "basis": "Video 01:54–02:06",
+        "notes": "Red manual pull station above wall heater. Honeywell marking visible; exact model and part number unconfirmed.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "Honeywell",
+        "model": "",
+        "partNumber": "",
+        "status": "tentative",
+        "notes": "Honeywell marking and PUSH IN / PULL DOWN instructions visible on red manual pull station above the heater. Exact model/part number unconfirmed; no replacement compatibility claim.",
+        "evidenceIds": [
+          "heater-pull-photo",
+          "stair2-equipment-context",
+          "v114",
+          "v120"
+        ],
+        "evidenceNote": "",
+        "workHeight": 1.28,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=fire-pull-station&focus=1&roof=0"
+    },
+    {
+      "id": "wall-heater-stair2",
+      "name": "Wall heater · Stair 2",
+      "dimensionsMetres": {
+        "width": 0.5,
+        "depth": 0.21577434954047092,
+        "height": 0.550000011920929
+      },
+      "evidence": {
+        "basis": "Video 02:12–02:24",
+        "notes": "Video 02:12/02:18 and new stills show the projecting dark enclosure, silver surround and divided grille. Approximate 20 cm visible projection; not measured.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "Dark projecting wall heater, silver perimeter, divided grille and lower-right control visible in close-up. Video side views support a projecting box; model projection is approximately 20 cm and remains estimated. Manufacturer and rating label not captured.",
+        "evidenceIds": [
+          "heater-pull-photo",
+          "stair2-equipment-context",
+          "v132",
+          "v138",
+          "v144"
+        ],
+        "evidenceNote": "",
+        "workHeight": 0.52,
+        "heightStatus": "estimated",
+        "heightSource": "Provisional model using existing 11 ft 6 in iPhone reading and video proportions; not a verified access measurement.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=wall-heater-stair2&focus=1&roof=0"
+    },
+    {
+      "id": "fire-horn-strobe-stair2",
+      "name": "Wall fire alarm horn/strobe · Stair 2",
+      "dimensionsMetres": {
+        "width": 0.10499999672174454,
+        "depth": 0.06750000012200275,
+        "height": 0.16500000655651093
+      },
+      "evidence": {
+        "basis": "New wall-equipment context and upper-alarm photo",
+        "notes": "White upper grille, clear lower strobe and FIRE marking visible. Exact product identity and dimensions estimated.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "tentative",
+        "notes": "Separate white wall fire-alarm notification appliance above the cabinet/heater group: upper perforated grille, clear lower strobe lens and vertical FIRE marking. Modeled as a horn/strobe; exact device type, manufacturer/model/part number and mounting height unconfirmed.",
+        "evidenceIds": [
+          "horn-strobe-photo",
+          "stair2-equipment-context"
+        ],
+        "evidenceNote": "",
+        "workHeight": 2.45,
+        "heightStatus": "estimated",
+        "heightSource": "Estimated from the new wall-equipment context photos and existing door-height anchor; not measured.",
+        "accessNote": "Confirm the service-point height and clear working space before choosing access equipment."
+      },
+      "view": "../#v=1&mode=edit&object=fire-horn-strobe-stair2&focus=1&roof=0"
+    },
+    {
+      "id": "junction-wall-finish",
+      "name": "Junction wall · observed orange finish",
+      "dimensionsMetres": {
+        "width": 1.5118080377578735,
+        "depth": 0.006000000052154064,
+        "height": 3.505199909210205
+      },
+      "evidence": {
+        "basis": "Video 03:36",
+        "notes": "Short wall opposite captured branch is visible; adjoining corridors remain overview only.",
+        "status": "estimated"
+      },
+      "coverage": "captured-route",
+      "record": {
+        "manufacturer": "",
+        "model": "",
+        "partNumber": "",
+        "status": "unknown",
+        "notes": "",
+        "evidenceIds": [],
+        "evidenceNote": "",
+        "workHeight": null,
+        "heightStatus": "unknown",
+        "heightSource": "",
+        "accessNote": ""
+      },
+      "view": "../#v=1&mode=edit&object=junction-wall-finish&focus=1&roof=0"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "v006",
+      "title": "Apartment 210 door",
+      "videoSeconds": 6,
+      "image": "../evidence/v006.jpg"
+    },
+    {
+      "id": "v009",
+      "title": "Apartment 210 door and plaque context",
+      "videoSeconds": 9,
+      "image": "../evidence/v009.jpg"
+    },
+    {
+      "id": "v132",
+      "title": "Heater top and projecting enclosure",
+      "videoSeconds": 132,
+      "image": "../evidence/v132.jpg"
+    },
+    {
+      "id": "v138",
+      "title": "Heater side and wall projection",
+      "videoSeconds": 138,
+      "image": "../evidence/v138.jpg"
+    },
+    {
+      "id": "v162",
+      "title": "Continuous wall toward T; no mid-branch doorway",
+      "videoSeconds": 162,
+      "image": "../evidence/v162.jpg"
+    },
+    {
+      "id": "v168",
+      "title": "Apartment 210 plaque on captured branch",
+      "videoSeconds": 168,
+      "image": "../evidence/v168.jpg"
+    },
+    {
+      "id": "v018",
+      "title": "Cabinet, heater and stair door context",
+      "videoSeconds": 18,
+      "image": "../evidence/v018.jpg"
+    },
+    {
+      "id": "v054",
+      "title": "Stair 2 sign and door",
+      "videoSeconds": 54,
+      "image": "../evidence/v054.jpg"
+    },
+    {
+      "id": "v060",
+      "title": "Apartment 209 opposite side",
+      "videoSeconds": 60,
+      "image": "../evidence/v060.jpg"
+    },
+    {
+      "id": "v114",
+      "title": "Pull station and wall heater",
+      "videoSeconds": 114,
+      "image": "../evidence/v114.jpg"
+    },
+    {
+      "id": "v120",
+      "title": "Manual pull station close-up",
+      "videoSeconds": 120,
+      "image": "../evidence/v120.jpg"
+    },
+    {
+      "id": "v144",
+      "title": "Heater grille and control",
+      "videoSeconds": 144,
+      "image": "../evidence/v144.jpg"
+    },
+    {
+      "id": "v150",
+      "title": "White cabinet side",
+      "videoSeconds": 150,
+      "image": "../evidence/v150.jpg"
+    },
+    {
+      "id": "v156",
+      "title": "Walk from Stair 2 toward T",
+      "videoSeconds": 156,
+      "image": "../evidence/v156.jpg"
+    },
+    {
+      "id": "v180",
+      "title": "Round ceiling light and conduit",
+      "videoSeconds": 180,
+      "image": "../evidence/v180.jpg"
+    },
+    {
+      "id": "v198",
+      "title": "Loose cable bundle and concrete brace",
+      "videoSeconds": 198,
+      "image": "../evidence/v198.jpg"
+    },
+    {
+      "id": "v216",
+      "title": "Camera at T junction",
+      "videoSeconds": 216,
+      "image": "../evidence/v216.jpg"
+    },
+    {
+      "id": "v240",
+      "title": "Grooved pipe junction",
+      "videoSeconds": 240,
+      "image": "../evidence/v240.jpg"
+    },
+    {
+      "id": "v252",
+      "title": "Pipe coupling and branch connection",
+      "videoSeconds": 252,
+      "image": "../evidence/v252.jpg"
+    },
+    {
+      "id": "v282",
+      "title": "Upright sprinkler end near east wall",
+      "videoSeconds": 282,
+      "image": "../evidence/v282.jpg"
+    },
+    {
+      "id": "v294",
+      "title": "Exit unit and camera leads",
+      "videoSeconds": 294,
+      "image": "../evidence/v294.jpg"
+    },
+    {
+      "id": "v306",
+      "title": "First adjoining corridor overview",
+      "videoSeconds": 306,
+      "image": "../evidence/v306.jpg"
+    },
+    {
+      "id": "v324",
+      "title": "Opposite corridor overview",
+      "videoSeconds": 324,
+      "image": "../evidence/v324.jpg"
+    },
+    {
+      "id": "extinguisher-photo-1",
+      "title": "Fire extinguisher cabinet · front",
+      "image": "../evidence/extinguisher-photo-1.jpg"
+    },
+    {
+      "id": "extinguisher-photo-2",
+      "title": "Fire extinguisher cabinet · side and ABC marking",
+      "image": "../evidence/extinguisher-photo-2.jpg"
+    },
+    {
+      "id": "stair2-equipment-context",
+      "title": "Cabinet, pull station, heater and upper alarm near Stair 2",
+      "image": "../evidence/stair2-equipment-context.jpg"
+    },
+    {
+      "id": "heater-pull-photo",
+      "title": "Heater grille and Honeywell pull station close-up",
+      "image": "../evidence/heater-pull-photo.jpg"
+    },
+    {
+      "id": "horn-strobe-photo",
+      "title": "Upper wall fire alarm and cabinet relationship",
+      "image": "../evidence/horn-strobe-photo.jpg"
+    }
+  ]
+}

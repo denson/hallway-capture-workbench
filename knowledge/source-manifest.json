@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "scope": "Individual approved reference pages; not recursive crawling or signed-in pages.",
+  "sources": [
+    {
+      "id": "house-editor",
+      "title": "Image to 3D House Editor repository",
+      "url": "https://github.com/wit543/image-to-3d-house-editor",
+      "role": "Upstream editor and reconstruction workflow"
+    },
+    {
+      "id": "blender-inspiration",
+      "title": "AI for Mortals: three Blender builds",
+      "url": "https://www.aiformortals.co/blog/gpt-6-astra-blender-fallingwater",
+      "role": "Historical inspiration; a different Blender workflow"
+    },
+    {
+      "id": "fuel-iron",
+      "title": "Fuel & Iron Food Hall",
+      "url": "https://www.fuelandironfoodhall.com/",
+      "role": "Optional human-facing venue website; open only at the human’s request",
+      "capture": false
+    },
+    {
+      "id": "mapcarta",
+      "title": "Fuel & Iron map entry",
+      "url": "https://mapcarta.com/N12143399901",
+      "role": "Mapped building location context"
+    },
+    {
+      "id": "latlong",
+      "title": "Fuel & Iron geographic entry",
+      "url": "https://www.latlong.net/poi/fuel-iron-food-hall-521841",
+      "role": "Secondary location cross-check"
+    },
+    {
+      "id": "county-parcel",
+      "title": "Pueblo County parcel 05-364-28-021",
+      "url": "https://puebloco-search.gsacorp.io/parcel/0536428021",
+      "role": "Parcel address cross-check, not an interior survey"
+    },
+    {
+      "id": "github-pages",
+      "title": "GitHub Pages documentation",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "role": "Hosting behavior"
+    },
+    {
+      "id": "vite-pages",
+      "title": "Vite static deployment guide",
+      "url": "https://vite.dev/guide/static-deploy.html",
+      "role": "Subpath and deployment configuration"
+    }
+  ]
+}
