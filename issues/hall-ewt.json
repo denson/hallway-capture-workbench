@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
   "created": "2026-10-29T07:22:00Z",
@@ -7,8 +7,8 @@
   "id": "hall-ewt",
   "labels": [],
   "priority": 1,
-  "status": "open",
+  "status": "in_progress",
   "title": "Record the agent-managed annotation and publishing workflow",
   "type": "task",
-  "updated_at": "2026-10-29T07:22:00Z"
+  "updated_at": "2026-10-29T07:23:19Z"
 }
