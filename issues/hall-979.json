@@ -2,6 +2,7 @@
   "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-29T21:52:51Z",
   "created": "2026-10-29T21:49:11Z",
   "description": "frame-210: user measured 40 inches outside-to-outside; approximate 80-inch outside height inferred from photo of equivalent door; other sizes estimated; earlier 79-inch leaf height unreliable. Enable click selection, verify interaction and surrounding evidence, publish.",
   "id": "hall-979",
@@ -13,8 +14,8 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Make apartment 210 frame selectable and record measurement",
   "type": "task",
-  "updated_at": "2026-10-29T21:52:47Z"
+  "updated_at": "2026-10-29T21:52:51Z"
 }
