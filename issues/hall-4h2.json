@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-29T07:53:08Z",
+  "description": "User reports all handles except corrected 210 are backwards. Inspect every door created by the shared function and compare captured doors to video/stills. Correct shared apartment hardware direction with explicit evidence/user correction per instance; preserve 210. Distinguish observed Stair 2 push hardware from apartment lever hardware and keep uncaptured gray proxies marked unverified. Apply the model-evidence review skill to affected instances, not only one example. Add regressions for shared orientation and 210 preservation, validate, publish, verify, close with exact coverage limits.",
+  "id": "hall-4h2",
+  "labels": [],
+  "priority": 1,
+  "status": "open",
+  "title": "Audit shared door hardware and correct reversed instances",
+  "type": "bug",
+  "updated_at": "2026-10-29T07:53:08Z"
+}
