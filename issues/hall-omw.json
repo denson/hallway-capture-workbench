@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-29T19:51:13Z",
+  "description": "Use the captured current Walk Inside view at the T junction, looking back down the captured branch, as the default for an unlinked site visit and Reset view. Preserve Stairway 2 named navigation, saved explicit URL views and geometry. Captured view has full walls, labels on and measurement guides off. Verify bare site startup, reset and explicit-link precedence locally and after deployment. No Easter-egg gameplay authorized; discussion only.",
+  "id": "hall-omw",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Use the user-selected junction view as the opening camera",
+  "type": "task",
+  "updated_at": "2026-10-29T19:51:13Z"
+}
