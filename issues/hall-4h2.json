@@ -2,6 +2,8 @@
   "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-29T08:05:37Z",
+  "close_reason": "Stair 2 hardware type and sign corrected, 209 source differences reviewed and upper lock added, 210 preserved; required checks and live publication verified. Gray-context hardware remains explicitly unverified.",
   "created": "2026-10-29T07:53:08Z",
   "description": "Final scope: the user identifies the stair exit as the wrong latch type. Replace its apartment-style lever with observed horizontal push hardware from v054/v018; correct the sign location on brick. Audit every shared door instance. Preserve 210; retain 209 right-side lever extending left per v060 and include its visible upper round lock. Gray unrecorded corridor doors remain explicitly unverified proxies; do not blindly mirror them or claim photo validation. Update default records without losing custom annotations. Add geometry regressions, compare running views against source images, validate, publish, verify and close with explicit scope limits.",
   "id": "hall-4h2",
@@ -25,8 +27,8 @@
     }
   ],
   "priority": 1,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Correct Stairway 2 hardware and audit shared door assumptions",
   "type": "bug",
-  "updated_at": "2026-10-29T08:05:36Z"
+  "updated_at": "2026-10-29T08:05:37Z"
 }
