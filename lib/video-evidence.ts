@@ -27,6 +27,10 @@ export const videoEvidence = [
 export const evidenceTime=(seconds:number)=>`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;
 export const findVideoEvidence=(id:string)=>videoEvidence.find(e=>e.id===id);
 export const photoEvidence = [
+  {id:'stair2-exit-front',title:'Stairway 2 · exit device front and handedness',file:'stair2-exit-device/stair2-exit-front.jpg'},
+  {id:'stair2-exit-latch-side',title:'Stairway 2 · rounded latch case and strike',file:'stair2-exit-device/stair2-exit-latch-side.jpg'},
+  {id:'stair2-exit-end-side',title:'Stairway 2 · hinge-side cover and end cap',file:'stair2-exit-device/stair2-exit-end-side.jpg'},
+  {id:'stair2-exit-bar-profile',title:'Stairway 2 · press pad profile and projection',file:'stair2-exit-device/stair2-exit-bar-profile.jpg'},
   {id:'door210-lock-closeup',title:'Apartment 210 · keyed insert close-up',file:'door210-hardware/keyed-insert.jpg'},
   {id:'door210-lever-front',title:'Apartment 210 · lever and round rose',file:'door210-hardware/lever-front.jpg'},
   {id:'door210-lever-side',title:'Apartment 210 · lever projection and side profile',file:'door210-hardware/lever-side.jpg'},

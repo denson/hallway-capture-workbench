@@ -958,13 +958,13 @@
       "id": "door-2",
       "name": "Stair 2 exit door",
       "dimensionsMetres": {
-        "width": 0.9667743453681474,
-        "depth": 0.1535000014305119,
+        "width": 0.995274351239205,
+        "depth": 0.16100564885139512,
         "height": 2.180000066757202
       },
       "evidence": {
-        "basis": "Video 00:18 / 00:54",
-        "notes": "Stairway 2 hallway-facing door has a horizontal push bar with a larger left latch-side housing. Door and hardware dimensions estimated.",
+        "basis": "Four exit-device detail photos + video 00:18 / 00:54",
+        "notes": "Hallway-left curved latch case, raised press pad, shorter right fixed cover and end cap observed. Door and hardware dimensions estimated.",
         "status": "estimated"
       },
       "coverage": "captured-route",
@@ -973,12 +973,16 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Hallway-facing Stairway 2 door: horizontal metal push bar across the leaf, with a larger latch-side housing at the left when viewed from the hall. Replaces the incorrect generic apartment lever. Hardware form follows video 00:54 and the 00:18 context frame; size, mounting height and projection remain estimated. Manufacturer/model/part number unconfirmed. Stairwell beyond is not modeled from this footage.",
+        "notes": "Hallway-facing Stairway 2 exit device (push bar), refined from four detail photos received 2026-10-29. Front view establishes the tall rounded latch case on hallway-view left, a broad press pad over roughly the left two-thirds of the horizontal rail, and a shorter fixed cover toward the right hinge end. Side views establish the curved projecting latch case, frame strike plate, backing rail, raised press pad, seam, small fixed-cover opening and compact right end cap. Replaces the earlier simplified full-width bar and block housings. Provisional dimensions: about 0.90 m overall width, 1.02 m center height and up to 0.11 m projection from the leaf; none tape-measured. No readable maker or model marking in these photos; manufacturer/model/part number and internal operation remain unknown. This is a visual reconstruction, not a functional or compliance assessment. Stairwell beyond remains unmodeled.",
         "evidenceIds": [
+          "stair2-exit-front",
+          "stair2-exit-latch-side",
+          "stair2-exit-end-side",
+          "stair2-exit-bar-profile",
           "v054",
           "v018"
         ],
-        "evidenceNote": "",
+        "evidenceNote": "Four user-supplied detail photographs, plus video 00:54 and 00:18 for context. Receipt/review date 2026-10-29 is not a verified capture date. Earlier evidence retained; new dimensions are photo-derived estimates.",
         "workHeight": null,
         "heightStatus": "unknown",
         "heightSource": "",
@@ -2402,6 +2406,26 @@
       "title": "Opposite corridor overview",
       "videoSeconds": 324,
       "image": "../evidence/v324.jpg"
+    },
+    {
+      "id": "stair2-exit-front",
+      "title": "Stairway 2 · exit device front and handedness",
+      "image": "../evidence/stair2-exit-front.jpg"
+    },
+    {
+      "id": "stair2-exit-latch-side",
+      "title": "Stairway 2 · rounded latch case and strike",
+      "image": "../evidence/stair2-exit-latch-side.jpg"
+    },
+    {
+      "id": "stair2-exit-end-side",
+      "title": "Stairway 2 · hinge-side cover and end cap",
+      "image": "../evidence/stair2-exit-end-side.jpg"
+    },
+    {
+      "id": "stair2-exit-bar-profile",
+      "title": "Stairway 2 · press pad profile and projection",
+      "image": "../evidence/stair2-exit-bar-profile.jpg"
     },
     {
       "id": "door210-lock-closeup",

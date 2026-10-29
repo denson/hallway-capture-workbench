@@ -1,5 +1,6 @@
 import {hallwayComponentRecord} from './hallway-component-defaults.ts';
 import {buildDoor210Hardware} from './door-hardware.ts';
+import {buildStairExitDevice} from './stair-exit-device.ts';
 import * as T from 'three';
 import {HALL, DOOR_210, FLOOR_RECTS, planX, planZ, type Obstacle} from './hallway-data.ts';
 import type {EditableEntry} from './house-editor';
@@ -128,7 +129,7 @@ export function buildHallway(textures=typeof document!=='undefined'){
   }
   function door(id:string,x:number,z:number,rotation:number,exit=false){
     const name=id==='210'?'Apartment 210 door panel · 79 in measured':exit?'Stair '+id+' exit door':'Apartment '+id+' door panel';
-    const e=id==='210'?evidence('Tape measurement + photos + user correction','Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','measured'):exit?evidence('Video 00:18 / 00:54','Stairway 2 hallway-facing door has a horizontal push bar with a larger left latch-side housing. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
+    const e=id==='210'?evidence('Tape measurement + photos + user correction','Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','measured'):exit?evidence('Four exit-device detail photos + video 00:18 / 00:54','Hallway-left curved latch case, raised press pad, shorter right fixed cover and end cap observed. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
     const g=assembly('door-'+id,name,e,[x,0,z],rotation);
     const w=exit?.95:HALL.doorWidth,h=exit?2.18:HALL.doorHeight;
     box(g,[0,h/2,0],[w,h,.052],trim);
@@ -145,10 +146,7 @@ export function buildHallway(textures=typeof document!=='undefined'){
       }
     }
     if(exit){
-      // Hallway view at 00:54 shows a horizontal push bar, not a keyed lever.
-      const push=box(g,[0,1.02,-.105],[w-.19,.06,.045],steel);push.name='Stair 2 horizontal push bar';
-      const latch=box(g,[w/2-.085,1.02,-.071],[.11,.25,.09],steel);latch.name='Stair 2 push-bar latch housing';
-      const cap=box(g,[-w/2+.085,1.02,-.071],[.08,.12,.07],steel);cap.name='Stair 2 push-bar end support';
+      const device=buildStairExitDevice(w);device.position.y=1.02;g.add(device);
     }
     if(!exit)cylinder(g,[0,1.48,-.029],[0,1.48,-.043],.008,steel,12);
     const hingeX=id==='210'||exit?-w/2-.008:w/2+.008;

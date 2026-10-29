@@ -36,7 +36,7 @@ Every row is authored geometry. Dimensions enclose the full assembly and are est
 | Apartment 210 · keyed lever and lock | door-hardware-210 | unknown | 0.169 × 0.066 × 0.076 | [Inspect](../#v=1&mode=edit&object=door-hardware-210&focus=1&roof=0) |
 | Door frame 210 | frame-210 | unknown | 1.014 × 0.120 × 2.132 | [Inspect](../#v=1&mode=edit&object=frame-210&focus=1&roof=0) |
 | Stair 2 end · brick surround | wall-stair2 | unknown | 1.590 × 0.191 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-stair2&focus=1&roof=0) |
-| Stair 2 exit door | door-2 | unknown | 0.967 × 0.154 × 2.180 | [Inspect](../#v=1&mode=edit&object=door-2&focus=1&roof=0) |
+| Stair 2 exit door | door-2 | unknown | 0.995 × 0.161 × 2.180 | [Inspect](../#v=1&mode=edit&object=door-2&focus=1&roof=0) |
 | Door frame 2 | frame-2 | unknown | 1.100 × 0.120 × 2.305 | [Inspect](../#v=1&mode=edit&object=frame-2&focus=1&roof=0) |
 | Elevator lobby · north side | wall-lobby-north | unknown | 6.242 × 0.176 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-lobby-north&focus=1&roof=0) |
 | Elevator lobby · south side | wall-lobby-south | unknown | 7.364 × 0.176 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-lobby-south&focus=1&roof=0) |
