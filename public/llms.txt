@@ -6,6 +6,7 @@ Agent-readable model knowledge, evidence status and URL navigation. Start here b
 - [Model, measurements and uncertainty](knowledge/model.md)
 - [Component catalog](knowledge/components.md)
 - [Capture process and development stages](knowledge/process.md)
+- [Geometry evidence review](knowledge/model-review.md)
 - [Navigation and URL controls](knowledge/controls.md)
 - [Prepared narrated tour](knowledge/tour.md)
 - [Referenced pages and source status](knowledge/sources.md)

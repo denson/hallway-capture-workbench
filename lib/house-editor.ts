@@ -1,4 +1,5 @@
 import {emptyComponentRecord,parseComponentRecord,type ComponentRecord} from './component-record';
+import {componentFocusPose} from './component-focus';
 import { PROJECT_CONFIG } from './project-config';
 import {parseCatalog,scaleForDimension,type CatalogAsset} from './asset-catalog';
 import { makeMaterial, materialNames, type MaterialPreset } from './material-presets';
@@ -107,7 +108,7 @@ export function createHouseEditor(scene:T.Scene,camera:T.Camera,canvas:HTMLCanva
   }
   emit();
   return{
-    focusSelected:()=>{if(!selected)return;const b=new T.Box3().setFromObject(selected.object),center=b.getCenter(new T.Vector3()),size=b.getSize(new T.Vector3()),distance=Math.max(.6,size.length()*1.6),offset=new T.Vector3(distance*.45,0,-distance).applyQuaternion(selected.object.getWorldQuaternion(new T.Quaternion()));offset.y=distance*.35;orbit.target.copy(center);camera.position.copy(center).add(offset);measurements=false;orbit.update();update();emit();},
+    focusSelected:()=>{if(!selected)return;const pose=componentFocusPose(selected.object);orbit.target.copy(pose.target);camera.position.copy(pose.position);measurements=false;orbit.update();update();emit();},
     setRecord:patch=>{if(!selected)return;const record=parseComponentRecord({...read()[selected.id].record,...patch});transaction(()=>{selected!.object.userData.componentRecord=record;});},
     exportRecords:()=>JSON.stringify({format:'hallway-component-inventory',version:1,units:'metres',source:'IMG_3462.MOV',objects:entries.filter(e=>!e.deleted).map(e=>({id:e.id,name:e.name,dimensions:measurementSize(e.object),evidence:e.object.userData.evidence,coverage:e.object.userData.coverage,record:read()[e.id].record}))},null,2),
     projectState:()=>({layout:JSON.stringify({version:1,objects:read()}),catalog:JSON.stringify(customAssets),designs:structuredClone(designs())}),

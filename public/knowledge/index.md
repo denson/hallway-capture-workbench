@@ -5,6 +5,7 @@ This is a provisional second-floor industrial hallway demonstration, adapted fro
 - [Model, measurements and uncertainty](model.md)
 - [Component catalog](components.md)
 - [Capture process and development stages](process.md)
+- [Geometry evidence review](model-review.md)
 - [Navigation and URL controls](controls.md)
 - [Prepared narrated tour](tour.md)
 - [Referenced pages and source status](sources.md)

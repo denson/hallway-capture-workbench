@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review model evidence"
+  short_description: "Compare the running model with source imagery"
+  default_prompt: "Use $review-model-evidence to compare the running model with source imagery, correct inconsistencies and verify the result before completion."

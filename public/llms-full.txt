@@ -9,6 +9,7 @@ This is a provisional second-floor industrial hallway demonstration, adapted fro
 - [Model, measurements and uncertainty](model.md)
 - [Component catalog](components.md)
 - [Capture process and development stages](process.md)
+- [Geometry evidence review](model-review.md)
 - [Navigation and URL controls](controls.md)
 - [Prepared narrated tour](tour.md)
 - [Referenced pages and source status](sources.md)
@@ -153,6 +154,10 @@ The goal of a demonstration for Mike is to show the process, actual trouble enco
 
 The repeatable workflow is: video → timestamped review frames → provisional model → component inventory → targeted close-ups/selected measurements → reviewed identification and access notes → refined model. When new evidence conflicts with plan-derived assumptions, record the conflict and correct the model.
 
+## Evidence review before a spatial update
+
+For any new modeled scene or spatial revision, the agent follows the [model evidence review skill](model-review.md): compare the running model with the actual source photos and video frames from comparable viewpoints. Check the affected features and their surroundings for flipped orientations, wrong placement or proportions, missing/invented details and other visible inconsistencies. Correct discrepancies, rebuild and compare again before calling the work complete. Tests and camera URLs support this check but do not replace looking at the rendered result. Record evidence, viewer links, screenshots, the comparison outcome and remaining uncertainty in the ticket. Reuse existing capture; ask for more only when the comparison establishes a specific evidence gap. This review belongs to the agent, before the user's review.
+
 ## Updating the model through the agent
 
 The agent is the primary application interface. A person selects an object in the viewer, then tells the agent by voice or text what to add or correct and supplies any photos, readings or measurements. The selected component ID is included in the current view URL. The agent uses that identity and existing evidence to resolve the request, asking a targeted question only if needed.
@@ -162,6 +167,38 @@ For each actionable change, the agent creates and starts a project Beadwork tick
 This makes accepted information part of the shared published model, available to a fresh browser and a later agent session. Browser-local edits are separate: the agent does not automatically receive unsent field contents. A person can ask the agent to apply those edits; the agent then reads the selected record or a supplied export and reconciles it into the canonical source. Saving an arrangement or downloading a project remains an optional local backup path.
 
 For example, a person could photograph the extinguisher's gauge and inspection or replacement labels. Those observations belong to the specific extinguisher represented by the cabinet component, not to every extinguisher in the building. The agent records the observation date separately from any dates printed on the equipment or tag, the legible gauge reading or visible range, and the source photos. It preserves earlier dated observations so the record shows changes over time. Unreadable text remains unknown; a reported replacement date is not inferred from an inspection date. A photographed gauge or tag is evidence of what was visible, not an agent-issued inspection or certification. This is the intended intake workflow; no gauge reading or inspection/replacement date has yet been supplied for this extinguisher.
+
+
+---
+
+---
+name: review-model-evidence
+description: Compare a running 3D model with its source photos and video frames, then correct visual inconsistencies before completion. Use for building or revising modeled scenes and their viewing interactions; ordinary text-only annotations do not need this review.
+---
+
+# Review Model Evidence
+
+The required check is the built result against the evidence: inspect the running viewer and the actual source images, and correct what does not agree. Apply this to any modeled scene or feature, not just the defect that prompted this skill. Use the project's existing Beadwork workflow.
+
+## Compare, correct, compare again
+
+1. Open the built scene in the viewer. Inspect source photos and relevant video frames alongside it. Use wider views for the arrangement and detail views for individual features; reuse existing material.
+2. Navigate the model to comparable viewpoints. Establish which way each source view faces so camera movement or a reversed viewing direction is not mistaken for a change in the scene. Check the affected area in context, not only an isolated object.
+3. Compare what is actually visible: location, relative size and height, side and facing direction, shape and projection, attachment, and relationships to surrounding features as applicable. Look for mirrored layouts, reversed parts, missing or invented objects, and inconsistencies between views. Do not use an earlier draft as the reference for itself.
+4. Correct discrepancies supported by the evidence, rebuild and repeat the comparison. An uncertainty label does not excuse something visibly contradicted by the images. Preserve measured anchors and distinguish estimated dimensions from observed relationships.
+5. Exercise any changed selection/navigation behavior in the running viewer and verify its target. Record the compared evidence IDs, viewer links, screenshot references, outcome and remaining uncertainties in the ticket. Verify the deployed result before closing it.
+
+Check all affected features for a broad scene change; for a small revision, review that feature and its surroundings. The review should be proportional to the change, not a new engineering survey.
+
+## What counts as verification
+
+Passing code tests, reading coordinates, or successfully opening a view URL does not establish visual consistency. Tests supplement the image comparison; they do not replace it. The user should not be the first visual QA pass.
+
+If the running model cannot be inspected, say that visual verification remains unfinished. Keep any saved review honest about what was actually compared; label retrospective checks as retrospective.
+
+## When evidence is missing
+
+Inspect the existing capture before attributing an error to video movement or asking for more images. If a relationship genuinely cannot be established, record the specific gap and keep it provisional, or ask for one targeted view when needed. Do not require a reshoot or exhaustive measurements to compensate for failing to compare the model with material already provided.
 
 
 ---

@@ -8,6 +8,10 @@ The user authorized a public GitHub Pages site including selected reference phot
 
 Run typecheck, npm test, npm run test:sources and npm run build:pages. Review the staged diff and run npm run check:public before pushing. Do not send messages to others. A stopped tour remains stopped until the user requests it.
 
+## Evidence review for spatial changes
+
+For a new modeled scene or any geometry/spatial interaction revision, read and apply [review-model-evidence](.agents/skills/review-model-evidence/SKILL.md). Before completion, compare the running viewer with the actual source photos and video frames from comparable viewpoints. Correct flipped or inconsistent features, rebuild and compare again. Review all affected features in context, not only isolated close-ups. Record the evidence and result in the ticket. Passing tests or opening a camera URL does not replace this visual comparison. Ordinary annotation-only updates do not require a geometry review. Use existing capture first; request more only for a demonstrated evidence gap. The user is not the first visual QA pass.
+
 ## Agent-managed changes and Beadwork
 
 The agent is the primary application interface. The user gives changes through voice or text; the agent records, implements, validates and publishes them. Browser-local editing and downloaded projects remain optional tools, not the shared source of truth. Follow the workflow in knowledge/process.md.

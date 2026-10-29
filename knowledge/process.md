@@ -16,6 +16,10 @@ The goal of a demonstration for Mike is to show the process, actual trouble enco
 
 The repeatable workflow is: video → timestamped review frames → provisional model → component inventory → targeted close-ups/selected measurements → reviewed identification and access notes → refined model. When new evidence conflicts with plan-derived assumptions, record the conflict and correct the model.
 
+## Evidence review before a spatial update
+
+For any new modeled scene or spatial revision, the agent follows the [model evidence review skill](model-review.md): compare the running model with the actual source photos and video frames from comparable viewpoints. Check the affected features and their surroundings for flipped orientations, wrong placement or proportions, missing/invented details and other visible inconsistencies. Correct discrepancies, rebuild and compare again before calling the work complete. Tests and camera URLs support this check but do not replace looking at the rendered result. Record evidence, viewer links, screenshots, the comparison outcome and remaining uncertainty in the ticket. Reuse existing capture; ask for more only when the comparison establishes a specific evidence gap. This review belongs to the agent, before the user's review.
+
 ## Updating the model through the agent
 
 The agent is the primary application interface. A person selects an object in the viewer, then tells the agent by voice or text what to add or correct and supplies any photos, readings or measurements. The selected component ID is included in the current view URL. The agent uses that identity and existing evidence to resolve the request, asking a targeted question only if needed.
