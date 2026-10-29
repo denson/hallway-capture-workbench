@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-29T07:38:50Z",
+  "description": "Prevent recurrence of the reversed apartment 210 handle and backside camera errors. Add a narrowly scoped repo-local skill discoverable through AGENTS.md: register each changed component to context and detail evidence before coding; state a real-world viewing direction; verify handedness, host attachment, projection and estimated anchors; compare local renders against reference images before publishing; retain review evidence and do not call user feedback first-pass QA. Preserve lightweight capture and avoid exhaustive measurements. Extract existing world-space component focus into a testable helper and add meaningful nested-parent/occlusion regression tests. Validate skill, run required project checks, publish public workflow knowledge, verify deployment and close with review instructions.",
+  "id": "hall-2lg",
+  "labels": [],
+  "priority": 1,
+  "status": "open",
+  "title": "Require evidence-grounded geometry review and protect nested camera focus",
+  "type": "task",
+  "updated_at": "2026-10-29T07:38:50Z"
+}
