@@ -6,9 +6,15 @@
   "description": "User requests all project material in Git for laptop migration and a substantial successor-agent handoff with reusable lessons. Scope: verify hallway and Field Capture sources/remotes, create private evidence/archive backup, document actual setup/publication and uncertainty, add general capture and agent-update skills, preserve existing geometry. Acceptance: pushed clones contain current sources and notes; private media availability is verified; clone/run instructions and skill validation pass; no private files enter public Pages.",
   "id": "hall-f12",
   "labels": [],
+  "comments": [
+    {
+      "text": "User changed transfer destination to Google Drive. No new GitHub repositories will be created. Preparing complete private ZIP with current source snapshots, Git bundles, handoff, two new skills plus existing evidence-review skill, original video/stills, scan trial artifacts, and sixteen historical stages. Drive connector cannot upload due insufficient scope; browser Drive session is signed in and will be used. No geometry changes.",
+      "timestamp": "2026-10-29T22:59:40Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Prepare portable project handoff, Git backups, and agent skills",
   "type": "task",
-  "updated_at": "2026-10-29T22:50:03Z"
+  "updated_at": "2026-10-29T22:59:40Z"
 }
