@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
   "created": "2026-10-29T19:33:15Z",
@@ -7,8 +7,8 @@
   "id": "hall-s2b",
   "labels": [],
   "priority": 2,
-  "status": "open",
+  "status": "in_progress",
   "title": "Refine hallway duplex outlet from three detail photos",
   "type": "task",
-  "updated_at": "2026-10-29T19:33:15Z"
+  "updated_at": "2026-10-29T19:34:14Z"
 }
