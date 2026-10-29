@@ -3,7 +3,7 @@
   "blocked_by": [],
   "blocks": [],
   "created": "2026-10-29T07:53:08Z",
-  "description": "User reports all handles except corrected 210 are backwards. Inspect every door created by the shared function and compare captured doors to video/stills. Correct shared apartment hardware direction with explicit evidence/user correction per instance; preserve 210. Distinguish observed Stair 2 push hardware from apartment lever hardware and keep uncaptured gray proxies marked unverified. Apply the model-evidence review skill to affected instances, not only one example. Add regressions for shared orientation and 210 preservation, validate, publish, verify, close with exact coverage limits.",
+  "description": "Final scope: the user identifies the stair exit as the wrong latch type. Replace its apartment-style lever with observed horizontal push hardware from v054/v018; correct the sign location on brick. Audit every shared door instance. Preserve 210; retain 209 right-side lever extending left per v060 and include its visible upper round lock. Gray unrecorded corridor doors remain explicitly unverified proxies; do not blindly mirror them or claim photo validation. Update default records without losing custom annotations. Add geometry regressions, compare running views against source images, validate, publish, verify and close with explicit scope limits.",
   "id": "hall-4h2",
   "labels": [],
   "comments": [
@@ -18,7 +18,7 @@
   ],
   "priority": 1,
   "status": "in_progress",
-  "title": "Audit shared door hardware and correct reversed instances",
+  "title": "Correct Stairway 2 hardware and audit shared door assumptions",
   "type": "bug",
-  "updated_at": "2026-10-29T07:55:28Z"
+  "updated_at": "2026-10-29T08:03:32Z"
 }
