@@ -3,7 +3,7 @@
   "blocked_by": [],
   "blocks": [],
   "created": "2026-10-29T07:38:50Z",
-  "description": "Prevent recurrence of the reversed apartment 210 handle and backside camera errors. Add a narrowly scoped repo-local skill discoverable through AGENTS.md: register each changed component to context and detail evidence before coding; state a real-world viewing direction; verify handedness, host attachment, projection and estimated anchors; compare local renders against reference images before publishing; retain review evidence and do not call user feedback first-pass QA. Preserve lightweight capture and avoid exhaustive measurements. Extract existing world-space component focus into a testable helper and add meaningful nested-parent/occlusion regression tests. Validate skill, run required project checks, publish public workflow knowledge, verify deployment and close with review instructions.",
+  "description": "User clarification: the general check is to compare the built model/game with the source images, correct flipped or otherwise inconsistent features, and compare again. Apply across the scene, not just a handle or a coordinate bug. Make this the core repo-local skill and mandatory AGENTS instruction; publish it in agent-readable knowledge. Use existing video/photos first and do not blame motion or request reshooting without demonstrating an evidence gap. Keep the small existing-camera regression as a supporting check, not the main workflow. Validate, perform an actual rendered comparison, publish, verify and close.",
   "id": "hall-2lg",
   "labels": [],
   "comments": [
@@ -14,7 +14,7 @@
   ],
   "priority": 1,
   "status": "in_progress",
-  "title": "Require evidence-grounded geometry review and protect nested camera focus",
+  "title": "Require comparison of the running model with source imagery",
   "type": "task",
-  "updated_at": "2026-10-29T07:42:11Z"
+  "updated_at": "2026-10-29T07:46:02Z"
 }
