@@ -2,6 +2,8 @@
   "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-29T18:19:00Z",
+  "close_reason": "Photo-informed geometry and evidence published, required checks passed, live model and reference gallery verified.",
   "created": "2026-10-29T18:12:42Z",
   "description": "Update door-2 push-bar geometry using new frontal, latch-end and oblique detail photos. Preserve observed hallway-left latch case and hinge-side fixed cover. Add selected metadata-free evidence, canonical identification and uncertainty notes. Compare running model from front and side against photos and existing context frames, preserve 209 and 210 hardware, run required checks, publish and verify. Dimensions and manufacturer/model remain estimates or unknown unless supported.",
   "id": "hall-pq0",
@@ -17,7 +19,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Refine Stairway 2 exit device from four detail photographs",
   "type": "task",
   "updated_at": "2026-10-29T18:19:00Z"
