@@ -18,11 +18,15 @@
     {
       "text": "Placement corrected after user feedback: hall-facing handle moved to left latch edge, lever mirrored to extend right; hinge side aligned opposite. Full-door frames v006/v009 support approximately 0.91 m center height and 65 mm edge setback, both explicitly estimated. Also fixed editor focus to use world orientation and selection to choose the nearest nested component. Browser verified the full-door position, hardware popup and exterior focus. All 45 JS tests, 6 source tests, typecheck, build and public scan pass.",
       "timestamp": "2026-10-29T07:36:02Z"
+    },
+    {
+      "text": "Published commit 51cdd502d11f9d6aba134363d0c7adf92282726e; Pages run 40836483488 succeeded. Live browser verified left latch-edge placement, right-extending lever, independent hardware popup and all three new reference links, with no console errors. Human check: review apartment 210 from the hallway and compare handle side, inward lever direction and proximity to door edge against photos. Exact product ID and hardware dimensions remain unconfirmed.",
+      "timestamp": "2026-10-29T07:37:17Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Refine apartment 210 keyed lever hardware from three close-up photos",
   "type": "task",
-  "updated_at": "2026-10-29T07:36:02Z"
+  "updated_at": "2026-10-29T07:37:17Z"
 }
