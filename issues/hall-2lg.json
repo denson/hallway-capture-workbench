@@ -2,6 +2,8 @@
   "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-29T07:49:39Z",
+  "close_reason": "General rendered-model comparison skill required by AGENTS, published in agent knowledge and verified; supporting camera regressions and project checks pass.",
   "created": "2026-10-29T07:38:50Z",
   "description": "User clarification: the general check is to compare the built model/game with the source images, correct flipped or otherwise inconsistent features, and compare again. Apply across the scene, not just a handle or a coordinate bug. Make this the core repo-local skill and mandatory AGENTS instruction; publish it in agent-readable knowledge. Use existing video/photos first and do not blame motion or request reshooting without demonstrating an evidence gap. Keep the small existing-camera regression as a supporting check, not the main workflow. Validate, perform an actual rendered comparison, publish, verify and close.",
   "id": "hall-2lg",
@@ -21,7 +23,7 @@
     }
   ],
   "priority": 1,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Require comparison of the running model with source imagery",
   "type": "task",
   "updated_at": "2026-10-29T07:49:39Z"
