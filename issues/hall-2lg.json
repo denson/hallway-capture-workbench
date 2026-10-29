@@ -10,11 +10,15 @@
     {
       "text": "Review target: standing in the hallway facing 210, handle at left latch edge extending right. Context v006/v009; detail door210-lever-front/side. Local exposed face is -Z, left latch edge is +X, lever extends -X; world orientation includes door parent. Current ticket changes focus implementation and review process, not authored geometry. Existing numeric dimensions remain provisional. Skill validator and 47 JS tests pass, including rotated dirty-parent focus/visibility checks.",
       "timestamp": "2026-10-29T07:42:11Z"
+    },
+    {
+      "text": "General visual review performed on the built viewer using context v006 and detail door210-lever-front. Compared side and direction in the host context, then inspected the exposed part from the focus view; the corrected arrangement agrees on these visible relationships while exact dimensions remain estimated. A farther overview camera was occluded by the cutaway wall and was not treated as successful verification. Saved model-review-local.png with the actual local focus result. No footage-motion cause or reshoot requirement inferred. Skill now centers on comparing all affected features in the running model against source imagery and correcting/rechecking inconsistencies; no mandatory new capture procedure.",
+      "timestamp": "2026-10-29T07:47:38Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Require comparison of the running model with source imagery",
   "type": "task",
-  "updated_at": "2026-10-29T07:46:02Z"
+  "updated_at": "2026-10-29T07:47:38Z"
 }
