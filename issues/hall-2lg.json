@@ -14,11 +14,15 @@
     {
       "text": "General visual review performed on the built viewer using context v006 and detail door210-lever-front. Compared side and direction in the host context, then inspected the exposed part from the focus view; the corrected arrangement agrees on these visible relationships while exact dimensions remain estimated. A farther overview camera was occluded by the cutaway wall and was not treated as successful verification. Saved model-review-local.png with the actual local focus result. No footage-motion cause or reshoot requirement inferred. Skill now centers on comparing all affected features in the running model against source imagery and correcting/rechecking inconsistencies; no mandatory new capture procedure.",
       "timestamp": "2026-10-29T07:47:38Z"
+    },
+    {
+      "text": "Completed commit d110df68eebcf42b33a6a5632ba7629c47cf3618. Pages run 40837738709 succeeded. Verified published Knowledge and sources contains Geometry evidence review and its general compare/correct/recompare rule; saved model-review-published.png. Skill validator, 47 JS tests, 6 source tests, typecheck, build and public-content check passed. Human check: read the published model-review instructions and confirm they require source-image comparison for all affected scene features, not a handle-specific rule. No new video capture requirement introduced.",
+      "timestamp": "2026-10-29T07:49:39Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Require comparison of the running model with source imagery",
   "type": "task",
-  "updated_at": "2026-10-29T07:47:38Z"
+  "updated_at": "2026-10-29T07:49:39Z"
 }
