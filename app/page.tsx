@@ -17,6 +17,7 @@ import {
   X,
 } from 'lucide-react';
 import { PROJECT_CONFIG } from '@/lib/project-config';
+import {ObjectInspector} from '@/components/object-inspector';
 import { EditorPanel } from '@/components/editor-panel';
 import type { EditorState } from '@/lib/house-editor';
 import { Button } from '@/components/ui/button';
@@ -30,6 +31,7 @@ export default function Home() {
   const host = useRef<HTMLDivElement>(null),
     api = useRef<HouseApi | null>(null);
   const [editorState, setEditorState] = useState<EditorState | null>(null);
+  const [inspectionOpen,setInspectionOpen]=useState(false);
   const [viewUrl,setViewUrl]=useState('');
   const [sceneVersion,setSceneVersion]=useState(0);
   const [mode, setMode] = useState<ViewMode>('walk'),
@@ -56,6 +58,7 @@ export default function Home() {
             setEditorState,
             undefined,
             setNotice,
+            ()=>setInspectionOpen(true),
           );
           api.current.setMode(mode);api.current.setRoof(roof);api.current.setLabels(labels);api.current.setTime(time);
           setReady(true);
@@ -238,6 +241,7 @@ export default function Home() {
     return () => window.removeEventListener('beforeunload', warn);
   }, [editorState?.dirty]);
   function changeMode(value: ViewMode) {
+    setInspectionOpen(false);
     rememberView();
     setMode(value);
     setActive('');
@@ -246,6 +250,7 @@ export default function Home() {
     if (value === 'edit') setSidebar(true);
   }
   function visit(id: string) {
+    setInspectionOpen(false);
     rememberView();
     setActive(id);
     api.current?.goTo(id);
@@ -276,7 +281,7 @@ export default function Home() {
     const {ObjectLoader}=await import('three');const object=await new ObjectLoader().parseAsync(data.model);
     for(const e of data.entries)if(!object.getObjectByProperty('uuid',e.uuid))throw Error('The project is missing an object.');
     const {createHouse}=await import('@/lib/house-scene');const previous=api.current;
-    const next=createHouse(host.current,(x,z,yaw)=>setPosition({x,z,yaw}),setEditorState,{file:data,object},setNotice);
+    const next=createHouse(host.current,(x,z,yaw)=>setPosition({x,z,yaw}),setEditorState,{file:data,object},setNotice,()=>setInspectionOpen(true));
     previous?.dispose();api.current=next;next.setMode(data.view.mode);next.setRoof(data.view.roof);next.setLabels(data.view.labels);next.setTime(data.view.time);
     setMode(data.view.mode);setRoof(data.view.roof);setLabels(data.view.labels);setTime(data.view.time);setActive('');setReady(true);setSceneVersion(v=>v+1);setSidebar(true);setNotice('Project opened, including its catalog and saved designs.');
   }catch(e){setNotice('Could not open project: '+(e as Error).message);}finally{setBusy(false);if(projectInput.current)projectInput.current.value='';}}
@@ -424,7 +429,7 @@ export default function Home() {
           <p className="model-note">
             Fuel & Iron · building location checked
             <br />
-            Select equipment in Edit for its record, source frames and dimensions. Gray = details not captured. Ceiling off gives a cutaway.
+            Hover over equipment for its name. Click for details and reference photos. Gray = details not captured. Ceiling off gives a cutaway.
           </p>
           <details className="refinement-list"><summary>Process for Mike · preserved stages</summary><ol><li>First draft from photos and blueprint; wrong door placement.</li><li>Floor double-click navigation added.</li><li>Arrow controls removed.</li><li>Door-side and starting-view correction.</li><li>5:28 video indexed; timestamped evidence and route corrections recorded.</li><li>Video-derived model, gray coverage and equipment records with source frames.</li></ol><p>Stages and original evidence are preserved locally. This is guided reconstruction from evidence; dimensions remain estimates unless measured.</p></details>
           <details className="refinement-list">
@@ -447,6 +452,7 @@ export default function Home() {
           aria-label="3D house viewer"
         >
           <div ref={host} className="scene-host" />
+          {inspectionOpen&&editorState?.selected&&<ObjectInspector selected={editorState.selected} onClose={()=>setInspectionOpen(false)} onEdit={()=>{setInspectionOpen(false);api.current?.setMode('edit');setMode('edit');setRoof(false);setSidebar(true);api.current?.editor.focusSelected();}}/>}
           <div className="viewer-top">
             <div className="view-tabs" role="group" aria-label="Viewing mode">
               {!sidebar && (
@@ -532,7 +538,7 @@ export default function Home() {
             <>
               <div className="crosshair" aria-hidden="true" />
               <div className="walk-badge">
-                <span className="status-dot" /> DOUBLE-CLICK FLOOR TO MOVE · DRAG TO LOOK
+                <span className="status-dot" /> CLICK EQUIPMENT FOR DETAILS · DOUBLE-CLICK FLOOR TO MOVE · DRAG TO LOOK
               </div>
             </>
           )}

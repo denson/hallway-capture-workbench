@@ -8,6 +8,7 @@ import { rooms, canOccupy, HALL, WALK_START, type ViewMode } from './house-data'
 import { migrateHallwayLayout } from './hallway-layout-migration';
 import { buildHallway } from './hallway-model';
 import { canWalkSegment, findWalkDestination, pickWalkFloor, type FloorPoint } from './walk-navigation';
+import {pickInspectable} from './object-inspection';
 import type {ViewSnapshot,ViewNavigation} from './view-url';
 export type HouseApi = {
   editor: EditorApi; saveProject:(view:ProjectFile['view'])=>Promise<void>;
@@ -17,13 +18,13 @@ export type HouseApi = {
   move: (key: string, down: boolean) => void; dispose: () => void;
   getView:()=>ViewSnapshot;applyView:(nav:ViewNavigation)=>void;
 };
-export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:number)=>void,onEditorChange:(state:EditorState)=>void,restore?:{file:ProjectFile;object:T.Object3D},onWalkNotice:(message:string)=>void=()=>{}):HouseApi{
+export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:number)=>void,onEditorChange:(state:EditorState)=>void,restore?:{file:ProjectFile;object:T.Object3D},onWalkNotice:(message:string)=>void=()=>{},onInspect:()=>void=()=>{}):HouseApi{
   const scene=new T.Scene();scene.background=new T.Color('#e1e4e1');
   const renderer=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;
   renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.toneMapping=T.ACESFilmicToneMapping;
   renderer.toneMappingExposure=1.12;renderer.outputColorSpace=T.SRGBColorSpace;renderer.localClippingEnabled=true;
-  const canvas=renderer.domElement;canvas.tabIndex=0;canvas.setAttribute('aria-label','Interactive provisional hallway. Double-click the floor to move; drag to look, including upward. WASD also moves.');host.appendChild(canvas);
+  const canvas=renderer.domElement;canvas.tabIndex=0;canvas.setAttribute('aria-label','Interactive provisional hallway. Hover over equipment for its name; click for details. Double-click the floor to move; drag to look, including upward. WASD also moves.');host.appendChild(canvas);
   const camera=new T.PerspectiveCamera(58,1,.035,180);camera.position.set(30,25,32);
   const orbit=new OrbitControls(camera,canvas);orbit.target.set(16,0,5);orbit.enableDamping=true;
   orbit.minDistance=.35;orbit.maxDistance=85;orbit.maxPolarAngle=Math.PI*.49;
@@ -63,7 +64,7 @@ export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:n
   destinationRing.rotation.x=-Math.PI/2;destinationRing.visible=false;scene.add(destinationRing);
   const cancelJourney=()=>{journey=null;destinationRing.visible=false;};
   const clear=()=>{keys.clear();drag=null;cancelJourney();};
-  const keyDown=(e:KeyboardEvent)=>{if((e.target as HTMLElement)?.closest('input,textarea,[role="slider"]'))return;if(mode==='walk'&&['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','ShiftLeft','ShiftRight'].includes(e.code)){e.preventDefault();cancelJourney();keys.add(e.code);}if(e.code==='Escape')clear();};
+  const keyDown=(e:KeyboardEvent)=>{if((e.target as HTMLElement)?.closest('input,textarea,dialog,[role="slider"]'))return;if(mode==='walk'&&['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','ShiftLeft','ShiftRight'].includes(e.code)){e.preventDefault();cancelJourney();keys.add(e.code);}if(e.code==='Escape')clear();};
   const keyUp=(e:KeyboardEvent)=>keys.delete(e.code);
   const pointerDown=(e:PointerEvent)=>{if(mode!=='walk'||e.button!==0)return;canvas.focus();drag={x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY,id:e.pointerId};canvas.setPointerCapture(e.pointerId);};
   const pointerMove=(e:PointerEvent)=>{if(!drag||mode!=='walk'||drag.id!==e.pointerId)return;if(Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>6)lastDrag=performance.now();yaw-=(e.clientX-drag.x)*.004;pitch=Math.max(-1.54,Math.min(1.54,pitch-(e.clientY-drag.y)*.004));drag.x=e.clientX;drag.y=e.clientY;};
@@ -82,6 +83,20 @@ export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:n
   window.addEventListener('keydown',keyDown);window.addEventListener('keyup',keyUp);window.addEventListener('blur',clear);
   canvas.addEventListener('pointerdown',pointerDown);canvas.addEventListener('pointermove',pointerMove);canvas.addEventListener('pointerup',pointerUp);canvas.addEventListener('pointercancel',pointerUp);
   canvas.addEventListener('dblclick',floorDoubleClick);
+  const hoverLabel=document.createElement('div');hoverLabel.className='object-hover-label';hoverLabel.setAttribute('role','tooltip');hoverLabel.hidden=true;host.appendChild(hoverLabel);
+  let inspectPress:{x:number;y:number;moved:boolean;id:number}|null=null;
+  const inspectHit=(event:PointerEvent)=>{const rect=canvas.getBoundingClientRect(),ray=new T.Raycaster();camera.updateMatrixWorld();ray.setFromCamera(new T.Vector2((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1),camera);return pickInspectable(ray,model,editable);};
+  const hideHover=()=>{hoverLabel.hidden=true;canvas.style.cursor=mode==='walk'?'grab':'default';};
+  const inspectDown=(event:PointerEvent)=>{if(mode==='edit'||event.button!==0)return;inspectPress={x:event.clientX,y:event.clientY,moved:false,id:event.pointerId};hideHover();};
+  const inspectMove=(event:PointerEvent)=>{
+    if(inspectPress){if(Math.hypot(event.clientX-inspectPress.x,event.clientY-inspectPress.y)>6)inspectPress.moved=true;hideHover();return;}
+    if(mode==='edit'||event.buttons){hideHover();return;}
+    const entry=inspectHit(event);if(!entry){hideHover();return;}
+    const rect=canvas.getBoundingClientRect();hoverLabel.textContent=entry.name+' · Click for details';hoverLabel.style.left=Math.max(8,Math.min(event.clientX-rect.left+14,rect.width-280))+'px';hoverLabel.style.top=Math.max(8,event.clientY-rect.top-40)+'px';hoverLabel.hidden=false;canvas.style.cursor='pointer';
+  };
+  const inspectUp=(event:PointerEvent)=>{const press=inspectPress;inspectPress=null;if(!press||press.id!==event.pointerId||press.moved||Math.hypot(event.clientX-press.x,event.clientY-press.y)>6)return;const entry=inspectHit(event);if(entry){clear();hideHover();editor.select(entry.id);onInspect();}};
+  const inspectCancel=()=>{inspectPress=null;hideHover();};
+  canvas.addEventListener('pointerdown',inspectDown);canvas.addEventListener('pointermove',inspectMove);canvas.addEventListener('pointerup',inspectUp);canvas.addEventListener('pointerleave',hideHover);canvas.addEventListener('pointercancel',inspectCancel);
   const resize=()=>{if(disposed)return;const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();};
   const observer=new ResizeObserver(resize);observer.observe(host);resize();
   function freeWalkPosition(x:number,z:number){
@@ -93,7 +108,7 @@ export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:n
     return new T.Vector3(WALK_START.x,HALL.eyeHeight,WALK_START.z);
   }
   const setMode=(value:ViewMode)=>{
-    mode=value;clear();editor.enable(value==='edit');orbit.enabled=value!=='walk';canvas.style.cursor=value==='walk'?'grab':'default';
+    mode=value;clear();hideHover();editor.enable(value==='edit');orbit.enabled=value!=='walk';canvas.style.cursor=value==='walk'?'grab':'default';
     if(value==='walk'){camera.position.copy(freeWalkPosition(WALK_START.x,WALK_START.z));yaw=WALK_START.yaw;pitch=WALK_START.pitch;camera.rotation.set(0,0,0,'YXZ');canvas.focus();}
     else{camera.up.set(0,1,0);const fit=Math.max(1,1.05/camera.aspect);camera.position.set(...(value==='plan'?[17,34*fit,5.01]:[17+14*fit,25*fit,5+27*fit]) as [number,number,number]);orbit.maxDistance=Math.max(65,65*fit);orbit.target.set(17,0,5);orbit.enableRotate=value!=='plan';orbit.update();}
   };
@@ -163,7 +178,7 @@ export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:n
     move:(key,down)=>{if(down){cancelJourney();keys.add(key);}else keys.delete(key);},
     renderImage:async()=>{const size=renderer.getSize(new T.Vector2()),ratio=renderer.getPixelRatio(),restoreHelpers=editor.hideHelpers();try{renderer.setPixelRatio(1);renderer.setSize(2560,Math.round(2560/ camera.aspect),false);renderer.render(scene,camera);const blob=await new Promise<Blob|null>(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('Image could not be saved');download(blob,'hallway-210-render.png');}finally{restoreHelpers();renderer.setPixelRatio(ratio);renderer.setSize(size.x,size.y,false);}},
     exportModel:async()=>{const visible=roof.visible;roof.visible=true;try{const exporter=new GLTFExporter();const data=await exporter.parseAsync(model,{binary:true});download(new Blob([data as ArrayBuffer],{type:'model/gltf-binary'}),'hallway-210.glb');}finally{roof.visible=visible;}},
-    dispose:()=>{disposed=true;cancelAnimationFrame(frame);editor.dispose();portableGeometry.forEach(g=>g.dispose());observer.disconnect();orbit.dispose();window.removeEventListener('keydown',keyDown);window.removeEventListener('keyup',keyUp);window.removeEventListener('blur',clear);canvas.removeEventListener('pointerdown',pointerDown);canvas.removeEventListener('pointermove',pointerMove);canvas.removeEventListener('pointerup',pointerUp);canvas.removeEventListener('pointercancel',pointerUp);canvas.removeEventListener('dblclick',floorDoubleClick);const materials=new Set<T.Material>();scene.traverse(o=>{if(o instanceof T.Mesh){o.geometry.dispose();(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>materials.add(m));}});materials.forEach(m=>m.dispose());resources.forEach(t=>t.dispose());environment.dispose();renderer.dispose();canvas.remove();labelLayer.remove();}
+    dispose:()=>{disposed=true;canvas.removeEventListener('pointerdown',inspectDown);canvas.removeEventListener('pointermove',inspectMove);canvas.removeEventListener('pointerup',inspectUp);canvas.removeEventListener('pointerleave',hideHover);canvas.removeEventListener('pointercancel',inspectCancel);hoverLabel.remove();cancelAnimationFrame(frame);editor.dispose();portableGeometry.forEach(g=>g.dispose());observer.disconnect();orbit.dispose();window.removeEventListener('keydown',keyDown);window.removeEventListener('keyup',keyUp);window.removeEventListener('blur',clear);canvas.removeEventListener('pointerdown',pointerDown);canvas.removeEventListener('pointermove',pointerMove);canvas.removeEventListener('pointerup',pointerUp);canvas.removeEventListener('pointercancel',pointerUp);canvas.removeEventListener('dblclick',floorDoubleClick);const materials=new Set<T.Material>();scene.traverse(o=>{if(o instanceof T.Mesh){o.geometry.dispose();(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>materials.add(m));}});materials.forEach(m=>m.dispose());resources.forEach(t=>t.dispose());environment.dispose();renderer.dispose();canvas.remove();labelLayer.remove();}
   };
   return api;
 }
