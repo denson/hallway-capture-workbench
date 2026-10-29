@@ -10,11 +10,15 @@
     {
       "text": "Source audit: v060 visibly places 209 lever on right edge extending left, unlike 210; blindly mirroring all apartment doors would contradict video. Current shared generator uses one generic lever and generic exit hardware. v054 clearly shows Stair 2 horizontal push bar, a concrete mismatch to correct independently. Asked user whether backwards means wrong edge, wrong lever direction or wrong face; dependent blanket reversal is pending clarification. Gray corridor doors remain plan-only and have no individually verified handing.",
       "timestamp": "2026-10-29T07:54:11Z"
+    },
+    {
+      "text": "User explicitly identifies Stairway 2 as the wrong latch type. Prioritizing that proven mismatch: removed generic keyed lever from the stair exit and added a horizontal push bar with the larger left latch-side housing, using v054/v018. Apartment 209 remains a separate opposite-handed source case. New skill rule audits every instance of shared code rather than only the reported example.",
+      "timestamp": "2026-10-29T07:55:28Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Audit shared door hardware and correct reversed instances",
   "type": "bug",
-  "updated_at": "2026-10-29T07:54:11Z"
+  "updated_at": "2026-10-29T07:55:28Z"
 }
