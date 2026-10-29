@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-29T22:49:38Z",
+  "description": "User requests all project material in Git for laptop migration and a substantial successor-agent handoff with reusable lessons. Scope: verify hallway and Field Capture sources/remotes, create private evidence/archive backup, document actual setup/publication and uncertainty, add general capture and agent-update skills, preserve existing geometry. Acceptance: pushed clones contain current sources and notes; private media availability is verified; clone/run instructions and skill validation pass; no private files enter public Pages.",
+  "id": "hall-f12",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Prepare portable project handoff, Git backups, and agent skills",
+  "type": "task",
+  "updated_at": "2026-10-29T22:49:38Z"
+}
