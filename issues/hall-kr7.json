@@ -10,11 +10,15 @@
     {
       "text": "Reviewed nearby video frames around 00:52-00:54 and existing approved photos. Added authored paper and text, clear tape, left NOTICE sheet and slightly lower right PLEASE DO NOT SLAM DOOR sheet. Body readable: smoking and vaping not permitted within 25 feet of entrances. Four tiny pictograms simplified. Same front context demonstrates solid leaf, upper closer and glass transom above the header; corrected prior invented leaf window. Compared local close and full door views with new source stills, kept push hardware/brick sign relationship. Screenshots outputs/stair-notices-local.png and outputs/stair-notices-full-local.png. Geometry/proportions remain estimates. 53 tests, six source tests, typecheck and build pass.",
       "timestamp": "2026-10-29T19:58:05Z"
+    },
+    {
+      "text": "Published same commit and successful Pages run 40944902542. Compared public full-door view with source: left NOTICE, slightly lower right do-not-slam paper, tape edges, closer and separate upper transom visible; push-bar handing retained. Clicked door, verified paper notes and all three new source stills loaded. No browser console errors. Screenshot outputs/stair-notices-published.png. Human check: paper placement, lettering and tape appearance; proportions remain estimated.",
+      "timestamp": "2026-10-29T20:01:12Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Add observed taped notices to Stairway 2 door",
   "type": "task",
-  "updated_at": "2026-10-29T19:58:05Z"
+  "updated_at": "2026-10-29T20:01:12Z"
 }
