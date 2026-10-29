@@ -18,11 +18,15 @@
     {
       "text": "Local render comparisons completed against v054/v018 for stair push bar and brick-mounted sign; against v060 for 209 right-edge lever extending left and separate upper round lock. The common generator covers 12 doors: observed 209/210/Stair 2 and 9 gray context doors without individual verified hardware. No blanket reversal applied. Code tests now 49 passing plus 6 source tests; 210 regression remains passing. Screenshot stair2-pushbar-local.png retained.",
       "timestamp": "2026-10-29T08:03:32Z"
+    },
+    {
+      "text": "Published commit 8981418d9a6470003520e148d0ff00543302bb62; Pages run 40839476137 succeeded. Live browser comparison confirms Stair 2 push bar with larger left housing and sign on brick, plus door record linking v054/v018; no console errors. Saved stair2-pushbar-published.png. Human check: bar type, overall shape and placement against the stair door; dimensions remain estimates. This is a captured-door repair and shared-code audit, not verification of the 9 gray corridor hardware proxies.",
+      "timestamp": "2026-10-29T08:05:36Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Correct Stairway 2 hardware and audit shared door assumptions",
   "type": "bug",
-  "updated_at": "2026-10-29T08:03:32Z"
+  "updated_at": "2026-10-29T08:05:36Z"
 }
