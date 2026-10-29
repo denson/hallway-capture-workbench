@@ -14,11 +14,15 @@
     {
       "text": "User reports the handle is in the wrong place during local preview. Stop publication until placement is checked against the full-door photo and the new hardware close-ups. Current nested hardware retained old estimated center; distinguish actual geometry placement from camera-focus errors.",
       "timestamp": "2026-10-29T07:32:09Z"
+    },
+    {
+      "text": "Placement corrected after user feedback: hall-facing handle moved to left latch edge, lever mirrored to extend right; hinge side aligned opposite. Full-door frames v006/v009 support approximately 0.91 m center height and 65 mm edge setback, both explicitly estimated. Also fixed editor focus to use world orientation and selection to choose the nearest nested component. Browser verified the full-door position, hardware popup and exterior focus. All 45 JS tests, 6 source tests, typecheck, build and public scan pass.",
+      "timestamp": "2026-10-29T07:36:02Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Refine apartment 210 keyed lever hardware from three close-up photos",
   "type": "task",
-  "updated_at": "2026-10-29T07:32:09Z"
+  "updated_at": "2026-10-29T07:36:02Z"
 }
