@@ -6,6 +6,12 @@
   "description": "User specifies: the agent is the application interface. Voice/text change requests become Beadwork tickets, tied to the selected stable component and evidence. Agent updates canonical source, validates and publishes, verifies deployment, closes the ticket, and tells the user what changed and what to check. Persist this contract in project instructions and public agent-readable knowledge. Clarify that unsent browser-local text is not automatically transmitted to the agent. Preserve browser save/backup as optional fallback. Acceptance: workflow documented, knowledge rebuilt, required checks pass, public deployment succeeds, ticket closed with commit/deployment and review instructions.",
   "id": "hall-ewt",
   "labels": [],
+  "comments": [
+    {
+      "text": "User example: photograph the extinguisher gauge and inspection/replacement labels after opening the cabinet. Store this as dated evidence for the specific extinguisher, retaining prior observations. Record visible readings/date labels with their source; distinguish observation date from label dates, and do not infer a service certification or replacement deadline from appearance.",
+      "timestamp": "2026-10-29T07:23:19Z"
+    }
+  ],
   "priority": 1,
   "status": "in_progress",
   "title": "Record the agent-managed annotation and publishing workflow",
