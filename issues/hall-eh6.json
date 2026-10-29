@@ -6,9 +6,15 @@
   "description": "Use the newly supplied keyway, full lever and side-profile close-ups for apartment 210, following the earlier request to refine its handle/lock. Preserve door-210 stable ID and measured 79-inch leaf height. Add detailed lever/rosette/key cylinder geometry and a linked hardware record if appropriate, attach selected metadata-free photos, document observed features and identity uncertainty, retain previous door evidence. Do not assert manufacturer, exact model, part number or dimensions without support. Validate, publish, verify the model and photo record, close ticket and give a targeted human check.",
   "id": "hall-eh6",
   "labels": [],
+  "comments": [
+    {
+      "text": "Added a nested door-hardware-210 component: stepped rose, hub, flattened swept blade, two-lobed keyed-insert surround and generic keyway. Three selected photos re-encoded without EXIF and attached to hardware/door evidence. Exact product identity and dimensions remain unknown. Added default-record migration preserving custom notes; testing nested selection and door attachment.",
+      "timestamp": "2026-10-29T07:30:38Z"
+    }
+  ],
   "priority": 1,
   "status": "in_progress",
   "title": "Refine apartment 210 keyed lever hardware from three close-up photos",
   "type": "task",
-  "updated_at": "2026-10-29T07:27:12Z"
+  "updated_at": "2026-10-29T07:30:38Z"
 }
