@@ -2,6 +2,8 @@
   "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-29T19:39:25Z",
+  "close_reason": "Outlet geometry and three reference photos published; required checks and live visual/record verification completed.",
   "created": "2026-10-29T19:33:15Z",
   "description": "Update existing outlet-opposite-210 face geometry from three new reference photos: white beveled wall plate, two stacked clipped-round receptacles, view-left T slots, view-right vertical slots, ground openings below and central screw. Attach metadata-free selected photos to canonical record. Preserve current approximate location; no new measurement or longitudinal registration supplied. Keep manufacturer/model unknown. Compare running front/context view with photos, test/build, publish, verify and preserve milestone.",
   "id": "hall-s2b",
@@ -21,7 +23,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Refine hallway duplex outlet from three detail photos",
   "type": "task",
   "updated_at": "2026-10-29T19:39:25Z"
