@@ -6,9 +6,15 @@
   "description": "Update door-2 push-bar geometry using new frontal, latch-end and oblique detail photos. Preserve observed hallway-left latch case and hinge-side fixed cover. Add selected metadata-free evidence, canonical identification and uncertainty notes. Compare running model from front and side against photos and existing context frames, preserve 209 and 210 hardware, run required checks, publish and verify. Dimensions and manufacturer/model remain estimates or unknown unless supported.",
   "id": "hall-pq0",
   "labels": [],
+  "comments": [
+    {
+      "text": "Implemented photo-informed Stairway 2 exit device, preserving hallway-left latch case. Compared local front context view and close oblique view with stair2-exit-front, stair2-exit-latch-side, stair2-exit-end-side and stair2-exit-bar-profile plus existing v054/v018 context. Corrected case to a curved extruded side section after the first rendering; checked raised pad, shorter fixed cover, seam, opening, end support and strike. Screenshots outputs/exit-detail-front-local.png and outputs/exit-detail-side-local.png. Clicking the bar opens door-2 with four new photos plus two older frames. 209/210 generation unchanged. 50 JS tests and six source tests pass; build passes. Sizes remain photo estimates; no readable maker/model.",
+      "timestamp": "2026-10-29T18:16:47Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Refine Stairway 2 exit device from four detail photographs",
   "type": "task",
-  "updated_at": "2026-10-29T18:12:47Z"
+  "updated_at": "2026-10-29T18:16:47Z"
 }
