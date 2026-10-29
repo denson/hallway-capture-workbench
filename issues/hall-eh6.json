@@ -10,11 +10,15 @@
     {
       "text": "Added a nested door-hardware-210 component: stepped rose, hub, flattened swept blade, two-lobed keyed-insert surround and generic keyway. Three selected photos re-encoded without EXIF and attached to hardware/door evidence. Exact product identity and dimensions remain unknown. Added default-record migration preserving custom notes; testing nested selection and door attachment.",
       "timestamp": "2026-10-29T07:30:38Z"
+    },
+    {
+      "text": "User reports the handle is in the wrong place during local preview. Stop publication until placement is checked against the full-door photo and the new hardware close-ups. Current nested hardware retained old estimated center; distinguish actual geometry placement from camera-focus errors.",
+      "timestamp": "2026-10-29T07:32:09Z"
     }
   ],
   "priority": 1,
   "status": "in_progress",
   "title": "Refine apartment 210 keyed lever hardware from three close-up photos",
   "type": "task",
-  "updated_at": "2026-10-29T07:30:38Z"
+  "updated_at": "2026-10-29T07:32:09Z"
 }
