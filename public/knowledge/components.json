@@ -2077,12 +2077,12 @@
       "name": "Outlet opposite 210",
       "dimensionsMetres": {
         "width": 0.07100000232458115,
-        "depth": 0.0155000000651917,
+        "depth": 0.010750000064028598,
         "height": 0.11500000208616257
       },
       "evidence": {
-        "basis": "Opposite-wall photos + video registration",
-        "notes": "Kept opposite 210 on branch west wall; height and size estimated.",
+        "basis": "Three outlet detail photos + earlier opposite-wall registration",
+        "notes": "White duplex plate, view-left T slots, lower ground openings and central screw observed. Existing branch west-wall placement retained; location, height and size estimated.",
         "status": "estimated"
       },
       "coverage": "captured-route",
@@ -2091,9 +2091,13 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "",
-        "evidenceIds": [],
-        "evidenceNote": "",
+        "notes": "Three photos received 2026-10-29 show a white beveled single-gang wall plate, two vertically stacked clipped-round receptacle faces, a T-shaped opening on the left and vertical opening on the right of each face when viewed from the hall, lower ground openings and a central slotted metal screw. The model now includes those visible details. No readable manufacturer/model or rating marking. Exact electrical rating, circuit, wiring and internal condition are not established. Existing approximate opposite-210 location and 0.34 m center height retained; these new views do not independently register the position along the hallway. Plate dimensions around 71 by 115 mm are modeling estimates, not a supplied measurement.",
+        "evidenceIds": [
+          "outlet-face-closeup",
+          "outlet-wall-context",
+          "outlet-wall-wide"
+        ],
+        "evidenceNote": "Three user-supplied stills: close-up, wall/baseboard context and wider wall view. Receipt date is not verified camera capture date. Earlier hallway photo established the modeled opposite wall; these detail photos refine appearance without relocating it.",
         "workHeight": null,
         "heightStatus": "unknown",
         "heightSource": "",
@@ -2406,6 +2410,21 @@
       "title": "Opposite corridor overview",
       "videoSeconds": 324,
       "image": "../evidence/v324.jpg"
+    },
+    {
+      "id": "outlet-wall-context",
+      "title": "Hallway outlet · wall plate and baseboard context",
+      "image": "../evidence/outlet-wall-context.jpg"
+    },
+    {
+      "id": "outlet-face-closeup",
+      "title": "Hallway outlet · duplex face and T slots",
+      "image": "../evidence/outlet-face-closeup.jpg"
+    },
+    {
+      "id": "outlet-wall-wide",
+      "title": "Hallway outlet · wider orange-wall view",
+      "image": "../evidence/outlet-wall-wide.jpg"
     },
     {
       "id": "stair2-exit-front",

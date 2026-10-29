@@ -72,7 +72,7 @@ Every row is authored geometry. Dimensions enclose the full assembly and are est
 | Ceiling detector 1 | detector-0 | unknown | 0.130 × 0.130 × 0.080 | [Inspect](../#v=1&mode=edit&object=detector-0&focus=1&roof=0) |
 | Ceiling detector 2 | detector-1 | unknown | 0.130 × 0.130 × 0.080 | [Inspect](../#v=1&mode=edit&object=detector-1&focus=1&roof=0) |
 | Dome camera and exposed leads | camera-dome | unknown | 0.144 × 0.119 × 0.264 | [Inspect](../#v=1&mode=edit&object=camera-dome&focus=1&roof=0) |
-| Outlet opposite 210 | outlet-opposite-210 | unknown | 0.071 × 0.016 × 0.115 | [Inspect](../#v=1&mode=edit&object=outlet-opposite-210&focus=1&roof=0) |
+| Outlet opposite 210 | outlet-opposite-210 | unknown | 0.071 × 0.011 × 0.115 | [Inspect](../#v=1&mode=edit&object=outlet-opposite-210&focus=1&roof=0) |
 | Fire extinguisher cabinet | wall-cabinet | tentative | 0.340 × 0.172 × 0.691 | [Inspect](../#v=1&mode=edit&object=wall-cabinet&focus=1&roof=0) |
 | Fire alarm pull station · Stair 2 | fire-pull-station | tentative | 0.095 × 0.063 × 0.140 | [Inspect](../#v=1&mode=edit&object=fire-pull-station&focus=1&roof=0) |
 | Wall heater · Stair 2 | wall-heater-stair2 | unknown | 0.500 × 0.216 × 0.550 | [Inspect](../#v=1&mode=edit&object=wall-heater-stair2&focus=1&roof=0) |

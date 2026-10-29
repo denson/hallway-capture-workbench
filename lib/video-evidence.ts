@@ -27,6 +27,9 @@ export const videoEvidence = [
 export const evidenceTime=(seconds:number)=>`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;
 export const findVideoEvidence=(id:string)=>videoEvidence.find(e=>e.id===id);
 export const photoEvidence = [
+  {id:'outlet-wall-context',title:'Hallway outlet · wall plate and baseboard context',file:'hallway-outlet/outlet-wall-context.jpg'},
+  {id:'outlet-face-closeup',title:'Hallway outlet · duplex face and T slots',file:'hallway-outlet/outlet-face-closeup.jpg'},
+  {id:'outlet-wall-wide',title:'Hallway outlet · wider orange-wall view',file:'hallway-outlet/outlet-wall-wide.jpg'},
   {id:'stair2-exit-front',title:'Stairway 2 · exit device front and handedness',file:'stair2-exit-device/stair2-exit-front.jpg'},
   {id:'stair2-exit-latch-side',title:'Stairway 2 · rounded latch case and strike',file:'stair2-exit-device/stair2-exit-latch-side.jpg'},
   {id:'stair2-exit-end-side',title:'Stairway 2 · hinge-side cover and end cap',file:'stair2-exit-device/stair2-exit-end-side.jpg'},

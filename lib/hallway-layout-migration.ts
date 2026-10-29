@@ -58,5 +58,7 @@ export function migrateHallwayLayout(layout: Layout): Layout {
   const stair=result['door-2'];
   const priorStairNotes='Hallway-facing Stairway 2 door: horizontal metal push bar across the leaf, with a larger latch-side housing at the left when viewed from the hall. Replaces the incorrect generic apartment lever. Hardware form follows video 00:54 and the 00:18 context frame; size, mounting height and projection remain estimated. Manufacturer/model/part number unconfirmed. Stairwell beyond is not modeled from this footage.';
   if(stair?.record?.notes===priorStairNotes){const latest=hallwayComponentRecord('door-2');result['door-2']={...stair,record:{...stair.record,notes:latest.notes,evidenceNote:latest.evidenceNote,evidenceIds:[...new Set([...stair.record.evidenceIds,...latest.evidenceIds])].slice(0,12)}};}
+  const outlet=result['outlet-opposite-210'];
+  if(outlet?.record&&outlet.record.notes===''&&outlet.record.evidenceIds.length===0){const latest=hallwayComponentRecord('outlet-opposite-210');result['outlet-opposite-210']={...outlet,record:{...outlet.record,notes:latest.notes,evidenceNote:latest.evidenceNote,evidenceIds:latest.evidenceIds}};}
   return result;
 }

@@ -1,6 +1,7 @@
 import {hallwayComponentRecord} from './hallway-component-defaults.ts';
 import {buildDoor210Hardware} from './door-hardware.ts';
 import {buildStairExitDevice} from './stair-exit-device.ts';
+import {buildDuplexOutlet} from './duplex-outlet.ts';
 import * as T from 'three';
 import {HALL, DOOR_210, FLOOR_RECTS, planX, planZ, type Obstacle} from './hallway-data.ts';
 import type {EditableEntry} from './house-editor';
@@ -302,9 +303,8 @@ export function buildHallway(textures=typeof document!=='undefined'){
   cylinder(camera,[0,0,0],[0,0,.06],.07,white,24);
   ball(camera,[0,0,.075],.045,lens);
   const loop=new T.Mesh(new T.TorusGeometry(.05,.0035,6,24),cableWhite);loop.position.set(.02,.14,.02);camera.add(loop);
-  const outlet=assembly('outlet-opposite-210','Outlet opposite 210',evidence('Opposite-wall photos + video registration','Kept opposite 210 on branch west wall; height and size estimated.'),[HALL.branchLeft+.006,0,DOOR_210.z],-Math.PI/2);
-  box(outlet,[0,.34,0],[.071,.115,.012],white);
-  for(const y of [.317,.359])for(const dx of [-.01,.01])box(outlet,[dx,y,-.008],[.003,.012,.003],trim);
+  const outlet=assembly('outlet-opposite-210','Outlet opposite 210',evidence('Three outlet detail photos + earlier opposite-wall registration','White duplex plate, view-left T slots, lower ground openings and central screw observed. Existing branch west-wall placement retained; location, height and size estimated.'),[HALL.branchLeft+.006,0,DOOR_210.z],-Math.PI/2);
+  const outletFace=buildDuplexOutlet();outletFace.position.y=.34;outlet.add(outletFace);
   const cabinet=assembly('wall-cabinet','Fire extinguisher cabinet',evidence('User confirmation + two cabinet close-up photos','Fire extinguisher in white cabinet with narrow left viewing window, metal pull and right hinge. Dimensions estimated; location confirmed by user, existing placement retained.'),[HALL.branchRight+.025,0,DOOR_210.z+1.05],Math.PI/2);
   box(cabinet,[0,1.05,.085],[.34,.69,.015],white);
   for(const side of [-1,1])box(cabinet,[side*.162,1.05,.03],[.015,.69,.11],white);
