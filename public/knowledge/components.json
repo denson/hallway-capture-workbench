@@ -749,7 +749,7 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated.",
+        "notes": "209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated. Viewed from the hallway, video shows a right-edge lever extending left, opposite to 210, with a separate round lock above it. The model retains that handing and includes the upper lock; shape and dimensions remain simplified, and exact lock identity/function is unconfirmed.",
         "evidenceIds": [
           "v060"
         ],
@@ -780,7 +780,7 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated.",
+        "notes": "209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated. Viewed from the hallway, video shows a right-edge lever extending left, opposite to 210, with a separate round lock above it. The model retains that handing and includes the upper lock; shape and dimensions remain simplified, and exact lock identity/function is unconfirmed.",
         "evidenceIds": [
           "v060"
         ],
@@ -930,7 +930,7 @@
       "name": "Stair 2 end · brick surround",
       "dimensionsMetres": {
         "width": 1.590000002384187,
-        "depth": 0.18149999839812558,
+        "depth": 0.19099999840184978,
         "height": 3.5050000572204594
       },
       "evidence": {
@@ -959,12 +959,12 @@
       "name": "Stair 2 exit door",
       "dimensionsMetres": {
         "width": 0.9667743453681474,
-        "depth": 0.11300000064074922,
+        "depth": 0.1535000014305119,
         "height": 2.180000066757202
       },
       "evidence": {
-        "basis": "Blueprint + photo style",
-        "notes": "Door size inferred from 210; closed doors define model boundary.",
+        "basis": "Video 00:18 / 00:54",
+        "notes": "Stairway 2 hallway-facing door has a horizontal push bar with a larger left latch-side housing. Door and hardware dimensions estimated.",
         "status": "estimated"
       },
       "coverage": "captured-route",
@@ -973,9 +973,10 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Stair 2 sign and door/push hardware visible. Stairwell beyond is not modeled from this footage.",
+        "notes": "Hallway-facing Stairway 2 door: horizontal metal push bar across the leaf, with a larger latch-side housing at the left when viewed from the hall. Replaces the incorrect generic apartment lever. Hardware form follows video 00:54 and the 00:18 context frame; size, mounting height and projection remain estimated. Manufacturer/model/part number unconfirmed. Stairwell beyond is not modeled from this footage.",
         "evidenceIds": [
-          "v054"
+          "v054",
+          "v018"
         ],
         "evidenceNote": "",
         "workHeight": null,

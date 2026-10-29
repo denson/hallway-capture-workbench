@@ -21,3 +21,7 @@ The original video’s location was checked against the building. It does not es
 Work-point heights are estimates unless explicitly marked measured. They describe the service point above its local floor, not ladder length. This app does not choose access equipment or certify replacement parts.
 
 No stairwell-side 360 or stair-flight geometry was established by the reviewed clip. The gray corridors are overview context, not a detailed survey.
+
+The hallway face of the Stairway 2 door is visible at 00:18 and 00:54. Its horizontal metal push bar and larger left latch-side housing replace an incorrect apartment-style lever inherited from shared door-generation code. Push-bar dimensions, height and projection remain estimates. This observation does not establish the hardware of apartment doors or uncaptured stairwell-side features.
+
+The shared-door audit also compared apartment 209 with 01:00: its right-edge lever extends left when viewed from the hallway, opposite to 210, with a separate round lock above it. That handing is retained and the upper lock included; shapes remain simplified. The Stairway 2 identification sign is on the left brick surround, not invented on its leaf. Other gray corridor doors still carry generic plan-context hardware proxies, whose individual handing and lock types have not been verified. They are not claimed to match source photographs.

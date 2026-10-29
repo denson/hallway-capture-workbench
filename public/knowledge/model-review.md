@@ -17,6 +17,8 @@ The required check is the built result against the evidence: inspect the running
 
 Check all affected features for a broad scene change; for a small revision, review that feature and its surroundings. The review should be proportional to the change, not a new engineering survey.
 
+When a mismatch comes from shared generation code or a reused asset, audit its other instances and their source views. Fixing one instance is not evidence that the others agree; shared code must allow real differences between the things it represents.
+
 ## What counts as verification
 
 Passing code tests, reading coordinates, or successfully opening a view URL does not establish visual consistency. Tests supplement the image comparison; they do not replace it. The user should not be the first visual QA pass.

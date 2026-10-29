@@ -128,7 +128,7 @@ export function buildHallway(textures=typeof document!=='undefined'){
   }
   function door(id:string,x:number,z:number,rotation:number,exit=false){
     const name=id==='210'?'Apartment 210 door panel · 79 in measured':exit?'Stair '+id+' exit door':'Apartment '+id+' door panel';
-    const e=id==='210'?evidence('Tape measurement + photos + user correction','Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','measured'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
+    const e=id==='210'?evidence('Tape measurement + photos + user correction','Panel height exactly 79 in (2.0066 m); width 34 in is provisional. Video 00:06–00:24 establishes the east wall of the Stair 2 branch; distance from stair door estimated.','measured'):exit?evidence('Video 00:18 / 00:54','Stairway 2 hallway-facing door has a horizontal push bar with a larger left latch-side housing. Door and hardware dimensions estimated.'):evidence('Blueprint + photo style','Door size inferred from 210; closed doors define model boundary.');
     const g=assembly('door-'+id,name,e,[x,0,z],rotation);
     const w=exit?.95:HALL.doorWidth,h=exit?2.18:HALL.doorHeight;
     box(g,[0,h/2,0],[w,h,.052],trim);
@@ -136,14 +136,24 @@ export function buildHallway(textures=typeof document!=='undefined'){
     if(id==='210'){
       const hardware=assembly('door-hardware-210','Apartment 210 · keyed lever and lock',evidence('Three hardware close-ups + video 00:06 / 00:09','Left latch edge and right-extending lever viewed from the hallway. Round stepped rose, flattened satin-metal blade, curved side profile and keyed insert observed. Setback about 65 mm and center height about 0.91 m inferred from the full-door image; not measured. Maker/model/part number unconfirmed.'),[w/2-.065,.91,-.026]);
       const form=buildDoor210Hardware();form.scale.x=-1;hardware.add(form);g.add(hardware);
-    }else{
-      cylinder(g,[-w*.34,.96,-.035],[-w*.34,.96,-.075],.034,steel);
-      cylinder(g,[-w*.34,.96,-.075],[-w*.13,.96,-.075],.012,steel);
+    }else if(!exit){
+      const rose=cylinder(g,[-w*.34,.96,-.035],[-w*.34,.96,-.075],.034,steel);rose.name='Generic apartment lever rose';
+      const lever=cylinder(g,[-w*.34,.96,-.075],[-w*.13,.96,-.075],.012,steel);lever.name='Generic apartment lever';
+      if(id==='209'){
+        const upper=cylinder(g,[-w*.34,1.15,-.029],[-w*.34,1.15,-.050],.025,steel);upper.name='209 upper round lock · observed at 01:00';
+        cylinder(g,[-w*.34,1.15,-.050],[-w*.34,1.15,-.052],.012,black);
+      }
+    }
+    if(exit){
+      // Hallway view at 00:54 shows a horizontal push bar, not a keyed lever.
+      const push=box(g,[0,1.02,-.105],[w-.19,.06,.045],steel);push.name='Stair 2 horizontal push bar';
+      const latch=box(g,[w/2-.085,1.02,-.071],[.11,.25,.09],steel);latch.name='Stair 2 push-bar latch housing';
+      const cap=box(g,[-w/2+.085,1.02,-.071],[.08,.12,.07],steel);cap.name='Stair 2 push-bar end support';
     }
     if(!exit)cylinder(g,[0,1.48,-.029],[0,1.48,-.043],.008,steel,12);
-    const hingeX=id==='210'?-w/2-.008:w/2+.008;
+    const hingeX=id==='210'||exit?-w/2-.008:w/2+.008;
     for(const y of [.22,h/2,h-.22])cylinder(g,[hingeX,y-.04,0],[hingeX,y+.04,0],.009,steel);
-    if(exit){box(g,[0,1.87,-.031],[w-.16,.42,.01],lamp);label(g,'STAIR '+id,[0,1.2,-.037],.4,.10,Math.PI);}
+    if(exit)box(g,[0,1.87,-.031],[w-.16,.42,.01],lamp);
     const frame=assembly('frame-'+id,'Door frame '+id,evidence('Photos','Steel jamb, stop and header profiles estimated.'),[x,0,z],rotation);
     for(const side of [-1,1])box(frame,[side*(w/2+.037),h/2,0],[.074,h+.09,.12],trim);
     box(frame,[0,h+.04,0],[w+.15,.08,.12],trim);
@@ -170,6 +180,10 @@ export function buildHallway(textures=typeof document!=='undefined'){
     box(end,[bx,.067+row*.137,HALL.branchEnd-.009],[.30,.125,.025],brick);
   }
   box(end,[(HALL.branchLeft+HALL.branchRight)/2,2.89,HALL.branchEnd+.08],[1.05,1.23,.16],paint);
+  const stairSignX=(HALL.branchLeft+HALL.branchRight)/2+.64;
+  box(end,[stairSignX,1.38,HALL.branchEnd-.027],[.24,.20,.008],white);
+  label(end,'STAIR',[stairSignX,1.42,HALL.branchEnd-.033],.20,.06,Math.PI,'#e8e8df','#263138');
+  label(end,'#2',[stairSignX,1.34,HALL.branchEnd-.033],.12,.06,Math.PI,'#e8e8df','#263138');
   door('2',(HALL.branchLeft+HALL.branchRight)/2,HALL.branchEnd,0,true);
   wall('wall-lobby-north','Elevator lobby · north side',HALL.length,HALL.width-.08,HALL.lobbyRight-HALL.length,'x');
   wall('wall-lobby-south','Elevator lobby · south side',HALL.lobbyLeft,HALL.lobbyEnd+.08,HALL.lobbyRight-HALL.lobbyLeft,'x',[{center:planX(924)-HALL.lobbyLeft,id:'214'}]);

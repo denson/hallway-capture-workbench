@@ -46,5 +46,14 @@ export function migrateHallwayLayout(layout: Layout): Layout {
     const latest=hallwayComponentRecord('door-210');
     result['door-210']={...door,record:{...door.record,notes:latest.notes,evidenceIds:[...new Set([...door.record.evidenceIds,...latest.evidenceIds])].slice(0,12)}};
   }
+  const previousDoorRecords={
+    'door-2':'Stair 2 sign and door/push hardware visible. Stairwell beyond is not modeled from this footage.',
+    'door-209':'209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated.',
+    'frame-209':'209 plaque readable at 01:00 near Stair 2 on the opposite wall from 210; longitudinal placement estimated.',
+  };
+  for(const [id,notes] of Object.entries(previousDoorRecords)){
+    const placement=result[id];
+    if(placement?.record?.notes===notes){const latest=hallwayComponentRecord(id);result[id]={...placement,record:{...placement.record,notes:latest.notes,evidenceIds:[...new Set([...placement.record.evidenceIds,...latest.evidenceIds])].slice(0,12)}};}
+  }
   return result;
 }
