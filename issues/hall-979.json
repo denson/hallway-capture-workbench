@@ -1,5 +1,5 @@
 {
-  "assignee": "",
+  "assignee": "denson",
   "blocked_by": [],
   "blocks": [],
   "created": "2026-10-29T21:49:11Z",
@@ -7,8 +7,8 @@
   "id": "hall-979",
   "labels": [],
   "priority": 2,
-  "status": "open",
+  "status": "in_progress",
   "title": "Make apartment 210 frame selectable and record measurement",
   "type": "task",
-  "updated_at": "2026-10-29T21:49:11Z"
+  "updated_at": "2026-10-29T21:49:14Z"
 }
