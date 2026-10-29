@@ -6,9 +6,15 @@
   "description": "Model the paper notices and clear tape visible above the Stairway 2 push bar. Review approved video frames and close-up photos; reproduce only readable wording and mark unreadable content unknown. Preserve surrounding door hardware and placement. Attach supporting evidence, compare running viewer to source, publish and verify.",
   "id": "hall-kr7",
   "labels": [],
+  "comments": [
+    {
+      "text": "Reviewed nearby video frames around 00:52-00:54 and existing approved photos. Added authored paper and text, clear tape, left NOTICE sheet and slightly lower right PLEASE DO NOT SLAM DOOR sheet. Body readable: smoking and vaping not permitted within 25 feet of entrances. Four tiny pictograms simplified. Same front context demonstrates solid leaf, upper closer and glass transom above the header; corrected prior invented leaf window. Compared local close and full door views with new source stills, kept push hardware/brick sign relationship. Screenshots outputs/stair-notices-local.png and outputs/stair-notices-full-local.png. Geometry/proportions remain estimates. 53 tests, six source tests, typecheck and build pass.",
+      "timestamp": "2026-10-29T19:58:05Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Add observed taped notices to Stairway 2 door",
   "type": "task",
-  "updated_at": "2026-10-29T19:52:51Z"
+  "updated_at": "2026-10-29T19:58:05Z"
 }
