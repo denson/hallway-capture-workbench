@@ -40,5 +40,11 @@ export function migrateHallwayLayout(layout: Layout): Layout {
       ...(['White wall cabinet beside 210','Fire extinguisher cabinet · location pending'].includes(cabinet.name??'')?{name:'Fire extinguisher cabinet'}:{}),
       ...(oldRecord&&((oldRecord.notes===oldNotes&&oldRecord.status==='unknown')||(oldRecord.notes===previousPhotoNotes&&oldRecord.status==='tentative'))&&!oldRecord.manufacturer&&!oldRecord.model&&!oldRecord.partNumber?{record:{...oldRecord,...hallwayComponentRecord('wall-cabinet'),workHeight:oldRecord.workHeight,heightStatus:oldRecord.heightStatus,heightSource:oldRecord.heightSource,accessNote:oldRecord.accessNote}}:{})};
   }
+  const door=result['door-210'];
+  const previousDoorNotes='Door height supplied by tape: 79 inches. Video places doorway on east wall near Stair 2. Distance along hallway estimated.';
+  if(door?.record?.notes===previousDoorNotes){
+    const latest=hallwayComponentRecord('door-210');
+    result['door-210']={...door,record:{...door.record,notes:latest.notes,evidenceIds:[...new Set([...door.record.evidenceIds,...latest.evidenceIds])].slice(0,12)}};
+  }
   return result;
 }

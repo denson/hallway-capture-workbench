@@ -1,4 +1,5 @@
 import {hallwayComponentRecord} from './hallway-component-defaults.ts';
+import {buildDoor210Hardware} from './door-hardware.ts';
 import * as T from 'three';
 import {HALL, DOOR_210, FLOOR_RECTS, planX, planZ, type Obstacle} from './hallway-data.ts';
 import type {EditableEntry} from './house-editor';
@@ -132,10 +133,16 @@ export function buildHallway(textures=typeof document!=='undefined'){
     const w=exit?.95:HALL.doorWidth,h=exit?2.18:HALL.doorHeight;
     box(g,[0,h/2,0],[w,h,.052],trim);
     box(g,[0,.145,-.029],[w-.08,.28,.008],steel);
-    cylinder(g,[-w*.34,.96,-.035],[-w*.34,.96,-.075],.034,steel);
-    cylinder(g,[-w*.34,.96,-.075],[-w*.13,.96,-.075],.012,steel);
+    if(id==='210'){
+      const hardware=assembly('door-hardware-210','Apartment 210 · keyed lever and lock',evidence('Three hardware close-ups + video 00:06 / 00:09','Left latch edge and right-extending lever viewed from the hallway. Round stepped rose, flattened satin-metal blade, curved side profile and keyed insert observed. Setback about 65 mm and center height about 0.91 m inferred from the full-door image; not measured. Maker/model/part number unconfirmed.'),[w/2-.065,.91,-.026]);
+      const form=buildDoor210Hardware();form.scale.x=-1;hardware.add(form);g.add(hardware);
+    }else{
+      cylinder(g,[-w*.34,.96,-.035],[-w*.34,.96,-.075],.034,steel);
+      cylinder(g,[-w*.34,.96,-.075],[-w*.13,.96,-.075],.012,steel);
+    }
     if(!exit)cylinder(g,[0,1.48,-.029],[0,1.48,-.043],.008,steel,12);
-    for(const y of [.22,h/2,h-.22])cylinder(g,[w/2+.008,y-.04,0],[w/2+.008,y+.04,0],.009,steel);
+    const hingeX=id==='210'?-w/2-.008:w/2+.008;
+    for(const y of [.22,h/2,h-.22])cylinder(g,[hingeX,y-.04,0],[hingeX,y+.04,0],.009,steel);
     if(exit){box(g,[0,1.87,-.031],[w-.16,.42,.01],lamp);label(g,'STAIR '+id,[0,1.2,-.037],.4,.10,Math.PI);}
     const frame=assembly('frame-'+id,'Door frame '+id,evidence('Photos','Steel jamb, stop and header profiles estimated.'),[x,0,z],rotation);
     for(const side of [-1,1])box(frame,[side*(w/2+.037),h/2,0],[.074,h+.09,.12],trim);

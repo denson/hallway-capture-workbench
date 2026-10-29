@@ -30,6 +30,8 @@ The user supplied a third-floor plan, confirmed its layout is very similar to th
 
 Apartment 210's door leaf is tape-measured at **79 inches / 2.0066 metres**. The prior 34-inch phone width and 11-foot-6-inch phone ceiling height remain approximate. Other fixture dimensions, longitudinal positions, pipe sizes and service heights are estimates. Displayed precision is not physical accuracy.
 
+Three hardware close-ups received on 2026-10-29 refined apartment 210's exterior keyed lever: round stepped rose, broad flattened satin-metal blade, curved side profile, projecting hub and two-lobed keyed insert outline. The hardware has its own clickable component, `door-hardware-210`, attached to `door-210`, with all three reference photos. Full-door video frames at 00:06 and 00:09 place it near the left latch edge, extending right when viewed from the hallway. An initial hardware draft had the side reversed; user feedback prompted that correction and a camera-focus fix for the nested component. The approximately 0.91 m center height and 65 mm edge setback are photo-derived estimates. The receipt/review date does not establish the camera capture date. Faint markings are not confidently transcribed; manufacturer, model, part number, exact finish and lock function remain unknown. The latch bolt/faceplate and interior hardware are not shown. Hardware dimensions remain estimates; no new hardware measurement was supplied. Earlier door evidence and the measured leaf height are retained. Other apartment doors have not been assigned this detailed hardware by assumption.
+
 Video IMG_3462.MOV lasts 328.275 seconds. Its plaques and route views support 210 on the cabinet wall near Stairway 2 and 209 on the opposite wall near the stair end. A mid-branch 208 door inherited from the third-floor drawing was removed: the corresponding video views show continuous wall. The actual second-floor entrance to 208 is not established here.
 
 The white cabinet contains a fire extinguisher. Its narrow left window, solid door, left metal pull, right hinge, red body, hose and ABC marking were refined from stills. The user confirmed its location was pretty correct. Exact product identity and dimensions remain unknown.
@@ -81,7 +83,8 @@ Every row is authored geometry. Dimensions enclose the full assembly and are est
 | Apartment 209 door panel | door-209 | unknown | 0.880 × 0.113 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-209&focus=1&roof=0) |
 | Door frame 209 | frame-209 | unknown | 1.014 × 0.120 × 2.132 | [Inspect](../#v=1&mode=edit&object=frame-209&focus=1&roof=0) |
 | Stair 2 branch · east wall | wall-branch-east | unknown | 0.176 × 11.022 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-branch-east&focus=1&roof=0) |
-| Apartment 210 door panel · 79 in measured | door-210 | unknown | 0.880 × 0.113 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-210&focus=1&roof=0) |
+| Apartment 210 door panel · 79 in measured | door-210 | unknown | 0.880 × 0.118 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-210&focus=1&roof=0) |
+| Apartment 210 · keyed lever and lock | door-hardware-210 | unknown | 0.169 × 0.066 × 0.076 | [Inspect](../#v=1&mode=edit&object=door-hardware-210&focus=1&roof=0) |
 | Door frame 210 | frame-210 | unknown | 1.014 × 0.120 × 2.132 | [Inspect](../#v=1&mode=edit&object=frame-210&focus=1&roof=0) |
 | Stair 2 end · brick surround | wall-stair2 | unknown | 1.590 × 0.181 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-stair2&focus=1&roof=0) |
 | Stair 2 exit door | door-2 | unknown | 0.967 × 0.113 × 2.180 | [Inspect](../#v=1&mode=edit&object=door-2&focus=1&roof=0) |

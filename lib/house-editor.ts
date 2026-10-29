@@ -85,7 +85,7 @@ export function createHouseEditor(scene:T.Scene,camera:T.Camera,canvas:HTMLCanva
     pointerStart=null;const rect=canvas.getBoundingClientRect();raycaster.setFromCamera(new T.Vector2((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1),camera);
     const hits=raycaster.intersectObjects(entries.map(e=>e.object),true);
     const hit=hits.find(h=>{let o:T.Object3D|null=h.object;while(o){if(!o.visible)return false;o=o.parent;}return true;});
-    if(hit){const e=entries.find(entry=>{let o:T.Object3D|null=hit.object;while(o){if(o===entry.object)return true;o=o.parent;}return false;});if(e)select(e.id);}
+    if(hit){let node:T.Object3D|null=hit.object;while(node){const entry=entries.find(e=>e.object===node);if(entry){select(entry.id);break;}node=node.parent;}}
   };
   canvas.addEventListener('pointerdown',down,true);canvas.addEventListener('pointerup',up);
   const undo=()=>{const next=history.undo(read());if(next)apply(next);};const redo=()=>{const next=history.redo(read());if(next)apply(next);};
@@ -107,7 +107,7 @@ export function createHouseEditor(scene:T.Scene,camera:T.Camera,canvas:HTMLCanva
   }
   emit();
   return{
-    focusSelected:()=>{if(!selected)return;const b=new T.Box3().setFromObject(selected.object),center=b.getCenter(new T.Vector3()),size=b.getSize(new T.Vector3()),distance=Math.max(.6,size.length()*1.6),offset=new T.Vector3(distance*.45,0,-distance).applyQuaternion(selected.object.quaternion);offset.y=distance*.35;orbit.target.copy(center);camera.position.copy(center).add(offset);measurements=false;orbit.update();update();emit();},
+    focusSelected:()=>{if(!selected)return;const b=new T.Box3().setFromObject(selected.object),center=b.getCenter(new T.Vector3()),size=b.getSize(new T.Vector3()),distance=Math.max(.6,size.length()*1.6),offset=new T.Vector3(distance*.45,0,-distance).applyQuaternion(selected.object.getWorldQuaternion(new T.Quaternion()));offset.y=distance*.35;orbit.target.copy(center);camera.position.copy(center).add(offset);measurements=false;orbit.update();update();emit();},
     setRecord:patch=>{if(!selected)return;const record=parseComponentRecord({...read()[selected.id].record,...patch});transaction(()=>{selected!.object.userData.componentRecord=record;});},
     exportRecords:()=>JSON.stringify({format:'hallway-component-inventory',version:1,units:'metres',source:'IMG_3462.MOV',objects:entries.filter(e=>!e.deleted).map(e=>({id:e.id,name:e.name,dimensions:measurementSize(e.object),evidence:e.object.userData.evidence,coverage:e.object.userData.coverage,record:read()[e.id].record}))},null,2),
     projectState:()=>({layout:JSON.stringify({version:1,objects:read()}),catalog:JSON.stringify(customAssets),designs:structuredClone(designs())}),

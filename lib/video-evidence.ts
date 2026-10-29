@@ -1,4 +1,4 @@
-/** Local-only references. Images remain in ignored references/, never public/. */
+/** Approved reference IDs; selected metadata-free stills are served under evidence/. */
 export const videoEvidence = [
   {id:'v006',seconds:6,title:'Apartment 210 door'},
   {id:'v009',seconds:9,title:'Apartment 210 door and plaque context'},
@@ -27,6 +27,9 @@ export const videoEvidence = [
 export const evidenceTime=(seconds:number)=>`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;
 export const findVideoEvidence=(id:string)=>videoEvidence.find(e=>e.id===id);
 export const photoEvidence = [
+  {id:'door210-lock-closeup',title:'Apartment 210 · keyed insert close-up',file:'door210-hardware/keyed-insert.jpg'},
+  {id:'door210-lever-front',title:'Apartment 210 · lever and round rose',file:'door210-hardware/lever-front.jpg'},
+  {id:'door210-lever-side',title:'Apartment 210 · lever projection and side profile',file:'door210-hardware/lever-side.jpg'},
   {id:'extinguisher-photo-1',title:'Fire extinguisher cabinet · front',file:'equipment-fire-extinguisher/photo-1.jpg'},
   {id:'extinguisher-photo-2',title:'Fire extinguisher cabinet · side and ABC marking',file:'equipment-fire-extinguisher/photo-2.jpg'},
   {id:'stair2-equipment-context',title:'Cabinet, pull station, heater and upper alarm near Stair 2',file:'equipment-fire-extinguisher/context.jpg'},
