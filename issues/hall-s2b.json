@@ -10,11 +10,15 @@
     {
       "text": "Compared local close frontal model with outlet-face-closeup: both T openings remain on view-left, vertical slots on right, grounds below; stacked face silhouettes, central screw and beveled plate included. Screenshot outputs/outlet-close-local.png. Clicking outlet opens correct record with three new evidence references. No relocation or size measurement supplied; existing opposite-wall placement retained. 51 tests and six source tests pass, build passes.",
       "timestamp": "2026-10-29T19:36:28Z"
+    },
+    {
+      "text": "Wider comparison against outlet-wall-context/outlet-wall-wide retains orange wall, black baseboard and floor relationship, without reinterpreting height as a measurement. Screenshot outputs/outlet-context-local.png. Orientation/selection regression passes; typecheck, build and six source tests pass. Metadata check: all three selected JPEGs have no EXIF. Staged diff reviewed; public scan running before commit.",
+      "timestamp": "2026-10-29T19:37:40Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Refine hallway duplex outlet from three detail photos",
   "type": "task",
-  "updated_at": "2026-10-29T19:36:28Z"
+  "updated_at": "2026-10-29T19:37:40Z"
 }
