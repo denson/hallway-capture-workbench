@@ -10,8 +10,8 @@ ordinary positioning checks; URL state now supplies camera and selection.
 
 Base URL: https://denson.github.io/hallway-capture-workbench/
 
-1. `#v=1&mode=walk&location=stair2`
-   “We’re starting with our back to Stairway 2, facing the T. The blueprint supplied
+1. `#v=1&mode=walk&x=9.375&y=1.65&z=0.941&yaw=174.8&pitch=-5.4&roof=1&labels=1&measurements=0`
+   “We’re starting at the T, looking back along the captured branch toward Stairway 2. The blueprint supplied
    the initial footprint; the video tells us which second-floor details to retain.”
 2. `#v=1&mode=walk&location=stair2&look=wall-cabinet`
    “Here is the fire extinguisher cabinet. Your close-ups refined its narrow window,

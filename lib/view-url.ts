@@ -4,6 +4,8 @@ type Point=[number,number,number];
 export type ViewSnapshot={mode:ViewMode;position:Point;target:Point;yaw:number;pitch:number;roof:boolean;labels:boolean;time:number;measurements?:boolean;object?:string};
 /** Angles in links are degrees; positions and targets are local model metres. */
 export type ViewNavigation=Partial<Omit<ViewSnapshot,'target'>> & {target?:Point;location?:string;focus?:boolean;look?:string};
+/** User-selected opening view at the T, looking back along the captured branch. */
+export const DEFAULT_OPENING_VIEW:ViewSnapshot={mode:'walk',position:[9.375,1.65,.941],target:[9.28,1.56,1.93],yaw:174.8,pitch:-5.4,roof:true,labels:true,time:48,measurements:false};
 const modes=['walk','orbit','plan','edit'];
 const keys=['v','mode','x','y','z','yaw','pitch','tx','ty','tz','roof','labels','time','object','location','focus','look','measurements'];
 export function readViewHash(hash:string):ViewNavigation|null{
@@ -41,7 +43,7 @@ export function writeViewHash(s:ViewSnapshot):string{
 export function syncViewUrl(getView:()=>ViewSnapshot,apply:(nav:ViewNavigation)=>void,env:{location:{hash:string;href:string};history:{state:unknown;replaceState:(state:unknown,unused:string,url:string)=>void};addEventListener:(name:string,fn:()=>void)=>void;removeEventListener:(name:string,fn:()=>void)=>void;setInterval:(fn:()=>void,ms:number)=>number;clearInterval:(id:number)=>void},onUrl:(url:string)=>void=()=>{}){
   const restore=()=>{const nav=readViewHash(env.location.hash);if(nav)apply(nav);};
   const publish=()=>{const hash=writeViewHash(getView());if(hash!==env.location.hash)env.history.replaceState(env.history.state,'',env.location.href.split('#')[0]+hash);onUrl(env.location.href);};
-  restore();publish();
+  const initial=readViewHash(env.location.hash);apply(initial??DEFAULT_OPENING_VIEW);publish();
   env.addEventListener('hashchange',restore);env.addEventListener('popstate',restore);
   const timer=env.setInterval(publish,200);
   return ()=>{env.clearInterval(timer);env.removeEventListener('hashchange',restore);env.removeEventListener('popstate',restore);};

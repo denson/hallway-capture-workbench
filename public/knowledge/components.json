@@ -930,8 +930,8 @@
       "name": "Stair 2 end · brick surround",
       "dimensionsMetres": {
         "width": 1.590000002384187,
-        "depth": 0.19099999840184978,
-        "height": 3.5050000572204594
+        "depth": 0.2099999989569188,
+        "height": 3.5050000536441805
       },
       "evidence": {
         "basis": "Exit photo + plan",
@@ -973,8 +973,11 @@
         "model": "",
         "partNumber": "",
         "status": "unknown",
-        "notes": "Hallway-facing Stairway 2 exit device (push bar), refined from four detail photos received 2026-10-29. Front view establishes the tall rounded latch case on hallway-view left, a broad press pad over roughly the left two-thirds of the horizontal rail, and a shorter fixed cover toward the right hinge end. Side views establish the curved projecting latch case, frame strike plate, backing rail, raised press pad, seam, small fixed-cover opening and compact right end cap. Replaces the earlier simplified full-width bar and block housings. Provisional dimensions: about 0.90 m overall width, 1.02 m center height and up to 0.11 m projection from the leaf; none tape-measured. No readable maker or model marking in these photos; manufacturer/model/part number and internal operation remain unknown. This is a visual reconstruction, not a functional or compliance assessment. Stairwell beyond remains unmodeled.",
+        "notes": "Hallway-facing Stairway 2 exit device (push bar), refined from four detail photos received 2026-10-29. Front view establishes the tall rounded latch case on hallway-view left, a broad press pad over roughly the left two-thirds of the horizontal rail, and a shorter fixed cover toward the right hinge end. Side views establish the curved projecting latch case, frame strike plate, backing rail, raised press pad, seam, small fixed-cover opening and compact right end cap. Replaces the earlier simplified full-width bar and block housings. Provisional dimensions: about 0.90 m overall width, 1.02 m center height and up to 0.11 m projection from the leaf; none tape-measured. No readable maker or model marking in these photos; manufacturer/model/part number and internal operation remain unknown. This is a visual reconstruction, not a functional or compliance assessment. Stairwell beyond remains unmodeled. Paper notices above the bar are now included with clear tape: a smoking/vaping NOTICE on view-left and PLEASE / DO NOT / SLAM DOOR on view-right, slightly lower. Readable notice body: SMOKING AND VAPING IS NOT PERMITTED WITHIN 25 FEET OF ALL ENTRANCES. Four prohibition symbols are simplified; their tiny pictograms are unresolved. Context frames show a solid door leaf, an upper closer and a transom above the header; the earlier invented leaf window has been corrected. Notice dimensions, placement and closer/transom sizes remain estimated.",
         "evidenceIds": [
+          "stair2-paper-context",
+          "stair2-paper-notice",
+          "stair2-paper-slam",
           "stair2-exit-front",
           "stair2-exit-latch-side",
           "stair2-exit-end-side",
@@ -2410,6 +2413,21 @@
       "title": "Opposite corridor overview",
       "videoSeconds": 324,
       "image": "../evidence/v324.jpg"
+    },
+    {
+      "id": "stair2-paper-context",
+      "title": "Stairway 2 · paper notices and transom context, video around 00:52",
+      "image": "../evidence/stair2-paper-context.jpg"
+    },
+    {
+      "id": "stair2-paper-notice",
+      "title": "Stairway 2 · smoking and vaping notice, video around 00:53",
+      "image": "../evidence/stair2-paper-notice.jpg"
+    },
+    {
+      "id": "stair2-paper-slam",
+      "title": "Stairway 2 · please do not slam door notice, video around 00:54",
+      "image": "../evidence/stair2-paper-slam.jpg"
     },
     {
       "id": "outlet-wall-context",

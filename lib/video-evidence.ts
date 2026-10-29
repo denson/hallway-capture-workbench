@@ -27,6 +27,9 @@ export const videoEvidence = [
 export const evidenceTime=(seconds:number)=>`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;
 export const findVideoEvidence=(id:string)=>videoEvidence.find(e=>e.id===id);
 export const photoEvidence = [
+  {id:'stair2-paper-context',title:'Stairway 2 · paper notices and transom context, video around 00:52',file:'stair2-notices/stair2-paper-context.jpg'},
+  {id:'stair2-paper-notice',title:'Stairway 2 · smoking and vaping notice, video around 00:53',file:'stair2-notices/stair2-paper-notice.jpg'},
+  {id:'stair2-paper-slam',title:'Stairway 2 · please do not slam door notice, video around 00:54',file:'stair2-notices/stair2-paper-slam.jpg'},
   {id:'outlet-wall-context',title:'Hallway outlet · wall plate and baseboard context',file:'hallway-outlet/outlet-wall-context.jpg'},
   {id:'outlet-face-closeup',title:'Hallway outlet · duplex face and T slots',file:'hallway-outlet/outlet-face-closeup.jpg'},
   {id:'outlet-wall-wide',title:'Hallway outlet · wider orange-wall view',file:'hallway-outlet/outlet-wall-wide.jpg'},

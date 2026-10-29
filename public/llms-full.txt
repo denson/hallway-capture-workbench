@@ -55,6 +55,8 @@ Four Stairway 2 exit-device detail photos received on 2026-10-29 refine the earl
 
 Three outlet photographs received 2026-10-29 refine `outlet-opposite-210`: white beveled plate, two stacked clipped-round faces, view-left T slots, view-right vertical slots, ground openings below and center screw. All three references are attached. The existing approximate opposite-wall placement and 0.34 m center height are retained; the new photos do not independently locate it along the hallway. Plate dimensions around 71 by 115 mm remain estimates. Manufacturer, model, electrical rating, circuit, wiring and internal condition are not established by these exterior views. No other outlet instances have been assigned these details by assumption.
 
+Stairway 2 paper signs were added after reviewing video views around 00:52–00:54. The left sheet has a NOTICE heading and legible smoking/vaping restriction; the slightly lower right sheet reads PLEASE / DO NOT / SLAM DOOR. Clear tape edges are modeled. Four tiny prohibition pictograms remain simplified. The same context establishes a solid leaf, an upper closer and a separate transom above the header, correcting the earlier window incorrectly placed in the leaf. Text is recreated on authored paper geometry, rather than using a photo as the door facade. Dimensions and placement remain estimates.
+
 
 ---
 
@@ -95,7 +97,7 @@ Every row is authored geometry. Dimensions enclose the full assembly and are est
 | Apartment 210 door panel · 79 in measured | door-210 | unknown | 0.880 × 0.118 × 2.007 | [Inspect](../#v=1&mode=edit&object=door-210&focus=1&roof=0) |
 | Apartment 210 · keyed lever and lock | door-hardware-210 | unknown | 0.169 × 0.066 × 0.076 | [Inspect](../#v=1&mode=edit&object=door-hardware-210&focus=1&roof=0) |
 | Door frame 210 | frame-210 | unknown | 1.014 × 0.120 × 2.132 | [Inspect](../#v=1&mode=edit&object=frame-210&focus=1&roof=0) |
-| Stair 2 end · brick surround | wall-stair2 | unknown | 1.590 × 0.191 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-stair2&focus=1&roof=0) |
+| Stair 2 end · brick surround | wall-stair2 | unknown | 1.590 × 0.210 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-stair2&focus=1&roof=0) |
 | Stair 2 exit door | door-2 | unknown | 0.995 × 0.161 × 2.180 | [Inspect](../#v=1&mode=edit&object=door-2&focus=1&roof=0) |
 | Door frame 2 | frame-2 | unknown | 1.100 × 0.120 × 2.305 | [Inspect](../#v=1&mode=edit&object=frame-2&focus=1&roof=0) |
 | Elevator lobby · north side | wall-lobby-north | unknown | 6.242 × 0.176 × 3.505 | [Inspect](../#v=1&mode=edit&object=wall-lobby-north&focus=1&roof=0) |
@@ -215,6 +217,8 @@ Inspect the existing capture before attributing an error to video movement or as
 
 # Navigation and URL controls
 
+A fresh visit and Reset view open in Walk inside at the user-selected T-junction position, looking back along the captured branch toward Stairway 2. Ceiling/full walls and labels are on; measurement guides are off. An explicit camera URL still takes precedence. The separate Stairway 2 destination remains available.
+
 Walk inside: drag to look, including upward; double-click visible floor to glide there. WASD also moves; arrow keys move/turn. Movement respects modeled walls. Move closer to a turn before selecting floor around the corner. Orbit, Floor plan and Edit retain the editor controls.
 
 The address bar updates approximately every 200 ms. **Copy view link** copies the camera view. It includes mode; local model position x/y/z in metres; yaw/pitch in degrees; the orbit target; ceiling/full-wall state; labels; lighting; measurement guides; and selected object. Back/Forward restores navigation checkpoints. Continuous movement replaces the current history entry.
@@ -256,8 +260,8 @@ ordinary positioning checks; URL state now supplies camera and selection.
 
 Base URL: https://denson.github.io/hallway-capture-workbench/
 
-1. `#v=1&mode=walk&location=stair2`
-   “We’re starting with our back to Stairway 2, facing the T. The blueprint supplied
+1. `#v=1&mode=walk&x=9.375&y=1.65&z=0.941&yaw=174.8&pitch=-5.4&roof=1&labels=1&measurements=0`
+   “We’re starting at the T, looking back along the captured branch toward Stairway 2. The blueprint supplied
    the initial footprint; the video tells us which second-floor details to retain.”
 2. `#v=1&mode=walk&location=stair2&look=wall-cabinet`
    “Here is the fire extinguisher cabinet. Your close-ups refined its narrow window,

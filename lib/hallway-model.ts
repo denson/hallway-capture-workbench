@@ -2,6 +2,7 @@ import {hallwayComponentRecord} from './hallway-component-defaults.ts';
 import {buildDoor210Hardware} from './door-hardware.ts';
 import {buildStairExitDevice} from './stair-exit-device.ts';
 import {buildDuplexOutlet} from './duplex-outlet.ts';
+import {buildStairDoorNotices} from './stair-door-notices.ts';
 import * as T from 'three';
 import {HALL, DOOR_210, FLOOR_RECTS, planX, planZ, type Obstacle} from './hallway-data.ts';
 import type {EditableEntry} from './house-editor';
@@ -148,11 +149,14 @@ export function buildHallway(textures=typeof document!=='undefined'){
     }
     if(exit){
       const device=buildStairExitDevice(w);device.position.y=1.02;g.add(device);
+      g.add(buildStairDoorNotices(textures,resources));
+      const closer=box(g,[-.08,2.04,-.063],[.30,.065,.067],steel);closer.name='Stair 2 upper door closer';
+      cylinder(g,[.11,2.125,-.05],[-.16,2.13,-.075],.007,steel);
+      cylinder(g,[-.16,2.13,-.075],[-.27,2.16,-.04],.007,steel);
     }
     if(!exit)cylinder(g,[0,1.48,-.029],[0,1.48,-.043],.008,steel,12);
     const hingeX=id==='210'||exit?-w/2-.008:w/2+.008;
     for(const y of [.22,h/2,h-.22])cylinder(g,[hingeX,y-.04,0],[hingeX,y+.04,0],.009,steel);
-    if(exit)box(g,[0,1.87,-.031],[w-.16,.42,.01],lamp);
     const frame=assembly('frame-'+id,'Door frame '+id,evidence('Photos','Steel jamb, stop and header profiles estimated.'),[x,0,z],rotation);
     for(const side of [-1,1])box(frame,[side*(w/2+.037),h/2,0],[.074,h+.09,.12],trim);
     box(frame,[0,h+.04,0],[w+.15,.08,.12],trim);
@@ -178,7 +182,11 @@ export function buildHallway(textures=typeof document!=='undefined'){
     const bx=(HALL.branchLeft+HALL.branchRight)/2+side*.64;
     box(end,[bx,.067+row*.137,HALL.branchEnd-.009],[.30,.125,.025],brick);
   }
-  box(end,[(HALL.branchLeft+HALL.branchRight)/2,2.89,HALL.branchEnd+.08],[1.05,1.23,.16],paint);
+  box(end,[(HALL.branchLeft+HALL.branchRight)/2,3.105,HALL.branchEnd+.08],[1.05,.80,.16],paint);
+  const transomX=(HALL.branchLeft+HALL.branchRight)/2;
+  const transom=box(end,[transomX,2.48,HALL.branchEnd+.025],[.95,.44,.025],lamp);transom.name='Stair 2 transom above solid door leaf';
+  for(const side of [-1,1])box(end,[transomX+side*.51,2.48,HALL.branchEnd],[.07,.51,.10],trim);
+  box(end,[transomX,2.735,HALL.branchEnd],[1.09,.07,.10],trim);
   const stairSignX=(HALL.branchLeft+HALL.branchRight)/2+.64;
   box(end,[stairSignX,1.38,HALL.branchEnd-.027],[.24,.20,.008],white);
   label(end,'STAIR',[stairSignX,1.42,HALL.branchEnd-.033],.20,.06,Math.PI,'#e8e8df','#263138');

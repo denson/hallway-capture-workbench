@@ -23,9 +23,9 @@ import type { EditorState } from '@/lib/house-editor';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { Slider } from '@/components/ui/slider';
-import { rooms, HALL, WALK_START, FLOOR_RECTS, hasDetailedCoverage, refinementTasks, type ViewMode } from '@/lib/house-data';
+import { rooms, HALL, FLOOR_RECTS, hasDetailedCoverage, refinementTasks, type ViewMode } from '@/lib/house-data';
 import type { HouseApi } from '@/lib/house-scene';
-import {readViewHash,syncViewUrl,writeViewHash} from '@/lib/view-url';
+import {DEFAULT_OPENING_VIEW,readViewHash,syncViewUrl,writeViewHash} from '@/lib/view-url';
 export default function Home() {
   const projectInput=useRef<HTMLInputElement>(null);
   const host = useRef<HTMLDivElement>(null),
@@ -43,8 +43,8 @@ export default function Home() {
     [notice, setNotice] = useState(''),
     [busy, setBusy] = useState(false),
     [sidebar, setSidebar] = useState(true),
-    [active, setActive] = useState('stair2'),
-    [position, setPosition] = useState<{x:number;z:number;yaw:number}>({ x: WALK_START.x, z: WALK_START.z, yaw: WALK_START.yaw });
+    [active, setActive] = useState('junction'),
+    [position, setPosition] = useState<{x:number;z:number;yaw:number}>({ x: DEFAULT_OPENING_VIEW.position[0], z: DEFAULT_OPENING_VIEW.position[2], yaw: DEFAULT_OPENING_VIEW.yaw*Math.PI/180 });
   useEffect(() => {
     if (window.innerWidth < 641) setSidebar(false);
     let cancelled = false;
@@ -60,7 +60,7 @@ export default function Home() {
             setNotice,
             ()=>setInspectionOpen(true),
           );
-          api.current.setMode(mode);api.current.setRoof(roof);api.current.setLabels(labels);api.current.setTime(time);
+          api.current.applyView(DEFAULT_OPENING_VIEW);
           setReady(true);
           setSceneVersion(v=>v+1);
         } catch (e) {
@@ -286,10 +286,9 @@ export default function Home() {
     setMode(data.view.mode);setRoof(data.view.roof);setLabels(data.view.labels);setTime(data.view.time);setActive('');setReady(true);setSceneVersion(v=>v+1);setSidebar(true);setNotice('Project opened, including its catalog and saved designs.');
   }catch(e){setNotice('Could not open project: '+(e as Error).message);}finally{setBusy(false);if(projectInput.current)projectInput.current.value='';}}
   function reset() {
-    setMode('orbit');
-    setRoof(false);
-    setActive('');
-    api.current?.setMode('orbit');
+    api.current?.applyView(DEFAULT_OPENING_VIEW);
+    setMode('walk');setRoof(true);setLabels(true);setTime(DEFAULT_OPENING_VIEW.time);
+    setActive('junction');setInspectionOpen(false);
   }
   return (
     <main className="studio">

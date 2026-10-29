@@ -75,3 +75,14 @@ test('stair detail evidence updates old defaults without replacing custom observ
   assert.deepEqual(migrateHallwayLayout({'door-2':custom})['door-2'],custom);
   assert.deepEqual(migrateHallwayLayout({'door-2':updated})['door-2'],updated);
 });
+
+test('stair notice arrangement stays on the solid leaf with the transom above the header',()=>{
+  const b=buildHallway(false),door=b.entries.find(e=>e.id==='door-2').object;
+  const left=door.getObjectByName('Taped smoking and vaping notice'),right=door.getObjectByName('Taped please do not slam door notice');
+  assert.ok(left.position.x>right.position.x,'local +X is hallway-view left');
+  assert.ok(left.position.y>right.position.y,'right sheet is slightly lower');
+  const transom=b.model.getObjectByName('Stair 2 transom above solid door leaf');
+  assert.ok(new T.Box3().setFromObject(transom).min.y>2.18,'glass sits above, not in, the leaf');
+  assert.ok(door.getObjectByName('Stair 2 upper door closer'));
+  assert.ok(door.userData.componentRecord.evidenceIds.includes('stair2-paper-context'));
+});

@@ -1,5 +1,7 @@
 # Navigation and URL controls
 
+A fresh visit and Reset view open in Walk inside at the user-selected T-junction position, looking back along the captured branch toward Stairway 2. Ceiling/full walls and labels are on; measurement guides are off. An explicit camera URL still takes precedence. The separate Stairway 2 destination remains available.
+
 Walk inside: drag to look, including upward; double-click visible floor to glide there. WASD also moves; arrow keys move/turn. Movement respects modeled walls. Move closer to a turn before selecting floor around the corner. Orbit, Floor plan and Edit retain the editor controls.
 
 The address bar updates approximately every 200 ms. **Copy view link** copies the camera view. It includes mode; local model position x/y/z in metres; yaw/pitch in degrees; the orbit target; ceiling/full-wall state; labels; lighting; measurement guides; and selected object. Back/Forward restores navigation checkpoints. Continuous movement replaces the current history entry.

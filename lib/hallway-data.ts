@@ -31,7 +31,7 @@ export const rooms = [
   {id:'door210',name:'Outside apartment 210',short:'210',x:WALK_START.x,z:DOOR_210.z,yaw:-Math.PI/2,rect:[HALL.branchLeft,DOOR_210.z-.7,HALL.branchRight-HALL.branchLeft,1.4]},
   {id:'junction',name:'Main corridor junction',short:'Junction',x:(HALL.branchLeft+HALL.branchRight)/2,z:HALL.width/2,yaw:Math.PI,rect:[HALL.branchLeft,0,HALL.branchRight-HALL.branchLeft,HALL.width]},
   {id:'services',name:'Exposed services bay',short:'Services',x:(HALL.branchLeft+HALL.branchRight)/2,z:4.1,yaw:Math.PI,pitch:.9,rect:[HALL.branchLeft,2,HALL.branchRight-HALL.branchLeft,3]},
-  {id:'stair2',name:'Back to Stair 2 · start',short:'Stair 2',...WALK_START,rect:[HALL.branchLeft,8,HALL.branchRight-HALL.branchLeft,HALL.branchEnd-8]},
+  {id:'stair2',name:'Stairway 2 · face junction',short:'Stair 2',...WALK_START,rect:[HALL.branchLeft,8,HALL.branchRight-HALL.branchLeft,HALL.branchEnd-8]},
   {id:'west',name:'West corridor · overview only',short:'Details not captured',x:3.8,z:HALL.width/2,yaw:-Math.PI/2,rect:[0,0,HALL.branchLeft,HALL.width]},
   {id:'east',name:'East corridor · overview only',short:'Details not captured',x:22,z:HALL.width/2,yaw:-Math.PI/2,rect:[15,0,12,HALL.width]},
   {id:'stair1',name:'Elevator / Stair 1 lobby · plan only',short:'Details not captured',x:34.5,z:2.25,yaw:Math.PI/2,rect:[HALL.lobbyLeft,HALL.width,HALL.lobbyRight-HALL.lobbyLeft,HALL.lobbyEnd-HALL.width]},

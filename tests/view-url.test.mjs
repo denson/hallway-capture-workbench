@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readViewHash,writeViewHash,syncViewUrl} from '../lib/view-url.ts';
+import {DEFAULT_OPENING_VIEW,readViewHash,writeViewHash,syncViewUrl} from '../lib/view-url.ts';
 const start={mode:'walk',position:[9.339072,1.65,12.030912],target:[17,0,5],yaw:0,pitch:2.8648,roof:true,labels:true,time:48};
 
 test('walk camera links round-trip positions and direction within displayed precision',()=>{
@@ -34,4 +34,15 @@ test('continuous movement replaces URLs, inbound history restores, and teardown 
  current.hash='#v=1&mode=walk&location=door210&yaw=-90';listeners.get('popstate')();assert.equal(state.yaw,-90);assert.equal(state.location,'door210');
  current.hash='#v=1&mode=walk&pitch=NaN';const before=calls;listeners.get('hashchange')();assert.equal(calls,before);
  cleanup();assert.equal(listeners.size,0);assert.equal(cleared,true);
+});
+
+test('an unlinked visit uses the chosen opening view while explicit links take precedence',()=>{
+ for(const hash of ['', '#v=1&mode=walk&location=stair2&yaw=0']){
+  const location=new URL('https://example.test/hallway/'+hash);let applied;
+  const env={location,history:{state:null,replaceState:(_,__,url)=>{location.href=url;}},addEventListener:()=>{},removeEventListener:()=>{},setInterval:()=>1,clearInterval:()=>{}};
+  const cleanup=syncViewUrl(()=>({...DEFAULT_OPENING_VIEW,...applied}),nav=>{applied=nav;},env);
+  if(hash) {assert.equal(applied.location,'stair2');assert.equal(applied.yaw,0);}
+  else {assert.equal(applied.mode,'walk');assert.deepEqual(applied.position,[9.375,1.65,.941]);assert.equal(applied.yaw,174.8);assert.equal(applied.measurements,false);}
+  cleanup();
+ }
 });

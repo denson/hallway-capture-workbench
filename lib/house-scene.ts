@@ -9,7 +9,7 @@ import { migrateHallwayLayout } from './hallway-layout-migration';
 import { buildHallway } from './hallway-model';
 import { canWalkSegment, findWalkDestination, pickWalkFloor, type FloorPoint } from './walk-navigation';
 import {pickInspectable} from './object-inspection';
-import type {ViewSnapshot,ViewNavigation} from './view-url';
+import {DEFAULT_OPENING_VIEW,type ViewSnapshot,type ViewNavigation} from './view-url';
 export type HouseApi = {
   editor: EditorApi; saveProject:(view:ProjectFile['view'])=>Promise<void>;
   setMode: (mode: ViewMode) => void; setRoof: (value: boolean) => void;
@@ -109,7 +109,7 @@ export function createHouse(host:HTMLElement,onPosition:(x:number,z:number,yaw:n
   }
   const setMode=(value:ViewMode)=>{
     mode=value;clear();hideHover();editor.enable(value==='edit');orbit.enabled=value!=='walk';canvas.style.cursor=value==='walk'?'grab':'default';
-    if(value==='walk'){camera.position.copy(freeWalkPosition(WALK_START.x,WALK_START.z));yaw=WALK_START.yaw;pitch=WALK_START.pitch;camera.rotation.set(0,0,0,'YXZ');canvas.focus();}
+    if(value==='walk'){camera.position.copy(freeWalkPosition(DEFAULT_OPENING_VIEW.position[0],DEFAULT_OPENING_VIEW.position[2]));yaw=T.MathUtils.degToRad(DEFAULT_OPENING_VIEW.yaw);pitch=T.MathUtils.degToRad(DEFAULT_OPENING_VIEW.pitch);camera.rotation.set(pitch,yaw,0,'YXZ');canvas.focus();}
     else{camera.up.set(0,1,0);const fit=Math.max(1,1.05/camera.aspect);camera.position.set(...(value==='plan'?[17,34*fit,5.01]:[17+14*fit,25*fit,5+27*fit]) as [number,number,number]);orbit.maxDistance=Math.max(65,65*fit);orbit.target.set(17,0,5);orbit.enableRotate=value!=='plan';orbit.update();}
   };
   const goTo=(id:string)=>{const room=rooms.find(r=>r.id===id);if(!room)throw new Error('Unknown room');clear();if(mode==='walk'){camera.position.copy(freeWalkPosition(room.x,room.z));yaw=room.yaw;pitch='pitch' in room?room.pitch:0;}else{orbit.target.set(room.x,0,room.z);camera.position.set(room.x+(mode==='plan'?0:9),mode==='plan'?26:13,room.z+(mode==='plan'?.01:12));orbit.update();}};
