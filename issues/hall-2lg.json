@@ -6,9 +6,15 @@
   "description": "Prevent recurrence of the reversed apartment 210 handle and backside camera errors. Add a narrowly scoped repo-local skill discoverable through AGENTS.md: register each changed component to context and detail evidence before coding; state a real-world viewing direction; verify handedness, host attachment, projection and estimated anchors; compare local renders against reference images before publishing; retain review evidence and do not call user feedback first-pass QA. Preserve lightweight capture and avoid exhaustive measurements. Extract existing world-space component focus into a testable helper and add meaningful nested-parent/occlusion regression tests. Validate skill, run required project checks, publish public workflow knowledge, verify deployment and close with review instructions.",
   "id": "hall-2lg",
   "labels": [],
+  "comments": [
+    {
+      "text": "Review target: standing in the hallway facing 210, handle at left latch edge extending right. Context v006/v009; detail door210-lever-front/side. Local exposed face is -Z, left latch edge is +X, lever extends -X; world orientation includes door parent. Current ticket changes focus implementation and review process, not authored geometry. Existing numeric dimensions remain provisional. Skill validator and 47 JS tests pass, including rotated dirty-parent focus/visibility checks.",
+      "timestamp": "2026-10-29T07:42:11Z"
+    }
+  ],
   "priority": 1,
   "status": "in_progress",
   "title": "Require evidence-grounded geometry review and protect nested camera focus",
   "type": "task",
-  "updated_at": "2026-10-29T07:39:34Z"
+  "updated_at": "2026-10-29T07:42:11Z"
 }
