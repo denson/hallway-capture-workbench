@@ -14,11 +14,15 @@
     {
       "text": "Wider comparison against outlet-wall-context/outlet-wall-wide retains orange wall, black baseboard and floor relationship, without reinterpreting height as a measurement. Screenshot outputs/outlet-context-local.png. Orientation/selection regression passes; typecheck, build and six source tests pass. Metadata check: all three selected JPEGs have no EXIF. Staged diff reviewed; public scan running before commit.",
       "timestamp": "2026-10-29T19:37:40Z"
+    },
+    {
+      "text": "Published e87de7c96171ae8931db9c14651b9a84cf9bc624; Pages run 40941830513 succeeded. Verified live close view against outlet-face-closeup, clicked correct record, scrolled gallery and confirmed all three references loaded. No browser console errors. Screenshots outputs/outlet-published.png and outputs/outlet-evidence-published.png. Human check: faceplate shape and T-slot/ground orientation. Dimensions, height and location remain estimates. View https://denson.github.io/hallway-capture-workbench/#v=1\u0026mode=orbit\u0026x=8.937\u0026y=0.388\u0026z=10.631\u0026tx=8.59\u0026ty=0.34\u0026tz=10.631\u0026roof=1\u0026labels=0\u0026measurements=0\u0026object=outlet-opposite-210",
+      "timestamp": "2026-10-29T19:39:25Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Refine hallway duplex outlet from three detail photos",
   "type": "task",
-  "updated_at": "2026-10-29T19:37:40Z"
+  "updated_at": "2026-10-29T19:39:25Z"
 }
