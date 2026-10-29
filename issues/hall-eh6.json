@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-29T07:26:39Z",
+  "description": "Use the newly supplied keyway, full lever and side-profile close-ups for apartment 210, following the earlier request to refine its handle/lock. Preserve door-210 stable ID and measured 79-inch leaf height. Add detailed lever/rosette/key cylinder geometry and a linked hardware record if appropriate, attach selected metadata-free photos, document observed features and identity uncertainty, retain previous door evidence. Do not assert manufacturer, exact model, part number or dimensions without support. Validate, publish, verify the model and photo record, close ticket and give a targeted human check.",
+  "id": "hall-eh6",
+  "labels": [],
+  "priority": 1,
+  "status": "open",
+  "title": "Refine apartment 210 keyed lever hardware from three close-up photos",
+  "type": "task",
+  "updated_at": "2026-10-29T07:26:39Z"
+}
