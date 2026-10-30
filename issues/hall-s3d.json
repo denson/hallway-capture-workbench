@@ -14,11 +14,15 @@
     {
       "text": "Implemented a separate private solar-facility route. C100 vector extraction retains 1,303 tracker strips (509 west / 535 central / 259 east); repeated-symbol registration aligns C101 and C103-C105. C101 symbols yield exactly 14 batteries and 7 BESS inverters; 11 field inverter positions remain explicitly provisional. 323,271 terrain vertices on a 5 m grid interpolate 30 manually read labels, with 1,227,943 optional original contour segments retained. Added 12 ft roads, schematic fences/gen-tie/laydown, documented existing/proposed substation footprints and approximate C202/C203 equipment. Compared the running model to C002/C100, C101, C103-C105, C200-C203, C300 and fence detail. Corrected field framing, yard finish/perimeter and distinct inverter ventilation during review. URL camera coordinates beyond 1200 m, layer restoration, source enlargement and canvas equipment selection verified. Static wire batching reduced draw calls without dropping segments; observed about 55-56 fps including the contour view. Ten terrain/capture/solar checks pass. GLB exports with 43 feature records and instancing; first import verified Blender 5.2.1, final refined export validation underway. Private publication pending; existing demos preserved.",
       "timestamp": "2026-10-30T17:49:04Z"
+    },
+    {
+      "text": "Source review complete; all three field silhouettes, C101 equipment arrangement, C202 battery form, C203 top vents/central grille, C201 tall dead-end structure and documented footprint sizes were compared in the running viewer. Known simplifications are retained explicitly: schematic fence perimeter (including C500 6 ft fabric versus site-sheet 8 ft callouts), no engineered pad/freeboard/clearance reproduction, approximate service roads/gen-tie and interpolated terrain. Original fine contour line segments remain available; no physical terrain simplification was used for wire batching. Packaging the verified private source now.",
+      "timestamp": "2026-10-30T17:50:07Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build solar facility demo",
   "type": "task",
-  "updated_at": "2026-10-30T17:49:04Z"
+  "updated_at": "2026-10-30T17:50:07Z"
 }
