@@ -6,9 +6,15 @@
   "description": "User requests an embedded Google Maps view of the solar facility location. Verify plant/project context against official location and county plans; retain model-local coordinates and avoid implying georegistration. Add interactive map and larger-map fallback, accessible responsive layout, browser verification, private publication, live verification, and handoff update. Preserve the current camera/model detail and owner-private audience.",
   "id": "hall-lqx",
   "labels": [],
+  "comments": [
+    {
+      "text": "Verified Portland Cement Plant at 3500 State Hwy 120 in Google Maps and the official TxDOT producer list. Obtained satellite iframe from Google Maps Share \u003e Embed a map, widened the context through the UI. Added a main-workbench Google Maps mode, larger-map link, explicit plant-pin/project-boundary distinction and Back to 3D model. Model rendering pauses while the map is visible; map state is retained in URL. Embedded imagery loads locally with no runtime errors. Verified exact camera XYZ/target and selected substation survive round-trip. No model geometry or geographic registration changed; owner-private audience confirmed.",
+      "timestamp": "2026-10-30T20:39:31Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Embed Google Maps context in solar demo",
   "type": "task",
-  "updated_at": "2026-10-30T20:35:14Z"
+  "updated_at": "2026-10-30T20:39:31Z"
 }
