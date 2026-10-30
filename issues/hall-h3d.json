@@ -18,11 +18,15 @@
     {
       "text": "User has directed proceeding with the QARC example after reviewing the permission concern. No written permission is claimed. Scope is an attributed authored demo on the existing owner-private ChatGPT Site; do not add QARC-derived content to the public hallway repository. User now explicitly requests preserving terrain detail and maximizing model detail while remaining reasonably performant on a gaming laptop. Acceptance: preserve available contour/rock/drainage/graded-platform evidence, document interpolation limits, use practical mesh/instance budgets, verify rendered source comparisons and runtime, provide useful views and export, then stop for user testing before hall-s3d.",
       "timestamp": "2026-10-30T00:30:54Z"
+    },
+    {
+      "text": "Implementation is in the existing owner-private Sites source, separate dist/house-terrain folder with shared Three.js viewer/model helpers. Dense terrain: 451x330 float32 grid (148830 stored vertices, \u003c=0.45 m spacing), 37 labelled elevation anchors, 220 recovered contour segments / 19822 samples plus optional exact source-linework layer. House includes fanned wings, upper clerestory, room cutaway, openings/louvres/screens, seams/vents, curved north steps/rails, tanks, shed with 3 roller openings + personnel door and roof lights, future observatory, road/fence and shelf-zone detail. No hallway source changes. Compared rendered north/south/overall/cutaway against PDF 2-8, 16-18, 23 and 25. Corrected buried stairs, cladding joints crossing openings, stray rocks outside terrain and canvas layout. Four source/terrain regression checks pass; browser around 56 fps at a 1476x722 render target with roughly 339k triangles / 111 draw calls. GLB downloaded, header/records checked, and imported successfully in Blender 5.2.1 (1401 mesh objects, all 13 feature IDs). Publication remains pending; ticket stays open until deployed result verified.",
+      "timestamp": "2026-10-30T00:58:02Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build house and terrain demo",
   "type": "task",
-  "updated_at": "2026-10-30T00:30:54Z"
+  "updated_at": "2026-10-30T00:58:02Z"
 }
