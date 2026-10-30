@@ -6,9 +6,15 @@
   "description": "User corrects the map target: identify and show the proposed solar construction area rather than a nearby cement-plant listing. Establish the proposed array location from county project plans and geographic landmarks or public geospatial evidence; correct the Google Maps embed and labels, retain provenance and uncertainty, avoid claiming surveyed registration. Verify location visually against the plan cover/site map, test the map and preserved model camera, publish privately and verify live. Preserve existing model geometry and audience.",
   "id": "hall-9bf",
   "labels": [],
+  "comments": [
+    {
+      "text": "Located the actual proposed array areas from C000, replacing the cement-plant listing. Matched the cover-sheet aerial to georeferenced USGSImageryOnly with 41 SIFT/RANSAC similarity-transform inliers; median residual 1.75 reference pixels. Extracted all three C000 white perimeter paths into WGS84 GeoJSON. Approximate centers: west 38.3854,-104.9873; central 38.3858,-104.9784; southeast 38.3797,-104.9694. Recovered outline area about 164.84 acres versus C001 project-area context 166.10 acres (different bases, useful scale check). Visually compared road/gully/river relationships and each irregular outline against C000. Google Share embed now uses central-field coordinates. Added self-contained attributed SVG footprint view on USGS imagery, location-specific sidebar links and C000 enlargement. No Google tiles copied. No 3D geometry/georegistration changes. Twelve checks pass, including registration/footprint integrity and Google links falling inside each proposed area near its center. Local map/footprint/source/modal/3D camera round-trip verified without errors. Approximate planning localization, not survey accuracy; construction status unverified. Private publication pending.",
+      "timestamp": "2026-10-30T21:05:48Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Locate and map the proposed solar array footprint",
   "type": "task",
-  "updated_at": "2026-10-30T20:48:51Z"
+  "updated_at": "2026-10-30T21:05:48Z"
 }
