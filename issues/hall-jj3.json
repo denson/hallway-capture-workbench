@@ -6,9 +6,15 @@
   "description": "Add numbered ground rings, direction arrows and aim targets to the private house demo, starting with central/northwest rock shelves and nearby inferred terrain, then north platform/stair grade, driveway transition and solarium roof junction. Each station retains local camera/target coordinates, camera height, purpose, uncertainty, and source references. Allow marker inspection, overview and exact shot preview, plus machine-readable capture-plan export. Proposed positions are planning candidates, not field-verified footing/access or autonomous routes. Preserve model geometry/detail and owner-private audience; keep solar untouched. Acceptance: markers visible/selectable without blocking normal exploration; selected target and shot framing correspond; camera/target/height/yaw/pitch persist in records and export; source/context comparison, meaningful regression checks, browser performance, private publication and live verification completed.",
   "id": "hall-jj3",
   "labels": [],
+  "comments": [
+    {
+      "text": "Implemented six proposed capture stations C01-C06: central face, northwest shelf, reverse/slope, north stair/platform, driveway bend, and solarium roof junction. Standing rings conform to modeled terrain; arrows, 1.6 m camera mast, selected aim target/ray, station records, Show marker / Preview shot and JSON export added. Exact shot views bypass responsive camera fitting and allow upward roof views; camera and layer hashes restore in existing tabs and after reload. All six model center rays are clear (excluding final 0.7 m), with explicit model-only/footing/access limitations. Compared marker contexts to source sheets 101SP1 and 105SP1 and inspected all six rendered previews. Seven terrain/capture regression checks pass; browser no runtime errors, around 56 fps in tested views. Resolved JSON downloaded and inspected; architectural GLB verified to exclude planning aids while retaining house/terrain records. Private publication pending; solar remains untouched.",
+      "timestamp": "2026-10-30T07:55:57Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Add photo capture stations at uncertain house-demo features",
   "type": "task",
-  "updated_at": "2026-10-30T07:39:22Z"
+  "updated_at": "2026-10-30T07:55:57Z"
 }
