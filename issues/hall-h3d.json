@@ -22,11 +22,15 @@
     {
       "text": "Implementation is in the existing owner-private Sites source, separate dist/house-terrain folder with shared Three.js viewer/model helpers. Dense terrain: 451x330 float32 grid (148830 stored vertices, \u003c=0.45 m spacing), 37 labelled elevation anchors, 220 recovered contour segments / 19822 samples plus optional exact source-linework layer. House includes fanned wings, upper clerestory, room cutaway, openings/louvres/screens, seams/vents, curved north steps/rails, tanks, shed with 3 roller openings + personnel door and roof lights, future observatory, road/fence and shelf-zone detail. No hallway source changes. Compared rendered north/south/overall/cutaway against PDF 2-8, 16-18, 23 and 25. Corrected buried stairs, cladding joints crossing openings, stray rocks outside terrain and canvas layout. Four source/terrain regression checks pass; browser around 56 fps at a 1476x722 render target with roughly 339k triangles / 111 draw calls. GLB downloaded, header/records checked, and imported successfully in Blender 5.2.1 (1401 mesh objects, all 13 feature IDs). Publication remains pending; ticket stays open until deployed result verified.",
       "timestamp": "2026-10-30T00:58:02Z"
+    },
+    {
+      "text": "Delivered: Sites source commit c5276e78b45f67115f216a4e4ba6582342538abe; private deployment appgdep_6ae3ec1ca004819191842c704fbd2e19 succeeded. Live URL https://field-capture-robotics.denson.chatgpt.site/house-terrain/ verified in the in-app browser: dense terrain and architecture rendered, feature records opened, source sheet chooser/enlargement worked, layers and view links exercised, no runtime errors. Live counter about 53 fps / 119 draw calls / 341k rendered triangles; earlier desktop-size render target 1476x722 pixels was about 54-56 fps. This is this browser/hardware result, not a hardware guarantee. Latest GLB export is about 16 MB and contains all feature IDs; full import was verified with Blender 5.2.1. Remaining uncertainty: intermediate contour elevations, traced positions, compound roof junctions, minor finishes and individual rocks are interpreted; no survey/engineering accuracy or earthwork volumes asserted. Human checks: Whole site + Rock shelves with source linework on/off; North stair/solarium and Interior cutaway; orbit/zoom smoothness and Export GLB. Stop here for user test; hall-s3d remains open and unstarted.",
+      "timestamp": "2026-10-30T01:02:56Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build house and terrain demo",
   "type": "task",
-  "updated_at": "2026-10-30T00:58:02Z"
+  "updated_at": "2026-10-30T01:02:56Z"
 }
