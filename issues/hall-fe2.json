@@ -2,6 +2,7 @@
   "assignee": "unknown",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-30T22:13:44Z",
   "created": "2026-10-30T22:06:31Z",
   "description": "User reports East versus Southeast naming mismatch between Google Maps/location view and 3D model. Standardize user-facing labels as West field, Central field and Southeast field across prepared views, feature controls, projected labels, records, source captions, exported data/knowledge and footprint map. Preserve existing stable IDs and view links. Validate rendered labels in both modes, publish privately, verify live and update handoff.",
   "id": "hall-fe2",
@@ -17,7 +18,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Align solar field labels across model and location map",
   "type": "task",
   "updated_at": "2026-10-30T22:13:44Z"
