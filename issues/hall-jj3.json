@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-30T07:37:28Z",
+  "description": "Add numbered ground rings, direction arrows and aim targets to the private house demo, starting with central/northwest rock shelves and nearby inferred terrain, then north platform/stair grade, driveway transition and solarium roof junction. Each station retains local camera/target coordinates, camera height, purpose, uncertainty, and source references. Allow marker inspection, overview and exact shot preview, plus machine-readable capture-plan export. Proposed positions are planning candidates, not field-verified footing/access or autonomous routes. Preserve model geometry/detail and owner-private audience; keep solar untouched. Acceptance: markers visible/selectable without blocking normal exploration; selected target and shot framing correspond; camera/target/height/yaw/pitch persist in records and export; source/context comparison, meaningful regression checks, browser performance, private publication and live verification completed.",
+  "id": "hall-jj3",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Add photo capture stations at uncertain house-demo features",
+  "type": "task",
+  "updated_at": "2026-10-30T07:37:28Z"
+}
