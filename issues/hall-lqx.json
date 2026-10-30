@@ -2,6 +2,7 @@
   "assignee": "unknown",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-30T20:43:30Z",
   "created": "2026-10-30T20:33:23Z",
   "description": "User requests an embedded Google Maps view of the solar facility location. Verify plant/project context against official location and county plans; retain model-local coordinates and avoid implying georegistration. Add interactive map and larger-map fallback, accessible responsive layout, browser verification, private publication, live verification, and handoff update. Preserve the current camera/model detail and owner-private audience.",
   "id": "hall-lqx",
@@ -21,7 +22,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Embed Google Maps context in solar demo",
   "type": "task",
   "updated_at": "2026-10-30T20:43:30Z"
