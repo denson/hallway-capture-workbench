@@ -10,11 +10,15 @@
     {
       "text": "Implemented six proposed capture stations C01-C06: central face, northwest shelf, reverse/slope, north stair/platform, driveway bend, and solarium roof junction. Standing rings conform to modeled terrain; arrows, 1.6 m camera mast, selected aim target/ray, station records, Show marker / Preview shot and JSON export added. Exact shot views bypass responsive camera fitting and allow upward roof views; camera and layer hashes restore in existing tabs and after reload. All six model center rays are clear (excluding final 0.7 m), with explicit model-only/footing/access limitations. Compared marker contexts to source sheets 101SP1 and 105SP1 and inspected all six rendered previews. Seven terrain/capture regression checks pass; browser no runtime errors, around 56 fps in tested views. Resolved JSON downloaded and inspected; architectural GLB verified to exclude planning aids while retaining house/terrain records. Private publication pending; solar remains untouched.",
       "timestamp": "2026-10-30T07:55:57Z"
+    },
+    {
+      "text": "Published privately and live verified. Source commit 5bb50767e6de0534ff8139cf78a2a0b8ed719871; deployment appgdep_6ae4d185cac48191a7290992e48bf115 succeeded. Tested C01 Show marker / Preview shot on the live route, correct exact camera and target, six station controls and no runtime errors; live renderer reported 60 fps / 74 calls / 300k triangles. Review: /house-terrain/#view=capture-C01\u0026object=capture-C01 ; choose C01-C06, compare standing marker and preview, toggle planning aids or download JSON. Positions remain proposed model coordinates; verify actual footing/access/framing. User has now authorized starting solar next.",
+      "timestamp": "2026-10-30T17:19:57Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Add photo capture stations at uncertain house-demo features",
   "type": "task",
-  "updated_at": "2026-10-30T07:55:57Z"
+  "updated_at": "2026-10-30T17:19:57Z"
 }
