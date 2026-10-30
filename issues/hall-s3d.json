@@ -10,11 +10,15 @@
     {
       "text": "Pickup on the Windows gaming laptop by the same lead modeling agent. User now authorized starting solar while reviewing the house/capture markers later. Implementation target is a separate solar-facility route in the existing owner-private Sites source, with reusable Three.js tools; existing hallway, exterior and house preserved. Will inspect the 17-page county plans, retain attribution/status and distinguish plan geometry from illustrative details. Acceptance includes terrain/array layout, roads, inverter skids, battery containers, fencing, documented substation footprint, source-comparison views, reproducible source and GLB export if feasible, checks, private deployment and live verification.",
       "timestamp": "2026-10-30T17:18:48Z"
+    },
+    {
+      "text": "Implemented a separate private solar-facility route. C100 vector extraction retains 1,303 tracker strips (509 west / 535 central / 259 east); repeated-symbol registration aligns C101 and C103-C105. C101 symbols yield exactly 14 batteries and 7 BESS inverters; 11 field inverter positions remain explicitly provisional. 323,271 terrain vertices on a 5 m grid interpolate 30 manually read labels, with 1,227,943 optional original contour segments retained. Added 12 ft roads, schematic fences/gen-tie/laydown, documented existing/proposed substation footprints and approximate C202/C203 equipment. Compared the running model to C002/C100, C101, C103-C105, C200-C203, C300 and fence detail. Corrected field framing, yard finish/perimeter and distinct inverter ventilation during review. URL camera coordinates beyond 1200 m, layer restoration, source enlargement and canvas equipment selection verified. Static wire batching reduced draw calls without dropping segments; observed about 55-56 fps including the contour view. Ten terrain/capture/solar checks pass. GLB exports with 43 feature records and instancing; first import verified Blender 5.2.1, final refined export validation underway. Private publication pending; existing demos preserved.",
+      "timestamp": "2026-10-30T17:49:04Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build solar facility demo",
   "type": "task",
-  "updated_at": "2026-10-30T17:18:48Z"
+  "updated_at": "2026-10-30T17:49:04Z"
 }
