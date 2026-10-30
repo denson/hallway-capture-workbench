@@ -6,9 +6,15 @@
   "description": "User reports East versus Southeast naming mismatch between Google Maps/location view and 3D model. Standardize user-facing labels as West field, Central field and Southeast field across prepared views, feature controls, projected labels, records, source captions, exported data/knowledge and footprint map. Preserve existing stable IDs and view links. Validate rendered labels in both modes, publish privately, verify live and update handoff.",
   "id": "hall-fe2",
   "labels": [],
+  "comments": [
+    {
+      "text": "Aligned names to West field, Central field and Southeast field. Added shared FIELD_LABELS for 3D prepared-view names, projected labels, feature controls, records and source captions. The map sidebar, GeoJSON and SVG already use Southeast field and were checked against the updated model. Exported site JSON now includes fieldLabels, and its generator retains the mapping. Legacy east / arrays-east IDs and view=east remain unchanged; knowledge explains their Southeast label. Browser verified projected WEST/CENTRAL/SOUTHEAST labels, Southeast prepared view/record/C105 caption, old URL behavior and map/footprint labels at the current narrow browser layout. No runtime errors. Twelve existing regression checks plus syntax/diff checks pass. This is an annotation-only change; model geometry, placement and map registration are unchanged. Owner-private publication pending.",
+      "timestamp": "2026-10-30T22:10:53Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Align solar field labels across model and location map",
   "type": "task",
-  "updated_at": "2026-10-30T22:07:13Z"
+  "updated_at": "2026-10-30T22:10:53Z"
 }
