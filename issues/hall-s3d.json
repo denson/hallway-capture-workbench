@@ -18,11 +18,15 @@
     {
       "text": "Source review complete; all three field silhouettes, C101 equipment arrangement, C202 battery form, C203 top vents/central grille, C201 tall dead-end structure and documented footprint sizes were compared in the running viewer. Known simplifications are retained explicitly: schematic fence perimeter (including C500 6 ft fabric versus site-sheet 8 ft callouts), no engineered pad/freeboard/clearance reproduction, approximate service roads/gen-tie and interpolated terrain. Original fine contour line segments remain available; no physical terrain simplification was used for wire batching. Packaging the verified private source now.",
       "timestamp": "2026-10-30T17:50:07Z"
+    },
+    {
+      "text": "Completed and privately published. Source commit e6e08f68903540f7e1044f5dc5ccc1a82c9bbed7; deployment appgdep_6ae4d8f89210819184c606ead4cb93f0 succeeded. Live route /solar-facility/ verified with the three-field overview and tracker close-up; source C200 loads correctly and observed about 55-56 fps. Final 27.2 MB GLB imported in Blender 5.2.1 LTS: 89,435 imported objects / 43 feature records, all 14 batteries, 7 BESS and 11 field inverters, dense terrain and all required groups retained. All ten regression checks and JS syntax/diff checks pass. House C01 Show marker / Preview shot rechecked on the published site after shared viewer changes. Review: Whole facility, Array fields, Tracker detail, Battery yard/detail, Substation, Contour evidence, select equipment, enlarge a source and export GLB. Remaining limits: interpolated terrain, illustrative tracker pose/module subdivisions/hardware, schematic fences/gen-tie/pads and provisional field-inverter setout; construction status unverified and source plans NOT FOR CONSTRUCTION. Owner-private audience preserved; no public hallway application changes.",
+      "timestamp": "2026-10-30T17:53:20Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build solar facility demo",
   "type": "task",
-  "updated_at": "2026-10-30T17:50:07Z"
+  "updated_at": "2026-10-30T17:53:20Z"
 }
