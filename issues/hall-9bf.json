@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-10-30T20:48:16Z",
+  "description": "User corrects the map target: identify and show the proposed solar construction area rather than a nearby cement-plant listing. Establish the proposed array location from county project plans and geographic landmarks or public geospatial evidence; correct the Google Maps embed and labels, retain provenance and uncertainty, avoid claiming surveyed registration. Verify location visually against the plan cover/site map, test the map and preserved model camera, publish privately and verify live. Preserve existing model geometry and audience.",
+  "id": "hall-9bf",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Locate and map the proposed solar array footprint",
+  "type": "task",
+  "updated_at": "2026-10-30T20:48:16Z"
+}
