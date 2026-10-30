@@ -10,11 +10,15 @@
     {
       "text": "Aligned names to West field, Central field and Southeast field. Added shared FIELD_LABELS for 3D prepared-view names, projected labels, feature controls, records and source captions. The map sidebar, GeoJSON and SVG already use Southeast field and were checked against the updated model. Exported site JSON now includes fieldLabels, and its generator retains the mapping. Legacy east / arrays-east IDs and view=east remain unchanged; knowledge explains their Southeast label. Browser verified projected WEST/CENTRAL/SOUTHEAST labels, Southeast prepared view/record/C105 caption, old URL behavior and map/footprint labels at the current narrow browser layout. No runtime errors. Twelve existing regression checks plus syntax/diff checks pass. This is an annotation-only change; model geometry, placement and map registration are unchanged. Owner-private publication pending.",
       "timestamp": "2026-10-30T22:10:53Z"
+    },
+    {
+      "text": "Published owner-private source f001858501779f4e675c64a9d2aedbcb9f6f405c; deployment appgdep_6ae5163d71288191b194716fef0960f1 succeeded. Live model view/record/C105 caption all read Southeast field, projected labels read WEST FIELD / CENTRAL FIELD / SOUTHEAST FIELD, and map sidebar/footprint use the same names. Legacy view=east and arrays-east selection verified. Twelve existing regression checks plus syntax/diff checks passed; browser has no runtime errors. Restored the prior array overview and selected West field. Review model buttons/labels then Google Maps \u003e Show proposed footprint. Handoff updated. Geometry and geographic placement unchanged.",
+      "timestamp": "2026-10-30T22:13:44Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Align solar field labels across model and location map",
   "type": "task",
-  "updated_at": "2026-10-30T22:10:53Z"
+  "updated_at": "2026-10-30T22:13:44Z"
 }
