@@ -10,11 +10,15 @@
     {
       "text": "Picked up on the current Windows laptop by the lead modeling agent on 2026-10-29 America/Denver. Restored the existing project and beadwork history from the transfer bundle, then fetched current tickets from origin. House demo first; hall-s3d remains untouched pending user testing of this ticket. QARC reuse permission is unresolved; user asked to choose an open-licensed replacement or confirm existing permission. Checking replacement sources and preparing the existing Three.js workflow; no QARC-derived geometry will be authored before source resolution.",
       "timestamp": "2026-10-30T00:15:21Z"
+    },
+    {
+      "text": "Source review: QARC official examples describe viewing sample sets; current terms section 2 requires express written permission for reproduction/exploitation. No permission has been established. Proposed replacement: Australian Commonwealth Design For Place technical drawings, explicitly licensed CC BY 4.0 at https://www.yourhome.gov.au/copyright and available at https://www.yourhome.gov.au/house-designs . Telopea provides two-storey plans, sections, elevations and setout; any added sloping terrain would be an explicitly illustrative adaptation rather than a surveyed QARC site. Source selection question is pending with user. Existing React/TypeScript/Three.js runtime and GLTFExporter were inspected; isolated ticket worktree created and dependencies installed. No model geometry or published site changed. hall-s3d has not been started.",
+      "timestamp": "2026-10-30T00:19:55Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build house and terrain demo",
   "type": "task",
-  "updated_at": "2026-10-30T00:15:21Z"
+  "updated_at": "2026-10-30T00:19:55Z"
 }
