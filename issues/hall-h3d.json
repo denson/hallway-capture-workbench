@@ -14,11 +14,15 @@
     {
       "text": "Source review: QARC official examples describe viewing sample sets; current terms section 2 requires express written permission for reproduction/exploitation. No permission has been established. Proposed replacement: Australian Commonwealth Design For Place technical drawings, explicitly licensed CC BY 4.0 at https://www.yourhome.gov.au/copyright and available at https://www.yourhome.gov.au/house-designs . Telopea provides two-storey plans, sections, elevations and setout; any added sloping terrain would be an explicitly illustrative adaptation rather than a surveyed QARC site. Source selection question is pending with user. Existing React/TypeScript/Three.js runtime and GLTFExporter were inspected; isolated ticket worktree created and dependencies installed. No model geometry or published site changed. hall-s3d has not been started.",
       "timestamp": "2026-10-30T00:19:55Z"
+    },
+    {
+      "text": "User has directed proceeding with the QARC example after reviewing the permission concern. No written permission is claimed. Scope is an attributed authored demo on the existing owner-private ChatGPT Site; do not add QARC-derived content to the public hallway repository. User now explicitly requests preserving terrain detail and maximizing model detail while remaining reasonably performant on a gaming laptop. Acceptance: preserve available contour/rock/drainage/graded-platform evidence, document interpolation limits, use practical mesh/instance budgets, verify rendered source comparisons and runtime, provide useful views and export, then stop for user testing before hall-s3d.",
+      "timestamp": "2026-10-30T00:30:54Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Build house and terrain demo",
   "type": "task",
-  "updated_at": "2026-10-30T00:19:55Z"
+  "updated_at": "2026-10-30T00:30:54Z"
 }
