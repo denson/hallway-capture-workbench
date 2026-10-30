@@ -2,6 +2,7 @@
   "assignee": "unknown",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-30T01:02:56Z",
   "created": "2026-10-30T00:09:30Z",
   "description": "Build a house-and-terrain 3D demo using the same lead modeling agent as the hallway project. Preserve the hallway demo; keep each demo in a separate folder and share reusable tools. Read AGENTS.md and the existing model-evidence skill. Inspect the current React/TypeScript/Three.js workflow before choosing modeling/export tools; do not assume an existing Blender pipeline.\n\nSources: QARC New House Example 01 PDF https://qarcsystems.com.au/wp-content/uploads/2024/06/ARCBinder01_R2.pdf ; official examples https://qarcsystems.com.au/software-info/examples/ ; terms https://qarcsystems.com.au/terms-and-conditions/ . Actual PDF has 78 pages: 2-4 site/contours/levels, 5-6 floor plans, 16-17 elevations, 19 and 21-22 sections.\n\nModel the house plus sloping terrain, driveway and relevant outbuildings from the drawings. Check dimensions and rendered views against sources; record measured, estimated and unknown geometry. Deliver reproducible source, useful preview views and a Blender-compatible export if feasible. This is an illustrative demo, not an engineering or as-built model.\n\nQARC terms restrict reuse: resolve permission or propose a permitted replacement before reproducing or publishing the demo; do not contact rights holders without user authorization. Keep private original hallway media and location metadata out of this public repository. Claim this ticket in the existing Beadwork store and record progress, tests, artifacts and blockers. Same existing hallway modeling agent is responsible; current computer assignment is unconfirmed and should be recorded on pickup. WOOT posted this handoff at the user's request.",
   "id": "hall-h3d",
@@ -29,7 +30,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Build house and terrain demo",
   "type": "task",
   "updated_at": "2026-10-30T01:02:56Z"
