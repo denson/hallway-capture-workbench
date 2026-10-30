@@ -2,6 +2,7 @@
   "assignee": "unknown",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-10-30T17:53:20Z",
   "created": "2026-10-30T00:10:25Z",
   "description": "Build an illustrative solar-power facility 3D demo using the same lead modeling agent as the hallway and house demos. Preserve existing work; use a separate demo folder with shared reusable tools. Read AGENTS.md and the model-evidence skill; inspect the current Three.js workflow before choosing modeling/export tools.\n\nSources: Amrize Portland Plant Solar and Storage plans https://fremontcountyco.gov/sites/default/files/planning-and-zoning/current-projects/Site_Plans_3.pdf ; county project page https://fremontcountyco.gov/content/sru-25-003-amrize-cement-inc-portland-plant-solar-storage-project-hwy-120florence . The 17-page PDF documents 33.35 MW solar and 42 MWh battery storage near Florence, Colorado. Useful pages: 5/C101 site and battery area; 8/C104 array layout and terrain contours; 10/C200 panel sections/dimensions; 12/C202 battery elevations.\n\nStart with terrain and panel layout, then access roads, inverter skids, battery containers, fencing and the documented substation footprint. Compare rendered views and dimensions against drawings; separate documented geometry from assumptions. Deliver reproducible source, preview views and a Blender-compatible export if feasible. Keep this useful for an industrial/worksite demo, not just a small-object showcase.\n\nPlans dated September 15, 2025 are marked NOT FOR CONSTRUCTION. Construction status is unverified; do not call this under construction or as-built. Approximate equipment dimensions and by-others details are not verified engineering. Public availability does not establish an open license; retain attribution and check reuse constraints before public publication. No third-party contact without authorization. Keep private original hallway media and location metadata out of this public repository. Claim and maintain this ticket in the existing Beadwork store, recording tests, artifacts and blockers. Same existing hallway modeling agent is responsible; current computer assignment is unconfirmed and should be recorded on pickup. WOOT posted this handoff at the user's request.",
   "id": "hall-s3d",
@@ -25,7 +26,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Build solar facility demo",
   "type": "task",
   "updated_at": "2026-10-30T17:53:20Z"
