@@ -16,6 +16,8 @@ The red manual pull station is separate. Honeywell is visible, but model and par
 
 Sprinkler heads retain **Needs confirmation for hallway**. An accessible apartment-head comparison has not confirmed their manufacturer, model, part number or interchangeability. The modeled head is simplified.
 
+November 1, 2026: sprinkler inspection panels now link to a separate [detailed comparison model](https://field-capture-robotics.denson.chatgpt.site/sprinkler-head/) in the existing private Field Capture collection. It illustrates a TYCO TY-B TY3151 upright head from manufacturer TFP151 (June 2026), with part selection and explanatory exploded views. It does not identify the installed heads or change any hallway geometry, dimensions, rating or compatibility claim. The linked demo preserves its private audience.
+
 The original video’s location was checked against the building. It does not establish a floor, a router position, or the method used by the phone to obtain its estimate. Raw phone metadata and the original video are not included in the public Site.
 
 Work-point heights are estimates unless explicitly marked measured. They describe the service point above its local floor, not ladder length. This app does not choose access equipment or certify replacement parts.

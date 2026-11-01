@@ -70,6 +70,14 @@ export function ObjectInspector({
         ))}
       </dl>
       {r.notes && <p>{r.notes}</p>}
+      {selected.id.startsWith('sprinkler-head-') && (
+        <section>
+          <h3>Explore a detailed comparison model</h3>
+          <p>Open a drawing-derived TYCO TY3151 upright sprinkler with selectable parts and an exploded view. This is a catalog example; the installed hallway head remains unidentified.</p>
+          <a href="https://field-capture-robotics.denson.chatgpt.site/sprinkler-head/" target="_blank" rel="noreferrer">Open sprinkler detail demo ↗</a>
+          <p><small>The linked Field Capture demo keeps its existing private access.</small></p>
+        </section>
+      )}
       {selected.evidence && (
         <section>
           <h3>Model evidence</h3>
