@@ -10,11 +10,15 @@
     {
       "text": "Manufacturer source reviewed: TYCO TFP151 June 2026, Fig 1/page 2 and parts/materials page 3. Upright TY3151 is a comparison candidate only; installed identity remains unverified. Source video 04:42 supports broad upright form only. Detailed model retains 55.6 mm height and 5 mm bulb, six selectable groups, reversible separation, cutaway, drawing enlargement and metre-scale assembled GLB. Local visual comparison checked inlet below bulb, arms/frame proportions, deflector above and separate button/seal ordering. All six records, share-state reload, export and hallway click-to-detail link tested.",
       "timestamp": "2026-11-01T20:47:13Z"
+    },
+    {
+      "text": "Published and live verified. Private source 573eb7357c2bbd288b4be61431e8a2a8e8ef9b42; deployment appgdep_6ae7a5a0f86081919716a18ecffb4ae6 succeeded; route /sprinkler-head/. Hallway fc18cacca151d87d65b102cb81d7083b990c7e23; Pages run 41348730782 succeeded. Checks: 15 private regressions, 53 hallway tests, 6 source tests, typecheck/build and public privacy scan passed. Live B0 click opens comparison link; original identity remains Unknown. Human check: compare Assembled/Exploded and select a part against Figure 1. Fine profiles and installed identity remain unverified.",
+      "timestamp": "2026-11-01T20:50:15Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Detailed sprinkler component demo linked to hallway",
   "type": "task",
-  "updated_at": "2026-11-01T20:47:13Z"
+  "updated_at": "2026-11-01T20:50:15Z"
 }
