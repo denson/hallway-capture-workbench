@@ -10,11 +10,15 @@
     {
       "text": "Official-source research completed for 14 software products, mapped to five demos. Includes AutoCAD/SketchUp baselines, phone/photo capture, Revit/Civil 3D, professional laser scanning, mechanical part modeling, DroneDeploy ground-robot/aerial workflows and Raptor solar inspection records. Supported automation interfaces are documented without claiming integrations installed. Thermal inspection and dimensional survey remain distinct.",
       "timestamp": "2026-11-01T20:47:13Z"
+    },
+    {
+      "text": "Published and live verified /software-routes/ with 14 products, five demo mappings and six phone/photo options. Private source 573eb7357c2bbd288b4be61431e8a2a8e8ef9b42; deployment appgdep_6ae7a5a0f86081919716a18ecffb4ae6 succeeded. Browser filters and per-demo links passed; root and demo navigation added. Human check: Solar tab for drone mapping, thermal inspection and robot capture; phone filter for low-cost starting routes. All interfaces are research findings, not tested integrations.",
+      "timestamp": "2026-11-01T20:50:15Z"
     }
   ],
   "priority": 2,
   "status": "in_progress",
   "title": "Research practical software alternatives for each 3D demo",
   "type": "task",
-  "updated_at": "2026-11-01T20:47:13Z"
+  "updated_at": "2026-11-01T20:50:15Z"
 }
