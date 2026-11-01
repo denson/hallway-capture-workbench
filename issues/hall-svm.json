@@ -1,0 +1,14 @@
+{
+  "assignee": "",
+  "blocked_by": [],
+  "blocks": [],
+  "created": "2026-11-01T20:35:17Z",
+  "description": "Build a fifth small-component 3D demo from manufacturer drawings for a plausible hallway sprinkler candidate. Preserve uncertainty: exact installed model is unverified. Stable hallway IDs sprinkler-head-*. Provide source-linked dimensions, selectable detail and explanatory exploded view, hallway return link, private publication and visual source comparison. Acceptance: detail viewer works, source provenance and identification limits visible, integration tested, required regressions pass and deployed result verified.",
+  "id": "hall-svm",
+  "labels": [],
+  "priority": 2,
+  "status": "open",
+  "title": "Detailed sprinkler component demo linked to hallway",
+  "type": "task",
+  "updated_at": "2026-11-01T20:35:17Z"
+}
