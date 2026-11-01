@@ -2,6 +2,7 @@
   "assignee": "unknown",
   "blocked_by": [],
   "blocks": [],
+  "closed_at": "2026-11-01T20:50:15Z",
   "created": "2026-11-01T20:35:17Z",
   "description": "Research several current official-source software routes for hallway, burned-site, house-terrain, solar and sprinkler component demos. Include phone capture, AutoCAD/SketchUp where appropriate, specialist survey and solar drone/robot inspection tools, and supported automation interfaces. Distinguish capabilities, hardware and untested integrations. Deliver a plain-language comparison in the private demo site with source links.",
   "id": "hall-h3j",
@@ -17,7 +18,7 @@
     }
   ],
   "priority": 2,
-  "status": "in_progress",
+  "status": "closed",
   "title": "Research practical software alternatives for each 3D demo",
   "type": "task",
   "updated_at": "2026-11-01T20:50:15Z"
