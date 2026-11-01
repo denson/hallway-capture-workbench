@@ -6,9 +6,15 @@
   "description": "Build a fifth small-component 3D demo from manufacturer drawings for a plausible hallway sprinkler candidate. Preserve uncertainty: exact installed model is unverified. Stable hallway IDs sprinkler-head-*. Provide source-linked dimensions, selectable detail and explanatory exploded view, hallway return link, private publication and visual source comparison. Acceptance: detail viewer works, source provenance and identification limits visible, integration tested, required regressions pass and deployed result verified.",
   "id": "hall-svm",
   "labels": [],
+  "comments": [
+    {
+      "text": "Manufacturer source reviewed: TYCO TFP151 June 2026, Fig 1/page 2 and parts/materials page 3. Upright TY3151 is a comparison candidate only; installed identity remains unverified. Source video 04:42 supports broad upright form only. Detailed model retains 55.6 mm height and 5 mm bulb, six selectable groups, reversible separation, cutaway, drawing enlargement and metre-scale assembled GLB. Local visual comparison checked inlet below bulb, arms/frame proportions, deflector above and separate button/seal ordering. All six records, share-state reload, export and hallway click-to-detail link tested.",
+      "timestamp": "2026-11-01T20:47:13Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Detailed sprinkler component demo linked to hallway",
   "type": "task",
-  "updated_at": "2026-11-01T20:35:42Z"
+  "updated_at": "2026-11-01T20:47:13Z"
 }
