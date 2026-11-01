@@ -6,9 +6,15 @@
   "description": "Research several current official-source software routes for hallway, burned-site, house-terrain, solar and sprinkler component demos. Include phone capture, AutoCAD/SketchUp where appropriate, specialist survey and solar drone/robot inspection tools, and supported automation interfaces. Distinguish capabilities, hardware and untested integrations. Deliver a plain-language comparison in the private demo site with source links.",
   "id": "hall-h3j",
   "labels": [],
+  "comments": [
+    {
+      "text": "Official-source research completed for 14 software products, mapped to five demos. Includes AutoCAD/SketchUp baselines, phone/photo capture, Revit/Civil 3D, professional laser scanning, mechanical part modeling, DroneDeploy ground-robot/aerial workflows and Raptor solar inspection records. Supported automation interfaces are documented without claiming integrations installed. Thermal inspection and dimensional survey remain distinct.",
+      "timestamp": "2026-11-01T20:47:13Z"
+    }
+  ],
   "priority": 2,
   "status": "in_progress",
   "title": "Research practical software alternatives for each 3D demo",
   "type": "task",
-  "updated_at": "2026-11-01T20:35:42Z"
+  "updated_at": "2026-11-01T20:47:13Z"
 }
